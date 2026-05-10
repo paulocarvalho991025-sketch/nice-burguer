@@ -62,28 +62,28 @@ export default function App() {
   
   <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
 
-  <div className="hidden items-center gap-7 text-sm font-semibold md:flex">
-  <a href="#cardapio" className="hover:text-orange-700">
-    Cardápio
-  </a>
-
-  <a href="#combos" className="hover:text-orange-700">
-    Combos
-  </a>
-
-  <a href="#local" className="hover:text-orange-700">
-    Localização
-  </a>
-
-  <a
-    href={linkWhatsapp}
-    target="_blank"
-    rel="noreferrer"
-    className="rounded-full bg-orange-600 px-5 py-2 text-white shadow hover:bg-orange-700"
-  >
-    Pedir agora
-  </a>
-</div>
+  <div classNnav className="hidden items-center gap-7 text-sm font-semibold md:flex">
+            <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
+            <a href="#combos" className="hover:text-orange-700">Combos</a>
+            <a href="#local" className="hover:text-orange-700">Localização</a>
+        </div>
+        {menuAberto && (
+          <div className="border-t bg-white px-5 py-4 md:hidden">
+            <div className="flex flex-col gap-4 font-semibold">
+              <a href="#cardapio" onClick={() => setMenuAberto(false)}>Cardápio</a>
+              <a href="#combos" onClick={() => setMenuAberto(false)}>Combos</a>
+              <a href="#local" onClick={() => setMenuAberto(false)}>Localização</a>
+              <a
+                href={linkWhatsapp}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full bg-orange-600 px-5 py-3 text-center text-white"
+              >
+                Pedir pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        )}
       </header>
       <div className="fixed right-5 top-24 z-50 w-72 rounded-3xl bg-white p-5 shadow-2xl border border-orange-100">
   <h2 className="text-2xl font-black text-orange-700">
