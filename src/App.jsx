@@ -298,7 +298,7 @@ return (
   
   </h1>
 </div>
-          <p className="mt-5 text-lg leading-8 text-stone-600">
+          <p className="mt-5 text-lg leading-8 text-stone-1000">
              O Hamburguer que voce merece!
           </p>
 
