@@ -26,7 +26,7 @@ export default function App() {
     nome: "Burguer 3.0",
     descricao: "Pão Brioche, 2 Blend Bovino 80g, Fatias de Queijo Cheddar, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.",
     preco: "R$ 21,99",
-    imagem: "/img/3..0.png"
+    imagem: "/img/333.png"
   },
   {
     nome: "Coca-Cola Lata 350ml",
