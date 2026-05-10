@@ -222,11 +222,15 @@ return (
   )}
 </div>
 
-<section id="inicio"
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+<section
+  id="inicio"
+  className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-10 md:grid-cols-2 md:py-16"
+>
+  <motion.div
+    initial={{ opacity: 0, y: 18 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+  >
           <p className="mb-4 inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-bold text-orange-9900">
             Hamburguer Artesanal
           </p>
@@ -263,7 +267,9 @@ return (
             >
               Ver cardápio
             </a>
+            
           </div>
+          </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
