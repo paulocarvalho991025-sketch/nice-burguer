@@ -34,6 +34,7 @@ function removerDoCarrinho(index) {
 }
 
 function finalizarPedido() {
+  const whatsapp = "5584997063345";
   if (carrinho.length === 0) {
     alert("Adicione pelo menos um item ao carrinho.");
     return;
@@ -303,15 +304,7 @@ return (
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href={linkWhatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-orange-600 px-7 py-4 font-bold text-white shadow-lg hover:bg-orange-700"
-            >
-              <MessageCircle size={20} />
-              Fazer pedido
-            </a>
+          
 
             <a
               href="#cardapio"
