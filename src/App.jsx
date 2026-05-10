@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 
 export default function App() {
   const [menuAberto, setMenuAberto] = useState(false);
-  const [carrinho, setCarrinho] = useState([]);const totalCarrinho = carrinho.reduce((total, item) => {
-    const [endereco, setEndereco] = useState("");
+const [carrinho, setCarrinho] = useState([]);
+const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
+const totalCarrinho = carrinho.reduce((total, item) => {
   const valor = Number(
     item.preco
       .replace("R$", "")
@@ -16,6 +17,7 @@ const [observacao, setObservacao] = useState("");
 
   return total + valor;
 }, 0);
+
 function adicionarAoCarrinho(produto) {
   setCarrinho((atual) => [...atual, produto]);
 }
@@ -54,32 +56,6 @@ ${endereco}
 
 📝 Observação:
 ${observacao || "Nenhuma"}`
-  );
-
-  window.open(
-    `https://wa.me/${whatsapp}?text=${mensagem}`,
-    "_blank"
-  );
-}
-  const endereco = prompt("Digite seu endereço:");
-
-  if (!endereco) return;
-
-  const itens = carrinho
-    .map((item) => `${item.nome} - ${item.preco}`)
-    .join("\n");
-
-  const mensagem = encodeURIComponent(
-    `🍔 *NOVO PEDIDO* 🍔
-
-${itens}
-
-💰 Total: R$ ${totalCarrinho
-      .toFixed(2)
-      .replace(".", ",")}
-
-📍 Endereço:
-${endereco}`
   );
 
   window.open(
@@ -172,8 +148,7 @@ return (
       </p>
     ) : (
       carrinho.map((item, index) => (
-        <div
-          key={index}
+        <div key={index}
           className="mb-3 rounded-xl bg-orange-50 p-3"
         >
           <p className="font-bold">
@@ -453,3 +428,4 @@ return (
 
 </main>
   );
+}
