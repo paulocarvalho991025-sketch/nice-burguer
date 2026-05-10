@@ -189,7 +189,16 @@ return (
   placeholder="Digite seu endereço"
   className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
-
+<select
+  value={pagamento}
+  onChange={(e) => setPagamento(e.target.value)}
+  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+>
+  <option value="">Forma de pagamento</option>
+  <option value="Pix">Pix</option>
+  <option value="Dinheiro">Dinheiro</option>
+  <option value="Cartão">Cartão</option>
+</select>
 <textarea
   value={observacao}
   onChange={(e) => setObservacao(e.target.value)}
