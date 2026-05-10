@@ -76,7 +76,7 @@ ${observacao || "Nenhuma"}
 `);
 
   window.open(`https://wa.me/${whatsapp}?text=${mensagem}`, "_blank");
-}
+
 
 
   if (!endereco.trim()) {
@@ -492,3 +492,4 @@ className="h-full w-auto object-contain"          />
 
 </main>
   );
+}
