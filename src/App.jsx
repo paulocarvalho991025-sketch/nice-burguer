@@ -105,10 +105,10 @@ ${observacao || "Nenhuma"}`
     imagem: "/img/coca coca.png"
   },
 {
-    nome: "Coca-Cola 600 ml",
-    descricao: "Coca-Cola 600 ml",
+    nome: "Coca-Cola 250 ml",
+    descricao: "Coca-Cola 250 ml",
     preco: "R$ 5,99",
-    imagem: "/img/coca600.png",
+    imagem: "/img/coca250.png",
   },{
     nome: "Coca-Cola 1 Litro",
     descricao: "Coca-Cola 1 Litro",
