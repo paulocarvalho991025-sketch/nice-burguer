@@ -99,20 +99,20 @@ ${observacao || "Nenhuma"}`
     imagem: "/img/3333.png"
   },
   {
-    nome: "Coca-Cola Lata 350ml",
-    descricao: "Coca-Cola Lata 350ml",
+    nome: "Coca-Cola Garrafinha 250ml",
+    descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/coca coca.png"
+    imagem: "/img/coca250.png"
   },
 {
-    nome: "Coca-Cola 250 ml",
-    descricao: "Coca-Cola 250 ml",
+    nome: "Coca-Cola Lata 350 ml",
+    descricao: "Coca-Cola Lata 350 ml",
     preco: "R$ 5,99",
-    imagem: "/img/coca250.png",
+    imagem: "/img/coca coca.png",
   },{
     nome: "Coca-Cola 1 Litro",
     descricao: "Coca-Cola 1 Litro",
-    preco: "R$ 8,99",
+    preco: "R$ 9,99",
     imagem: "/img/coca1.png",
   },
 ]; 
