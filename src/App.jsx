@@ -53,6 +53,7 @@ export default function App() {
 ]; 
     function adicionarAoCarrinho(produto) {
   setCarrinho((atual) => [...atual, produto]);
+}
   return (
     <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
       <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
@@ -339,5 +340,5 @@ export default function App() {
   © 2026 Hamburgueria Delivery.
 </footer>
 </main>
-); }
+);
 }
