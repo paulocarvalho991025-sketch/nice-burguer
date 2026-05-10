@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 export default function App() {
   const [menuAberto, setMenuAberto] = useState(false);
 const [carrinho, setCarrinho] = useState([]);
+const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
 const [pagamento, setPagamento] = useState("");
@@ -142,11 +143,25 @@ return (
           {menuAberto ? <X /> : <Menu />}
         </button>
       </div>
-    </header>
-      <div className="fixed right-5 top-24 z-50 w-72 rounded-3xl bg-white p-5 shadow-2xl border border-orange-100">
-  <h2 className="text-2xl font-black text-orange-700">
+      <button
+  onClick={() => setCarrinhoAberto(!carrinhoAberto)}
+  className="w-full rounded-2xl bg-orange-600 p-4 text-left text-xl font-black text-white shadow-2xl"
+>
+  Carrinho ({carrinho.length})
+</button>
+
+</header>
+  
+<div className="fixed bottom-4 left-4 right-4 z-50 md:bottom-auto md:left-auto md:right-5 md:top-24 md:w-72">
+  <button
+    onClick={() => setCarrinhoAberto(!carrinhoAberto)}
+    className="w-full rounded-2xl bg-orange-600 p-4 text-left text-xl font-black text-white shadow-2xl"
+  >
     Carrinho ({carrinho.length})
-  </h2>
+  </button>
+
+  {carrinhoAberto && (
+    <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-white p-5 shadow-2xl">
 
 <div className="mt-4 max-h-64 overflow-y-auto">
   {carrinho.length === 0 ? (
@@ -209,6 +224,8 @@ return (
 >
   Finalizar Pedido
 </button>
+    </div>
+  )}
 </div>
 
 <section id="inicio"
@@ -263,8 +280,6 @@ return (
             <div className="mb-4 flex items-center justify-between">
               <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
                 O Mais Pedido
-
-            
               </span>
               <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
             </div>
