@@ -53,20 +53,26 @@ export default function App() {
   setCarrinho((atual) => [...atual, produto]);
 }
   return (
-    <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
-      <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">ame="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" /
-          <a href="#inicio" className="text-xl font-black text-orange-700">
-            NiceBurguer!
-          </a>
-  <div className="absolute top-0 left-0 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
-  
-  <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
+  <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
+  <div className="absolute inset-0 opacity-20 pointer-events-none">
+    <div className="absolute top-0 left-0 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
+    <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
+    <div className="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" />
+  </div>
 
-  <div classNnav className="hidden items-center gap-7 text-sm font-semibold md:flex">
-            <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
-            <a href="#combos" className="hover:text-orange-700">Combos</a>
-            <a href="#local" className="hover:text-orange-700">Localização</a>
-        </div>
+  <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
+    <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#inicio" className="text-xl font-black text-orange-700">
+        NiceBurguer!
+      </a>
+
+      <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
+        <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
+        <a href="#combos" className="hover:text-orange-700">Combos</a>
+        <a href="#local" className="hover:text-orange-700">Localização</a>
+      </nav>
+    </div>
+  </header>
         {menuAberto && (
           <div className="border-t bg-white px-5 py-4 md:hidden">
             <div className="flex flex-col gap-4 font-semibold">
