@@ -4,12 +4,59 @@ import { motion } from "framer-motion";
 
 export default function App() {
   const [menuAberto, setMenuAberto] = useState(false);
-  const [carrinho, setCarrinho] = useState([]);
-  function adicionarAoCarrinho(produto) {
+  const [carrinho, setCarrinho] = useState([]);const totalCarrinho = carrinho.reduce((total, item) => {
+  const valor = Number(
+    item.preco
+      .replace("R$", "")
+      .replace(",", ".")
+      .trim()
+  );
+
+  return total + valor;
+}, 0);
+function adicionarAoCarrinho(produto) {
   setCarrinho((atual) => [...atual, produto]);
 }
+
+function removerDoCarrinho(index) {
+  setCarrinho((atual) =>
+    atual.filter((_, i) => i !== index)
+  );
+}
+
+function finalizarPedido() {
+  const endereco = prompt("Digite seu endereço:");
+
+  if (!endereco) return;
+
+  const itens = carrinho
+    .map((item) => `${item.nome} - ${item.preco}`)
+    .join("\n");
+
+  const mensagem = encodeURIComponent(
+    `🍔 *NOVO PEDIDO* 🍔
+
+${itens}
+
+💰 Total: R$ ${totalCarrinho
+      .toFixed(2)
+      .replace(".", ",")}
+
+📍 Endereço:
+${endereco}`
+  );
+
+  window.open(
+    `https://wa.me/${whatsapp}?text=${mensagem}`,
+    "_blank"
+  );
+}
   const whatsapp = "5584997063345";
-  const mensagem = encodeURIComponent("Olá! Quero fazer um pedido de hamburguer artesanal.");
+  const mensagem = encodeURIComponent(
+  carrinho.map((item) =>
+    `${item.nome} - ${item.preco}`
+  ).join("\n")
+);
   const linkWhatsapp = `https://wa.me/${whatsapp}?text=${mensagem}`;
 
   const produtos = [
@@ -94,7 +141,29 @@ return (
           className="mb-3 rounded-xl bg-orange-50 p-3"
         >
           <p className="font-bold">
-            {item.nome}
+            <div
+  key={index}
+  className="mb-3 rounded-xl bg-orange-50 p-3"
+>
+  <p className="font-bold">
+    {item.nome}
+  </p>
+
+  <p className="text-sm text-stone-600">
+    {item.preco}
+  </p>
+
+  <button
+    onClick={() => removerDoCarrinho(index)}
+    className="mt-2 text-xs font-bold text-red-500 hover:text-red-700"
+  >
+    Remover
+  </button>
+</div><div className="mt-4 border-t pt-4">
+  <p className="text-lg font-black text-orange-700">
+    Total: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
+  </p>
+</div>
           </p>
 
           <p className="text-sm text-stone-600">
