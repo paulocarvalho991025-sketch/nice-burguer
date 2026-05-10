@@ -318,7 +318,7 @@ return (
       </section>
 <section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
   <div className="mb-10 text-center">
-    <p className="font-bold text-orange-200">Cardápio</p>
+    <p className="font-bold text-orange-700">Cardápio</p>
     <h2 className="text-3xl font-black md:text-4xl">Escolha Seu Burguer</h2>
   </div>
 
