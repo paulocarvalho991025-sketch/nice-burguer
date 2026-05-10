@@ -143,11 +143,6 @@ return (
           {menuAberto ? <X /> : <Menu />}
         </button>
       </div>
-      <button
-  onClick={() => setCarrinhoAberto(!carrinhoAberto)}
-  className="w-full rounded-2xl bg-orange-600 p-4 text-left text-xl font-black text-white shadow-2xl"
->
-</button>
 
 </header>
   
