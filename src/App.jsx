@@ -152,6 +152,12 @@ return (
 </header>
   
 <div className="fixed right-5 top-24 z-50 w-72">
+  <button
+  onClick={() => setCarrinhoAberto(!carrinhoAberto)}
+  className="w-full rounded-2xl bg-orange-600 p-4 text-left text-xl font-black text-white shadow-2xl"
+>
+  Carrinho ({carrinho.length})
+</button>
   {carrinhoAberto && (
     <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-white p-5 shadow-2xl">
 
