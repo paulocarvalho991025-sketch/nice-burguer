@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 export default function App() {
   const [menuAberto, setMenuAberto] = useState(false);
+  
 
   const whatsapp = "5584997063345";
   const mensagem = encodeURIComponent("Olá! Quero fazer um pedido de hamburguer artesanal.");
@@ -50,8 +51,8 @@ export default function App() {
   
   
 ]; 
-    
-
+    function adicionarAoCarrinho(produto) {
+  setCarrinho((atual) => [...atual, produto]);
   return (
     <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
       <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
@@ -80,9 +81,9 @@ export default function App() {
             </a>
           </nav>
 
-          <button className="md:hidden" onClick={() => setMenuAberto(!menuAberto)}>
-            {menuAberto ? <X /> : <Menu />}
-          </button>
+          <button onClick={() => adicionarAoCarrinho(produto)}>
+  Adicionar
+</button>
         </div>
 
         {menuAberto && (
@@ -324,6 +325,21 @@ export default function App() {
       <footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
         © 2026 Hamburgueria Delivery.
       </footer>
-    </main>
-  );
-}
+<div className="p-10">
+  <h2 className="text-3xl font-bold">
+    Carrinho
+  </h2>
+
+  {carrinho.map((item, index) => {
+    return (
+      <div key={index} className="mt-2">
+        {item.nome} - {item.preco}
+      </div>
+    );
+  })}
+</div>
+
+<footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
+  © 2026 Hamburgueria Delivery.
+</footer>
+</main>
