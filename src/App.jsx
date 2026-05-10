@@ -284,12 +284,11 @@ return (
               <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
             </div>
 
-        <div className="flex h-72 items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100"></div>    <div className="flex aspect-square items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100 shadow-inner">
+        <div className="flex h-[320px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100"></div>    <div className="flex aspect-square items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100 shadow-inner">
   <img
     src="/img/burguer 1.0 att.png" 
     alt="Hambúrguer Artesanal"
- className="h-full max-h-72 w-auto object-contain"
-  />
+className="max-h-[240px] w-auto object-contain"  />
 </div>
 
             <h2 className="mt-5 text-2xl font-black">Burguer 1.0</h2>
