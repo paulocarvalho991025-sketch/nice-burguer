@@ -53,8 +53,7 @@ export default function App() {
 }
   return (
     <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
-      <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
-        ame="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" /
+      <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">ame="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" /
 <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <a href="#inicio" className="text-xl font-black text-orange-700">
             NiceBurguer!
@@ -73,8 +72,8 @@ export default function App() {
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
   Adicionar
-</button>
-          </nav>
+</button> 
+        </nav>
         </div>
         {menuAberto && (
           <div className="border-t bg-white px-5 py-4 md:hidden">
@@ -259,6 +258,7 @@ export default function App() {
 
                 <button
   type="button"
+  onClick={() => adicionarAoCarrinho(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
   Adicionar
