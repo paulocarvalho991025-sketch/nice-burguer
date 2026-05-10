@@ -47,10 +47,6 @@ export default function App() {
     preco: "R$ 8,99",
     imagem: "/img/coca1.png",
   },
-  
-  
-  
-  
 ]; 
     function adicionarAoCarrinho(produto) {
   setCarrinho((atual) => [...atual, produto]);
@@ -58,8 +54,47 @@ export default function App() {
   return (
     <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
       <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
-        ame="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" />
-</div><div className="fixed right-5 top-24 z-50 w-72 rounded-3xl bg-white p-5 shadow-2xl border border-orange-100">
+        ame="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" /
+<div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+          <a href="#inicio" className="text-xl font-black text-orange-700">
+            NiceBurguer!
+          </a>
+<div className="absolute inset-0 opacity-20 pointer-events-none">
+  <div className="absolute top-0 left-0 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
+  
+  <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
+
+  <div classNnav className="hidden items-center gap-7 text-sm font-semibold md:flex">
+            <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
+            <a href="#combos" className="hover:text-orange-700">Combos</a>
+            <a href="#local" className="hover:text-orange-700">Localização</a>
+            <button
+  onClick={() => adicionarAoCarrinho(produto)}
+  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+>
+  Adicionar
+</button>
+          </nav>
+        </div>
+        {menuAberto && (
+          <div className="border-t bg-white px-5 py-4 md:hidden">
+            <div className="flex flex-col gap-4 font-semibold">
+              <a href="#cardapio" onClick={() => setMenuAberto(false)}>Cardápio</a>
+              <a href="#combos" onClick={() => setMenuAberto(false)}>Combos</a>
+              <a href="#local" onClick={() => setMenuAberto(false)}>Localização</a>
+              <a
+                href={linkWhatsapp}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full bg-orange-600 px-5 py-3 text-center text-white"
+              >
+                Pedir pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        )}
+      </header>
+      <div className="fixed right-5 top-24 z-50 w-72 rounded-3xl bg-white p-5 shadow-2xl border border-orange-100">
   <h2 className="text-2xl font-black text-orange-700">
     Carrinho ({carrinho.length})
   </h2>
@@ -87,47 +122,6 @@ export default function App() {
     )}
   </div>
 </div>
-          <<div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <a href="#inicio" className="text-xl font-black text-orange-700">
-            NiceBurguer!
-          </a>
-<div className="absolute inset-0 opacity-20 pointer-events-none">
-  <div className="absolute top-0 left-0 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
-  
-  <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
-
-  <div classNnav className="hidden items-center gap-7 text-sm font-semibold md:flex">
-            <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
-            <a href="#combos" className="hover:text-orange-700">Combos</a>
-            <a href="#local" className="hover:text-orange-700">Localização</a>
-            <button
-  onClick={() => adicionarAoCarrinho(produto)}
-  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
->
-  Adicionar
-</button>
-          </nav>
-        </div>
-
-        {menuAberto && (
-          <div className="border-t bg-white px-5 py-4 md:hidden">
-            <div className="flex flex-col gap-4 font-semibold">
-              <a href="#cardapio" onClick={() => setMenuAberto(false)}>Cardápio</a>
-              <a href="#combos" onClick={() => setMenuAberto(false)}>Combos</a>
-              <a href="#local" onClick={() => setMenuAberto(false)}>Localização</a>
-              <a
-                href={linkWhatsapp}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full bg-orange-600 px-5 py-3 text-center text-white"
-              >
-                Pedir pelo WhatsApp
-              </a>
-            </div>
-          </div>
-        )}
-      </header>
-
       <section id="inicio" className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
