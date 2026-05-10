@@ -257,7 +257,7 @@ return (
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="rounded-[2rem] bg-gradient-to-br from-orange-500 to-amber-300 p-6 shadow-2xl"
+          className="rounded-[2rem] bg-gradient-to-br from-orange-500 to-amber-300 p-6 shadow-1xl"
         >
           <div className="rounded-[1.5rem] bg-white p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
@@ -269,11 +269,11 @@ return (
               <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
             </div>
 
-            <div className="flex aspect-square items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100 shadow-inner">
+        <div className="flex h-72 items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100"></div>    <div className="flex aspect-square items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100 shadow-inner">
   <img
-    src="/img/burguer 1.0 att.png"
+    src="/img/burguer 1.0 att.png" 
     alt="Hambúrguer Artesanal"
-    className="h-full w-full object-contain"
+ className="h-full max-h-72 w-auto object-contain"
   />
 </div>
 
