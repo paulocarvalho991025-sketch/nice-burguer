@@ -148,35 +148,30 @@ return (
     Carrinho ({carrinho.length})
   </h2>
 
-  <div className="mt-4 max-h-64 overflow-y-auto">
-    {carrinho.length === 0 ? (
-      <p className="text-sm text-stone-500">
-        Nenhum item ainda.
-      </p>
-    ) : (
-      carrinho.map((item, index) => (
-        <div key={index}
-          className="mb-3 rounded-xl bg-orange-50 p-3"
-        >
-          <p className="font-bold">
-            <div
-  key={index}
-  className="mb-3 rounded-xl bg-orange-50 p-3"
->
-  <p className="font-bold">
-    {item.nome}
-  </p>
+<div className="mt-4 max-h-64 overflow-y-auto">
+  {carrinho.length === 0 ? (
+    <p className="text-sm text-stone-500">
+      Nenhum item ainda.
+    </p>
+  ) : (
+    carrinho.map((item, index) => (
+      <div key={index} className="mb-3 rounded-xl bg-orange-50 p-3">
+        <p className="font-bold">{item.nome}</p>
 
-  <p className="text-sm text-stone-600">
-    {item.preco}
-  </p>
-  <button
-    onClick={() => removerDoCarrinho(index)}
-    className="mt-2 text-xs font-bold text-red-500 hover:text-red-700"
-  >
-    Remover
-  </button>
-</div><div className="mt-4 border-t pt-4">
+        <p className="text-sm text-stone-600">{item.preco}</p>
+
+        <button
+          onClick={() => removerDoCarrinho(index)}
+          className="mt-2 text-xs font-bold text-red-500 hover:text-red-700"
+        >
+          Remover
+        </button>
+      </div>
+    ))
+  )}
+</div>
+
+<div className="mt-4 border-t pt-4">
   <p className="text-lg font-black text-orange-700">
     Total: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
   </p>
@@ -189,6 +184,7 @@ return (
   placeholder="Digite seu endereço"
   className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
+
 <select
   value={pagamento}
   onChange={(e) => setPagamento(e.target.value)}
@@ -199,6 +195,7 @@ return (
   <option value="Dinheiro">Dinheiro</option>
   <option value="Cartão">Cartão</option>
 </select>
+
 <textarea
   value={observacao}
   onChange={(e) => setObservacao(e.target.value)}
@@ -212,19 +209,9 @@ return (
 >
   Finalizar Pedido
 </button>
-
-          </p>
-
-          <p className="text-sm text-stone-600">
-            {item.preco}
-          </p>
-        </div>
-      ))
-    )}
-  </div>
 </div>
-      <section id="inicio" className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
-        <motion.div
+
+<section id="inicio"
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -266,8 +253,6 @@ return (
               Ver cardápio
             </a>
           </div>
-        </motion.div>
-
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
