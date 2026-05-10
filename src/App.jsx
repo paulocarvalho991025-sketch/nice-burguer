@@ -369,7 +369,7 @@ className="h-full w-auto object-contain"          />
             <div className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur">
               <h3 className="text-2xl font-black">Combo Essencial</h3>
               <p className="mt-3 text-orange-100">
-                Burguer 1.0 + Coca Lata
+                Burguer 1.0 + Coca-Cola Garrafinha 250ml
               </p>
               <p className="mt-6 text-3xl font-black text-orange-300">R$ 13,98</p>
             </div>
@@ -377,7 +377,7 @@ className="h-full w-auto object-contain"          />
             <div className="rounded-3xl bg-orange-500 p-6 text-stone-900 shadow-xl">
               <h3 className="text-2xl font-black">Combo Econômico</h3>
               <p className="mt-3">Burguer 2.0 + Coca Lata</p>
-              <p className="mt-6 text-3xl font-black">R$ 18,98</p>
+              <p className="mt-6 text-3xl font-black">R$ 20,98</p>
             </div>
 
             <div className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur">
@@ -385,7 +385,7 @@ className="h-full w-auto object-contain"          />
               <p className="mt-3 text-orange-100">
                 2 Burguer's 1.0 + Coca-Cola 1 Litro
               </p>
-              <p className="mt-6 text-3xl font-black text-orange-300">R$28,97</p>
+              <p className="mt-6 text-3xl font-black text-orange-300">R$29,97</p>
             </div>
           </div>
         </div>
