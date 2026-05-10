@@ -45,31 +45,41 @@ if (!pagamento) {
   alert("Selecione a forma de pagamento.");
   return;
 }
-  const itens = carrinho
-    .map((item) => `${item.nome} - ${item.preco}`)
-    .join("\n");
+const itens = carrinho
+  .map(
+    (item, index) =>
+      `${index + 1}. ${item.nome} — ${item.preco}`
+  )
+  .join("\n");
 
-  const mensagem = encodeURIComponent(
-    `🍔 *NOVO PEDIDO* 🍔
+const mensagem = encodeURIComponent(`
+🍔 *NOVO PEDIDO - NICE BURGUER*
+
+━━━━━━━━━━━━━━━
+
+🛒 *ITENS DO PEDIDO:*
 
 ${itens}
 
-💰 Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+━━━━━━━━━━━━━━━
 
-📍 Endereço:
+💰 *TOTAL:* R$ ${totalCarrinho
+  .toFixed(2)
+  .replace(".", ",")}
+
+📍 *ENDEREÇO:*
 ${endereco}
 
-💳 Forma de pagamento:
+💳 *PAGAMENTO:*
 ${pagamento}
 
-📝 Observação:
-${observacao || "Nenhuma"}`
-  );
+📝 *OBSERVAÇÃO:*
+${observacao || "Nenhuma"}
 
-  window.open(
-    `https://wa.me/${whatsapp}?text=${mensagem}`,
-    "_blank"
-  );
+━━━━━━━━━━━━━━━
+
+🔥 Pedido enviado pelo site
+`);
 }
   const whatsapp = "5584997063345";
   const mensagem = encodeURIComponent(
