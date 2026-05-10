@@ -7,6 +7,7 @@ export default function App() {
 const [carrinho, setCarrinho] = useState([]);
 const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
+const [pagamento, setPagamento] = useState("");
 const totalCarrinho = carrinho.reduce((total, item) => {
   const valor = Number(
     item.preco
@@ -39,7 +40,10 @@ function finalizarPedido() {
     alert("Digite seu endereço antes de finalizar o pedido.");
     return;
   }
-
+if (!pagamento) {
+  alert("Selecione a forma de pagamento.");
+  return;
+}
   const itens = carrinho
     .map((item) => `${item.nome} - ${item.preco}`)
     .join("\n");
@@ -53,6 +57,9 @@ ${itens}
 
 📍 Endereço:
 ${endereco}
+
+💳 Forma de pagamento:
+${pagamento}
 
 📝 Observação:
 ${observacao || "Nenhuma"}`
