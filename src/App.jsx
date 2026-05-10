@@ -280,7 +280,13 @@ return (
                 O Mais Pedido
               </span>
               <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
-            </div>
+            </div><div className="mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
+  <img
+    src="/img/burguer 1.0 att.png"
+    alt="Burguer 1.0"
+    className="max-h-[250px] w-auto object-contain"
+  />
+</div>
             <h2 className="mt-5 text-2xl font-black">Burguer 1.0</h2>
             <p className="mt-2 text-stone-700">
               Mussarela derretida, carne suculenta e molho especial da casa.
