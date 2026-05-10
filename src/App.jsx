@@ -217,6 +217,49 @@ export default function App() {
           </div>
         </div>
       </section>
+<section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
+  <div className="mb-10 text-center">
+    <p className="font-bold text-orange-700">Cardápio</p>
+    <h2 className="text-3xl font-black md:text-4xl">Escolha Seu Burguer</h2>
+  </div>
+
+  <div className="grid gap-5 md:grid-cols-3">
+    {produtos.map((produto) => (
+      <div
+        key={produto.nome}
+        className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div className="mb-4 flex h-64 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+          <img
+            src={produto.imagem}
+            alt={produto.nome}
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+        <h3 className="text-xl font-black">{produto.nome}</h3>
+
+        <p className="mt-2 min-h-16 text-sm leading-6 text-stone-700">
+          {produto.descricao}
+        </p>
+
+        <div className="mt-5 flex items-center justify-between">
+          <span className="text-2xl font-black text-orange-700">
+            {produto.preco}
+          </span>
+
+          <button
+            type="button"
+            onClick={() => adicionarAoCarrinho(produto)}
+            className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+          >
+            Adicionar
+          </button>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
