@@ -222,7 +222,7 @@ export default function App() {
               key={produto.nome}
               className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-4 flex h-69 items-center justify-center rounded-2xl bg-orange-100 text-6xl">
+              <div className="mb-4 flex h-100 items-center justify-center rounded-2xl bg-orange-100 text-6xl">
                 <img
  src={produto.imagem}
   alt="Hambúrguer"
