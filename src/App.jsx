@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 export default function App() {
   const [menuAberto, setMenuAberto] = useState(false);
   const [carrinho, setCarrinho] = useState([]);const totalCarrinho = carrinho.reduce((total, item) => {
+    const [endereco, setEndereco] = useState("");
+const [observacao, setObservacao] = useState("");
   const valor = Number(
     item.preco
       .replace("R$", "")
@@ -25,6 +27,40 @@ function removerDoCarrinho(index) {
 }
 
 function finalizarPedido() {
+  
+  if (carrinho.length === 0) {
+    alert("Adicione pelo menos um item ao carrinho.");
+    return;
+  }
+
+  if (!endereco.trim()) {
+    alert("Digite seu endereço antes de finalizar o pedido.");
+    return;
+  }
+
+  const itens = carrinho
+    .map((item) => `${item.nome} - ${item.preco}`)
+    .join("\n");
+
+  const mensagem = encodeURIComponent(
+    `🍔 *NOVO PEDIDO* 🍔
+
+${itens}
+
+💰 Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
+📍 Endereço:
+${endereco}
+
+📝 Observação:
+${observacao || "Nenhuma"}`
+  );
+
+  window.open(
+    `https://wa.me/${whatsapp}?text=${mensagem}`,
+    "_blank"
+  );
+}
   const endereco = prompt("Digite seu endereço:");
 
   if (!endereco) return;
@@ -152,7 +188,6 @@ return (
   <p className="text-sm text-stone-600">
     {item.preco}
   </p>
-
   <button
     onClick={() => removerDoCarrinho(index)}
     className="mt-2 text-xs font-bold text-red-500 hover:text-red-700"
@@ -164,6 +199,29 @@ return (
     Total: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
   </p>
 </div>
+
+<input
+  type="text"
+  value={endereco}
+  onChange={(e) => setEndereco(e.target.value)}
+  placeholder="Digite seu endereço"
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+/>
+
+<textarea
+  value={observacao}
+  onChange={(e) => setObservacao(e.target.value)}
+  placeholder="Observação do pedido"
+  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+/>
+
+<button
+  onClick={finalizarPedido}
+  className="mt-4 w-full rounded-xl bg-orange-600 py-3 font-bold text-white hover:bg-orange-700"
+>
+  Finalizar Pedido
+</button>
+
           </p>
 
           <p className="text-sm text-stone-600">
@@ -395,4 +453,3 @@ return (
 
 </main>
   );
-}
