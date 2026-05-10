@@ -147,7 +147,6 @@ return (
   onClick={() => setCarrinhoAberto(!carrinhoAberto)}
   className="w-full rounded-2xl bg-orange-600 p-4 text-left text-xl font-black text-white shadow-2xl"
 >
-  Carrinho ({carrinho.length})
 </button>
 
 </header>
@@ -282,14 +281,6 @@ return (
               </span>
               <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
             </div>
-
-        <div className="flex h-[320px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100"></div>    <div className="flex aspect-square items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100 shadow-inner">
-  <img
-    src="/img/burguer 1.0 att.png" 
-    alt="Hambúrguer Artesanal"
-className="max-h-[240px] w-auto object-contain"  />
-</div>
-
             <h2 className="mt-5 text-2xl font-black">Burguer 1.0</h2>
             <p className="mt-2 text-stone-700">
               Mussarela derretida, carne suculenta e molho especial da casa.
