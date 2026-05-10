@@ -259,7 +259,6 @@ export default function App() {
 
                 <button
   type="button"
-  onClick={() => adicionarAoCarrinho(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
   Adicionar
