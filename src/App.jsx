@@ -31,11 +31,49 @@ function removerDoCarrinho(index) {
 }
 
 function finalizarPedido() {
-  
   if (carrinho.length === 0) {
     alert("Adicione pelo menos um item ao carrinho.");
     return;
   }
+
+  if (!endereco.trim()) {
+    alert("Digite seu endereço antes de finalizar o pedido.");
+    return;
+  }
+
+  if (!pagamento) {
+    alert("Selecione a forma de pagamento.");
+    return;
+  }
+
+  const itens = carrinho
+    .map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`)
+    .join("\n");
+
+  const mensagem = encodeURIComponent(`
+🍔 *NOVO PEDIDO - NICE BURGUER*
+
+🛒 *ITENS DO PEDIDO:*
+${itens}
+
+💰 *TOTAL DOS ITENS:* R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+🛵 *TAXA DE ENTREGA:* R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
+💵 *TOTAL FINAL:* R$ ${totalFinal.toFixed(2).replace(".", ",")}
+
+📍 *ENDEREÇO:*
+${endereco}
+
+💳 *PAGAMENTO:*
+${pagamento}
+
+${pagamento === "Dinheiro" ? `💸 *TROCO PARA:* R$ ${trocoPara || "Não informado"}` : ""}
+
+📝 *OBSERVAÇÃO:*
+${observacao || "Nenhuma"}
+`);
+
+  window.open(`https://wa.me/${whatsapp}?text=${mensagem}`, "_blank");
+
 
   if (!endereco.trim()) {
     alert("Digite seu endereço antes de finalizar o pedido.");
@@ -76,7 +114,7 @@ ${pagamento}
 📝 *OBSERVAÇÃO:*
 ${observacao || "Nenhuma"}
 
-━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━
 
 🔥 Pedido enviado pelo site
 `);
@@ -227,6 +265,7 @@ return (
 >
   Finalizar Pedido
 </button>
+
     </div>
   )}
 </div>
