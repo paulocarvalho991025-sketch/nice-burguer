@@ -9,6 +9,9 @@ const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
 const [pagamento, setPagamento] = useState("");
+const taxaEntrega = 3;
+const [trocoPara, setTrocoPara] = useState("");
+const totalFinal = totalCarrinho + taxaEntrega;
 const totalCarrinho = carrinho.reduce((total, item) => {
   const valor = Number(
     item.preco
@@ -73,6 +76,7 @@ ${observacao || "Nenhuma"}
 `);
 
   window.open(`https://wa.me/${whatsapp}?text=${mensagem}`, "_blank");
+}
 
 
   if (!endereco.trim()) {
@@ -488,4 +492,3 @@ className="h-full w-auto object-contain"          />
 
 </main>
   );
-}
