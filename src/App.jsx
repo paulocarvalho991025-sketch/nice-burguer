@@ -153,12 +153,6 @@ return (
 </header>
   
 <div className="fixed bottom-4 left-4 right-4 z-50 md:bottom-auto md:left-auto md:right-5 md:top-24 md:w-72">
-  <button
-    onClick={() => setCarrinhoAberto(!carrinhoAberto)}
-    className="w-full rounded-2xl bg-orange-600 p-4 text-left text-xl font-black text-white shadow-2xl"
-  >
-    Carrinho ({carrinho.length})
-  </button>
 
   {carrinhoAberto && (
     <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-white p-5 shadow-2xl">
@@ -339,12 +333,11 @@ return (
         key={produto.nome}
         className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
       >
-        <div className="mb-4 flex h-64 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+        <div className="mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
           <img
             src={produto.imagem}
             alt={produto.nome}
-            className="h-full w-full object-cover"
-          />
+className="h-full w-auto object-contain"          />
         </div>
 
         <h3 className="text-xl font-black">{produto.nome}</h3>
