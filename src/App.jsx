@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 export default function App() {
   const [menuAberto, setMenuAberto] = useState(false);
+  const [carrinho, setCarrinho] = useState([]);
   
 
   const whatsapp = "5584997063345";
@@ -72,19 +73,13 @@ export default function App() {
             <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
             <a href="#combos" className="hover:text-orange-700">Combos</a>
             <a href="#local" className="hover:text-orange-700">Localização</a>
-            <a
-              href={linkWhatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full bg-orange-600 px-5 py-2 text-white shadow hover:bg-orange-700"
-            >
-              Pedir agora
-            </a>
-          </nav>
-
-          <button onClick={() => adicionarAoCarrinho(produto)}>
+            <button
+  onClick={() => adicionarAoCarrinho(produto)}
+  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+>
   Adicionar
 </button>
+          </nav>
         </div>
 
         {menuAberto && (
@@ -339,6 +334,7 @@ export default function App() {
 <footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
   © 2026 Hamburgueria Delivery.
 </footer>
+
 </main>
-);
+  );
 }
