@@ -152,8 +152,7 @@ return (
 
 </header>
   
-<div className="fixed bottom-4 left-4 right-4 z-50 md:bottom-auto md:left-auto md:right-5 md:top-24 md:w-72">
-
+<div className="fixed right-5 top-24 z-50 w-72">
   {carrinhoAberto && (
     <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-white p-5 shadow-2xl">
 
@@ -371,7 +370,7 @@ className="h-full w-auto object-contain"          />
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
-            <p className="font-bold text-orange-300">Em Nossa Hamburgueria Delively </p>
+            <p className="font-bold text-orange-300">Em Nossa Hamburgueria Delivery </p>
             <h2 className="text-3xl font-black md:text-4xl">Voçe aproveita o melhor pagando muito pouco!</h2>
           </div>
 
