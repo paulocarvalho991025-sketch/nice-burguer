@@ -236,14 +236,14 @@ export default function App() {
               <div className="mt-5 flex items-center justify-between">
                 <span className="text-2xl font-black text-orange-700">{produto.preco}</span>
 
-                <a
-                  href={linkWhatsapp}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
-                >
-                  Pedir
-                </a>
+                <button
+  type="button"
+  onClick={() => adicionarAoCarrinho(produto)}
+  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+>
+  Adicionar
+</button>
+
               </div>
             </div>
           ))}
