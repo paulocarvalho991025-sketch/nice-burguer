@@ -58,7 +58,36 @@ export default function App() {
   return (
     <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
       <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        ame="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" />
+</div><div className="fixed right-5 top-24 z-50 w-72 rounded-3xl bg-white p-5 shadow-2xl border border-orange-100">
+  <h2 className="text-2xl font-black text-orange-700">
+    Carrinho ({carrinho.length})
+  </h2>
+
+  <div className="mt-4 max-h-64 overflow-y-auto">
+    {carrinho.length === 0 ? (
+      <p className="text-sm text-stone-500">
+        Nenhum item ainda.
+      </p>
+    ) : (
+      carrinho.map((item, index) => (
+        <div
+          key={index}
+          className="mb-3 rounded-xl bg-orange-50 p-3"
+        >
+          <p className="font-bold">
+            {item.nome}
+          </p>
+
+          <p className="text-sm text-stone-600">
+            {item.preco}
+          </p>
+        </div>
+      ))
+    )}
+  </div>
+</div>
+          <<div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <a href="#inicio" className="text-xl font-black text-orange-700">
             NiceBurguer!
           </a>
@@ -67,9 +96,7 @@ export default function App() {
   
   <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
 
-  <div className="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" />
-</div>
-          <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
+  <div classNnav className="hidden items-center gap-7 text-sm font-semibold md:flex">
             <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
             <a href="#combos" className="hover:text-orange-700">Combos</a>
             <a href="#local" className="hover:text-orange-700">Localização</a>
@@ -317,19 +344,6 @@ export default function App() {
           </a>
         </div>
       </section>
-<div className="p-10">
-  <h2 className="text-3xl font-bold">
-    Carrinho
-  </h2>
-
-  {carrinho.map((item, index) => {
-    return (
-      <div key={index} className="mt-2">
-        {item.nome} - {item.preco}
-      </div>
-    );
-  })}
-</div>
 
 <footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
   © 2026 Hamburgueria Delivery.
