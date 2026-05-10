@@ -321,10 +321,6 @@ export default function App() {
           </a>
         </div>
       </section>
-
-      <footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
-        © 2026 Hamburgueria Delivery.
-      </footer>
 <div className="p-10">
   <h2 className="text-3xl font-bold">
     Carrinho
@@ -343,3 +339,5 @@ export default function App() {
   © 2026 Hamburgueria Delivery.
 </footer>
 </main>
+); }
+}
