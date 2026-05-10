@@ -371,8 +371,8 @@ className="h-full w-auto object-contain"          />
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
-            <p className="font-bold text-orange-300">Promoções</p>
-            <h2 className="text-3xl font-black md:text-4xl">Combos Especiais!</h2>
+            <p className="font-bold text-orange-300">Em Nossa Hamburgueria Delively </p>
+            <h2 className="text-3xl font-black md:text-4xl">Voçe consegue se aproveitar o melhor pagando muito pouco!</h2>
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
