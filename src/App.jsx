@@ -32,8 +32,27 @@ const mensagemPedido = encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
-${carrinho.map((item) => `${item.nome} - ${item.preco}`).join("\n")}
-💰 TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+${Object.values(
+  carrinho.reduce((acc, item) => {
+
+    if (!acc[item.nome]) {
+      acc[item.nome] = {
+        ...item,
+        quantidade: 0,
+      };
+    }
+
+    acc[item.nome].quantidade += 1;
+
+    return acc;
+
+  }, {})
+)
+.map(
+  (item) =>
+    `${item.quantidade}x ${item.nome} - ${item.preco}`
+)
+.join("\n")}💰 TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 🛵 TAXA DE ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
