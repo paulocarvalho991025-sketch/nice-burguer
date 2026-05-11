@@ -34,12 +34,25 @@ function removerDoCarrinho(index) {
 }
 
 function finalizarPedido() {
-  console.log("clicou");
+  const mensagem = encodeURIComponent(`
+🍔 NOVO PEDIDO - NICE BURGUER
 
-  const mensagem = encodeURIComponent("Teste pedido");
+🛒 ITENS:
+${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
 
-  window.location.href =
-    `https://wa.me/5584997063345?text=${mensagem}`;
+💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
+📍 ENDEREÇO:
+${endereco || "Não informado"}
+
+💳 PAGAMENTO:
+${pagamento || "Não informado"}
+
+📝 OBSERVAÇÃO:
+${observacao || "Nenhuma"}
+`);
+
+  window.location.href = `https://wa.me/5584997063345?text=${mensagem}`;
 }
 
   if (!endereco.trim()) {
@@ -55,8 +68,7 @@ function finalizarPedido() {
   const itens = carrinho
     .map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`)
     .join("\n");
-     window.location.href =
-    `https://wa.me/5584997063345?text=${mensagem}`;
+    
 
   const mensagem = encodeURIComponent(`
 🍔 *NOVO PEDIDO - NICE BURGUER*
@@ -421,12 +433,12 @@ className="h-full w-auto object-contain"          />
           </span>
 
           <button
-            type="button"
-            onClick={() => adicionarAoCarrinho(produto)}
-            className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
-          >
-            Adicionar
-          </button>
+  type="button"
+  onClick={finalizarPedido}
+  className="mt-4 w-full rounded-xl bg-orange-600 py-3 font-bold text-white hover:bg-orange-700"
+>
+  Finalizar Pedido
+</button>
         </div>
       </div>
     ))}
