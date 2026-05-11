@@ -232,7 +232,8 @@ ${Object.values(
         .toFixed(2)
         .replace(".", ",")}`
   )
-  .join("\n")}💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+  .join("\n")}
+  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
@@ -272,7 +273,10 @@ ${Object.values(
         .toFixed(2)
         .replace(".", ",")}`
   )
-  .join("\n")}💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+  .join("\n")}
+  
+
+  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
