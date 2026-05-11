@@ -432,15 +432,13 @@ className="h-full w-auto object-contain"          />
           <span className="text-2xl font-black text-orange-700">
             {produto.preco}
           </span>
-
-<a
-  href="https://wa.me/5584997063345?text=Teste%20pedido"
-  target="_blank"
-  rel="noreferrer"
-  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
+<button
+  type="button"
+  onClick={() => alert("Cliquei no botão do carrinho")}
+  className="mt-4 w-full rounded-xl bg-orange-600 py-3 font-bold text-white hover:bg-orange-700"
 >
   Finalizar Pedido
-</a>
+</button>
         </div>
       </div>
     ))}
