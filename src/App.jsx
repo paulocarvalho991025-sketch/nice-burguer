@@ -185,8 +185,9 @@ return (
 />
 
 
-<a
-  href={linkWhatsapp}
+<button
+  type="button"
+  onClick={finalizarPedido}
   target="_blank"
   rel="noreferrer"
   className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
