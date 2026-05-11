@@ -433,6 +433,14 @@ className="h-full w-auto object-contain"          />
           <span className="text-2xl font-black text-orange-700">
             {produto.preco}
           </span>
+
+          <button
+  type="button"
+  onClick={finalizarPedido}
+  className="mt-4 w-full rounded-xl bg-orange-600 py-3 font-bold text-white hover:bg-orange-700"
+>
+  Finalizar Pedido
+</button>
         </div>
       </div>
     ))}
