@@ -285,18 +285,17 @@ return (
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
 
-ITENS:
 ${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
 
-TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
-ENDEREÇO:
-${endereco || "Não informado"}
+Endereço:
+${endereco}
 
-PAGAMENTO:
-${pagamento || "Não informado"}
+Pagamento:
+${pagamento}
 
-OBSERVAÇÃO:
+Observação:
 ${observacao || "Nenhuma"}
 `)}`}
   target="_blank"
@@ -434,13 +433,14 @@ className="h-full w-auto object-contain"          />
             {produto.preco}
           </span>
 
-          <button
-  type="button"
-  onClick={finalizarPedido}
-  className="mt-4 w-full rounded-xl bg-orange-600 py-3 font-bold text-white hover:bg-orange-700"
+<a
+  href="https://wa.me/5584997063345?text=Teste%20pedido"
+  target="_blank"
+  rel="noreferrer"
+  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 >
   Finalizar Pedido
-</button>
+</a>
         </div>
       </div>
     ))}
