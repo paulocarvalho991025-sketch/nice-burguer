@@ -333,8 +333,8 @@ ${observacao || "Nenhuma"}
   </div>
 
   <div className="grid gap-5 md:grid-cols-3">
-    {produtos.map((produto) => (
-      <div
+<>
+{produtos.map((produto) => (      <div
         key={produto.nome}
         className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
       >
@@ -364,7 +364,8 @@ className="h-full w-auto object-contain"          />
 </button>
         </div>
       </div>
-    ))}
+  ))}
+</>
   </div>
 </section>
       <section id="combos" className="bg-stone-900 py-16 text-white">
