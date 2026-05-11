@@ -183,14 +183,42 @@ return (
   placeholder="Observação do pedido"
   className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
+  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
+🍔 NOVO PEDIDO - NICE BURGUER
+
+${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
+
+Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
+Endereço:
+${endereco}
+
+Pagamento:
+${pagamento}
+
+Observação:
+${observacao || "Nenhuma"}
+`)}`}
 <a
-  href={linkWhatsapp}
-  target="_blank"
-  rel="noreferrer"
-  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
->
-  Finalizar Pedido
-</a>
+  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
+🍔 NOVO PEDIDO - NICE BURGUER
+
+🛒 ITENS:
+${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
+
+💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
+📍 ENDEREÇO:
+${endereco || "Não informado"}
+
+💳 PAGAMENTO:
+${pagamento || "Não informado"}
+
+📝 OBSERVAÇÃO:
+${observacao || "Nenhuma"}
+`)}`}
+
+  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
