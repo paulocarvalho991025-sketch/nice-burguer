@@ -34,8 +34,11 @@ function removerDoCarrinho(index) {
 }
 
 function finalizarPedido() {
+
   const whatsapp = "5584997063345";
+
   if (carrinho.length === 0) {
+    
     alert("Adicione pelo menos um item ao carrinho.");
     return;
   }
