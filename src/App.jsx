@@ -52,7 +52,9 @@ ${Object.values(
   (item) =>
     `${item.quantidade}x ${item.nome} - ${item.preco}`
 )
-.join("\n")}💰 TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+.join("\n")}
+
+💰 TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 🛵 TAXA DE ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
@@ -233,6 +235,7 @@ ${Object.values(
         .replace(".", ",")}`
   )
   .join("\n")}
+
   💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
@@ -274,7 +277,6 @@ ${Object.values(
         .replace(".", ",")}`
   )
   .join("\n")}
-  
 
   💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
