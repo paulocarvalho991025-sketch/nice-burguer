@@ -199,9 +199,6 @@ ${pagamento}
 Observação:
 ${observacao || "Nenhuma"}
 `)}`}
-  target="_blank"
-  rel="noreferrer"
-  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 <a
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
