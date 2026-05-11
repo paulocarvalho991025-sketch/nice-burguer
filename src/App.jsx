@@ -52,12 +52,7 @@ ${observacao || "Nenhuma"}
 
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
-  {
-    nome: "Burguer 1.0",
-    descricao: "Pão Brioche, Blend Bovino 65g, Queijo Mussarela, e Molho da casa.",
-    preco: "R$ 9,99",
-    imagem: "/img/1.0.png",
-  },
+
   {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 65g, Queijo Mussarela, e Molho da casa.",
