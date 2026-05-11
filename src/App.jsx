@@ -185,15 +185,48 @@ return (
 />
 
 
-<button
-  type="button"
-  onClick={finalizarPedido}
+<a
+  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
+🍔 NOVO PEDIDO - NICE BURGUER
+
+🛒 ITENS:
+${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
+
+💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
+📍 ENDEREÇO:
+${endereco || "Não informado"}
+
+💳 PAGAMENTO:
+${pagamento || "Não informado"}
+
+📝 OBSERVAÇÃO:
+${observacao || "Nenhuma"}
+`)}`}
+
+  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
+🍔 NOVO PEDIDO - NICE BURGUER
+
+🛒 ITENS:
+${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
+
+💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
+📍 ENDEREÇO:
+${endereco || "Não informado"}
+
+💳 PAGAMENTO:
+${pagamento || "Não informado"}
+
+📝 OBSERVAÇÃO:
+${observacao || "Nenhuma"}
+`)}`}
   target="_blank"
   rel="noreferrer"
   className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 >
   Finalizar Pedido
-</button>
+</a>
 
     </div>
   )}
