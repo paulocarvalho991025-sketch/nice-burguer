@@ -34,14 +34,13 @@ function removerDoCarrinho(index) {
 }
 
 function finalizarPedido() {
+  console.log("clicou");
 
-  const whatsapp = "5584997063345";
+  const mensagem = encodeURIComponent("Teste pedido");
 
-  if (carrinho.length === 0) {
-    
-    alert("Adicione pelo menos um item ao carrinho.");
-    return;
-  }
+  window.location.href =
+    `https://wa.me/5584997063345?text=${mensagem}`;
+}
 
   if (!endereco.trim()) {
     alert("Digite seu endereço antes de finalizar o pedido.");
@@ -267,12 +266,29 @@ return (
   className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
 
-<button
-  onClick={finalizarPedido}
-  className="mt-4 w-full rounded-xl bg-orange-600 py-3 font-bold text-white hover:bg-orange-700"
+<a
+  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
+🍔 NOVO PEDIDO - NICE BURGUER
+
+${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
+
+Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
+Endereço:
+${endereco}
+
+Pagamento:
+${pagamento}
+
+Observação:
+${observacao || "Nenhuma"}
+`)}`}
+  target="_blank"
+  rel="noreferrer"
+  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 >
   Finalizar Pedido
-</button>
+</a>
 
     </div>
   )}
@@ -488,4 +504,3 @@ className="h-full w-auto object-contain"          />
 
 </main>
   );
-}
