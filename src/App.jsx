@@ -208,8 +208,31 @@ return (
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
-${carrinho.map((item) => `${item.nome} - ${item.preco}`).join("\n")}
-💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+${Object.values(
+  carrinho.reduce((acc, item) => {
+    if (!acc[item.nome]) {
+      acc[item.nome] = {
+        ...item,
+        quantidade: 0,
+        total: 0,
+      };
+    }
+
+    acc[item.nome].quantidade += 1;
+    acc[item.nome].total += Number(
+      item.preco.replace("R$", "").replace(",", ".").trim()
+    );
+
+    return acc;
+  }, {})
+)
+  .map(
+    (item) =>
+      `${item.quantidade}x ${item.nome} - R$ ${item.total
+        .toFixed(2)
+        .replace(".", ",")}`
+  )
+  .join("\n")}💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
@@ -225,8 +248,31 @@ ${observacao || "Nenhuma"}
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
-${carrinho.map((item) => `${item.nome} - ${item.preco}`).join("\n")}
-💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+${Object.values(
+  carrinho.reduce((acc, item) => {
+    if (!acc[item.nome]) {
+      acc[item.nome] = {
+        ...item,
+        quantidade: 0,
+        total: 0,
+      };
+    }
+
+    acc[item.nome].quantidade += 1;
+    acc[item.nome].total += Number(
+      item.preco.replace("R$", "").replace(",", ".").trim()
+    );
+
+    return acc;
+  }, {})
+)
+  .map(
+    (item) =>
+      `${item.quantidade}x ${item.nome} - R$ ${item.total
+        .toFixed(2)
+        .replace(".", ",")}`
+  )
+  .join("\n")}💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
