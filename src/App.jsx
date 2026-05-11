@@ -32,8 +32,7 @@ const mensagemPedido = encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
-${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
-
+${carrinho.map((item) => `${item.nome} - ${item.preco}`).join("\n")}
 💰 TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 🛵 TAXA DE ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
@@ -190,8 +189,7 @@ return (
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
-${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
-
+${carrinho.map((item) => `${item.nome} - ${item.preco}`).join("\n")}
 💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
@@ -208,8 +206,7 @@ ${observacao || "Nenhuma"}
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
-${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
-
+${carrinho.map((item) => `${item.nome} - ${item.preco}`).join("\n")}
 💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
