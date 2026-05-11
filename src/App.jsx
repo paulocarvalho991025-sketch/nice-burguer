@@ -193,7 +193,7 @@ return (
   className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 >
   Finalizar Pedido
-</a>
+</button>
 
     </div>
   )}
