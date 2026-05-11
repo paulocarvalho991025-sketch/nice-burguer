@@ -146,7 +146,7 @@ ${observacao || "Nenhuma"}
     `${item.nome} - ${item.preco}`
   ).join("\n")
 );
-  const linkWhatsapp = `https://wa.me/${whatsapp}?text=${mensagem}`;
+  const linkWhatsapp = `https://wa.me/${5584997063345}?text=${mensagem}`;
 
   const produtos = [
   {
