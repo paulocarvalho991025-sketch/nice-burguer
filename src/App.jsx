@@ -3,44 +3,40 @@ import { ShoppingBag, MessageCircle, Star, Clock, MapPin, Menu, X } from "lucide
 import { motion } from "framer-motion";
 
 export default function App() {
-  const [menuAberto, setMenuAberto] = useState(false);
+const [menuAberto, setMenuAberto] = useState(false);
 const [carrinho, setCarrinho] = useState([]);
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
 const [pagamento, setPagamento] = useState("");
-const taxaEntrega = 3;
 const [trocoPara, setTrocoPara] = useState("");
-const totalFinal = totalCarrinho + taxaEntrega;
-const totalCarrinho = carrinho.reduce((total, item) => {
-  const valor = Number(
-    item.preco
-      .replace("R$", "")
-      .replace(",", ".")
-      .trim()
-  );
 
+const taxaEntrega = 3;
+
+const totalCarrinho = carrinho.reduce((total, item) => {
+  const valor = Number(item.preco.replace("R$", "").replace(",", ".").trim());
   return total + valor;
 }, 0);
+
+const totalFinal = totalCarrinho + taxaEntrega;
 
 function adicionarAoCarrinho(produto) {
   setCarrinho((atual) => [...atual, produto]);
 }
 
 function removerDoCarrinho(index) {
-  setCarrinho((atual) =>
-    atual.filter((_, i) => i !== index)
-  );
+  setCarrinho((atual) => atual.filter((_, i) => i !== index));
 }
 
-function finalizarPedido() {
-  const mensagem = encodeURIComponent(`
+const mensagemPedido = encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
 
 🛒 ITENS:
 ${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
 
-💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+💰 TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+🛵 TAXA DE ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
+💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
@@ -48,108 +44,13 @@ ${endereco || "Não informado"}
 💳 PAGAMENTO:
 ${pagamento || "Não informado"}
 
+${pagamento === "Dinheiro" ? `💸 TROCO PARA: R$ ${trocoPara || "Não informado"}` : ""}
+
 📝 OBSERVAÇÃO:
 ${observacao || "Nenhuma"}
 `);
 
-  window.location.href = `https://wa.me/5584997063345?text=${mensagem}`;
-}
-
-  if (!endereco.trim()) {
-    alert("Digite seu endereço antes de finalizar o pedido.");
-    return;
-  }
-
-  if (!pagamento) {
-    alert("Selecione a forma de pagamento.");
-    return;
-  }
-
-  const itens = carrinho
-    .map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`)
-    .join("\n");
-    
-
-  const mensagem = encodeURIComponent(`
-🍔 *NOVO PEDIDO - NICE BURGUER*
-
-🛒 *ITENS DO PEDIDO:*
-${itens}
-
-💰 *TOTAL DOS ITENS:* R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
-🛵 *TAXA DE ENTREGA:* R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
-💵 *TOTAL FINAL:* R$ ${totalFinal.toFixed(2).replace(".", ",")}
-
-📍 *ENDEREÇO:*
-${endereco}
-
-💳 *PAGAMENTO:*
-${pagamento}
-
-${pagamento === "Dinheiro" ? `💸 *TROCO PARA:* R$ ${trocoPara || "Não informado"}` : ""}
-
-📝 *OBSERVAÇÃO:*
-${observacao || "Nenhuma"}
-`);
-
-  window.open(`https://wa.me/${5584997063345}?text=${mensagem}`, "_blank");
-
-
-
-  if (!endereco.trim()) {
-    alert("Digite seu endereço antes de finalizar o pedido.");
-    return;
-  }
-if (!pagamento) {
-  alert("Selecione a forma de pagamento.");
-  return;
-}
-const itens = carrinho
-  .map(
-    (item, index) =>
-      `${index + 1}. ${item.nome} — ${item.preco}`
-  )
-  .join("\n");
-
-const mensagem = encodeURIComponent(`
-🍔 *NOVO PEDIDO - NICE BURGUER*
-
-━━━━━━━━━━━━━━━
-
-🛒 *ITENS DO PEDIDO:*
-
-${itens}
-
-━━━━━━━━━━━━━━━
-
-💰 *TOTAL:* R$ ${totalCarrinho
-  .toFixed(2)
-  .replace(".", ",")}
-
-📍 *ENDEREÇO:*
-${endereco}
-
-💳 *PAGAMENTO:*
-${pagamento}
-
-📝 *OBSERVAÇÃO:*
-${observacao || "Nenhuma"}
-
-━━━━━━━━━━━━━━
-
-🔥 Pedido enviado pelo site
-`);
-}
-  const whatsapp = "5584997063345";
-  const mensagem = encodeURIComponent(
-  carrinho.map((item) =>
-    `${item.nome} - ${item.preco}`
-  ).join("\n")
-);https://wa.me/5584997063345
-
-  const linkWhatsapp = `https://wa.me/5584997063345}`;
-
-  const produtos = [
+const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
   {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 65g, Queijo Mussarela, e Molho da casa.",
@@ -302,6 +203,12 @@ ${observacao || "Nenhuma"}
   rel="noreferrer"
   className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 >
+<a
+  href={linkWhatsapp}
+  target="_blank"
+  rel="noreferrer"
+  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
+>
   Finalizar Pedido
 </a>
 
@@ -434,10 +341,10 @@ className="h-full w-auto object-contain"          />
           </span>
 <button
   type="button"
-  onClick={() => alert("Cliquei no botão do carrinho")}
-  className="mt-4 w-full rounded-xl bg-orange-600 py-3 font-bold text-white hover:bg-orange-700"
+  onClick={() => adicionarAoCarrinho(produto)}
+  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
-  Finalizar Pedido
+  Adicionar
 </button>
         </div>
       </div>
