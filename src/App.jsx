@@ -92,7 +92,7 @@ ${pagamento === "Dinheiro" ? `💸 *TROCO PARA:* R$ ${trocoPara || "Não informa
 ${observacao || "Nenhuma"}
 `);
 
-  window.open(`https://wa.me/${whatsapp}?text=${mensagem}`, "_blank");
+  window.open(`https://wa.me/${5584997063345}?text=${mensagem}`, "_blank");
 
 
 
