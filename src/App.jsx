@@ -184,20 +184,6 @@ return (
   className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
 
-🍔 NOVO PEDIDO - NICE BURGUER
-
-${carrinho.map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`).join("\n")}
-
-Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
-
-Endereço:
-${endereco}
-
-Pagamento:
-${pagamento}
-
-Observação:
-${observacao || "Nenhuma"}
 
 <a
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
