@@ -50,6 +50,7 @@ ${pagamento === "Dinheiro" ? `💸 TROCO PARA: R$ ${trocoPara || "Não informado
 ${observacao || "Nenhuma"}
 `);
 
+const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
   {
     nome: "Burguer 1.0",
@@ -224,6 +225,7 @@ ${pagamento || "Não informado"}
 📝 OBSERVAÇÃO:
 ${observacao || "Nenhuma"}
 `)}`}
+
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
 
