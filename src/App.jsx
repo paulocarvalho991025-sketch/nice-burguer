@@ -235,6 +235,9 @@ ${pagamento || "Não informado"}
 📝 OBSERVAÇÃO:
 ${observacao || "Nenhuma"}
 `)}`}
+  target="_blank"
+  rel="noreferrer"
+  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 >
   Finalizar Pedido
 </a>
@@ -436,13 +439,13 @@ className="h-full w-auto object-contain"          />
           </div>
 
           <a
-  href={`https://wa.me/5584997063345?text=Teste`}
-  target="_blank"
-  rel="noreferrer"
-  className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
->
-  Finalizar Pedido
-</a>
+            href={linkWhatsapp}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex rounded-full bg-orange-600 px-7 py-4 font-bold text-white shadow hover:bg-orange-700 md:mt-0"
+          >
+            Chamar no WhatsApp
+          </a>
         </div>
       </section>
 
