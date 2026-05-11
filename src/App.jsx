@@ -55,6 +55,8 @@ function finalizarPedido() {
   const itens = carrinho
     .map((item, index) => `${index + 1}. ${item.nome} - ${item.preco}`)
     .join("\n");
+     window.location.href =
+    `https://wa.me/5584997063345?text=${mensagem}`;
 
   const mensagem = encodeURIComponent(`
 🍔 *NOVO PEDIDO - NICE BURGUER*
