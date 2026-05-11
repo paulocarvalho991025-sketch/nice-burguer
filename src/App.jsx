@@ -145,8 +145,7 @@ ${observacao || "Nenhuma"}
   carrinho.map((item) =>
     `${item.nome} - ${item.preco}`
   ).join("\n")
-);
-  const linkWhatsapp = `https://wa.me/{5584997063345}?text={mensagem}`;
+  const linkWhatsapp = `https://wa.me/5584997063345?text=Burguer%201.0%20-%20R%24%209%2C99}`;
 
   const produtos = [
   {
