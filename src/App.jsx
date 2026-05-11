@@ -51,6 +51,13 @@ ${observacao || "Nenhuma"}
 `);
 
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
+const produtos = [
+  {
+    nome: "Burguer 1.0",
+    descricao: "Pão Brioche, Blend Bovino 65g, Queijo Mussarela, e Molho da casa.",
+    preco: "R$ 9,99",
+    imagem: "/img/1.0.png",
+  },
   {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 65g, Queijo Mussarela, e Molho da casa.",
@@ -181,8 +188,6 @@ return (
   placeholder="Observação do pedido"
   className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
-
-<a
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
 🍔 NOVO PEDIDO - NICE BURGUER
 
@@ -202,7 +207,6 @@ ${observacao || "Nenhuma"}
   target="_blank"
   rel="noreferrer"
   className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
->
 <a
   href={linkWhatsapp}
   target="_blank"
@@ -425,3 +429,4 @@ className="h-full w-auto object-contain"          />
 
 </main>
   );
+}
