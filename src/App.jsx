@@ -98,7 +98,7 @@ const produtos = [
     nome: "Burguer 3.0",
     descricao: "Pão Brioche, 2 Blend Bovino 80g, Fatias de Queijo Cheddar, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.",
     preco: "R$ 21,99",
-    imagem: "/img/3333.png"
+    imagem: "/img/novo3.0.png"
   },
   {
     nome: "Coca-Cola Garrafinha 250ml",
