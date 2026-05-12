@@ -1,10 +1,16 @@
-import React, { useState } from "react";
-import { ShoppingBag, MessageCircle, Star, Clock, MapPin, Menu, X } from "lucide-react";
+import React, { useState, useEffect } from "react";import { ShoppingBag, MessageCircle, Star, Clock, MapPin, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function App() {
 const [menuAberto, setMenuAberto] = useState(false);
-const [carrinho, setCarrinho] = useState([]);
+const [carrinho, setCarrinho] = useState(() => {
+  const carrinhoSalvo = localStorage.getItem("carrinho");
+
+  return carrinhoSalvo
+    ? JSON.parse(carrinhoSalvo)
+    : [];
+});
+
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
