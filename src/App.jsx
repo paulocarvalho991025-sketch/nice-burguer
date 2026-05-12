@@ -381,10 +381,11 @@ ${observacao || "Nenhuma"}
   </h1>
 </div>
 <p
-  className="mt-5 text-4xl leading-8 text-black-700"
-  style={{ fontFamily: "Pacifico" }}
->             O Burguer Que Voçe Merece!
-          </p>
+  className="mt-5 text-5xl text-black-700"
+  style={{ fontFamily: "Kaushan Script" }}
+>
+  O Burguer que você merece!
+</p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           
