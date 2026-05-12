@@ -25,8 +25,7 @@ const [pagamento, setPagamento] = useState(() => {
   return localStorage.getItem("pagamento") || "";
 });
 const [trocoPara, setTrocoPara] = useState(() => {
-  const taxaEntrega = 3;
-const totalFinal = totalCarrinho + taxaEntrega;
+  
   return localStorage.getItem("trocoPara") || "";
 });
 
@@ -45,7 +44,6 @@ const totalCarrinho = carrinho.reduce((total, item) => {
   return total + valor;
 }, 0);
 
-const taxaEntrega = 5;
 const totalFinal = totalCarrinho + taxaEntrega;
 
 function adicionarAoCarrinho(produto) {
@@ -222,16 +220,8 @@ return (
 </div>
 
 <div className="mt-4 border-t pt-4">
-  <p className="text-sm font-bold text-stone-600">
-    Itens: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
-  </p>
-
-  <p className="text-sm font-bold text-stone-600">
-    Entrega: R$ {taxaEntrega.toFixed(2).replace(".", ",")}
-  </p>
-
-  <p className="mt-2 text-lg font-black text-orange-700">
-    Total: R$ {totalFinal.toFixed(2).replace(".", ",")}
+  <p className="text-lg font-black text-orange-700">
+    Total: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
   </p>
 </div>
 
