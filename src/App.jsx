@@ -411,7 +411,7 @@ ${observacao || "Nenhuma"}
             </div><div className="mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
   <img
     src="/img/2.0.png"
-    alt="Burguer 1.0"
+    alt="Burguer 2.0"
     className="max-h-[250px] w-auto object-contain"
   />
 </div>
