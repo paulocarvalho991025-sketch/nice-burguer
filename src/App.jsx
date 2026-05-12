@@ -369,11 +369,11 @@ ${observacao || "Nenhuma"}
             Hamburguer Artesanal
           </p>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col items-center justify-center">
   <img
     src="/img/NiceBurguer.jpeg"
     alt="Nice Burguer"
-    className="h-64 w-64 rounded-full object-cover shadow-lg"
+    className="h-80 w-80 rounded-full object-cover shadow-lg"
   />
 
   <h1 className="text-2xl font-black text-orange-100">
