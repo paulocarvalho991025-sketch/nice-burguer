@@ -415,7 +415,7 @@ ${observacao || "Nenhuma"}
     className="max-h-[250px] w-auto object-contain"
   />
 </div>
-            <h2 className="mt-5 text-2xl font-black">Burguer 1.0</h2>
+            <h2 className="mt-5 text-2xl font-black">Burguer 2.0</h2>
             <p className="mt-2 text-stone-700">
               Mussarela derretida, carne suculenta e molho especial da casa.
             </p>
