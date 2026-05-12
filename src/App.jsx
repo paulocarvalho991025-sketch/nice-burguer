@@ -25,7 +25,7 @@ const [pagamento, setPagamento] = useState(() => {
   return localStorage.getItem("pagamento") || "";
 });
 const [trocoPara, setTrocoPara] = useState(() => {
- 
+  const taxaEntrega = 3;
 const totalFinal = totalCarrinho + taxaEntrega;
   return localStorage.getItem("trocoPara") || "";
 });
@@ -38,7 +38,7 @@ useEffect(() => {
   
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }, [carrinho]);
-
+const taxaEntrega = 3;
 
 const totalCarrinho = carrinho.reduce((total, item) => {
   const valor = Number(item.preco.replace("R$", "").replace(",", ".").trim());
