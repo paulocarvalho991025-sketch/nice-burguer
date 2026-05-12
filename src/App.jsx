@@ -380,7 +380,7 @@ ${observacao || "Nenhuma"}
   
   </h1>
 </div>
-          <p className="mt-5 text-lg leading-8 text-stone-1000">
+          <p className="mt-5 text-lg leading-8 text-stone-3000">
              O Hamburguer que voce merece!
           </p>
 
