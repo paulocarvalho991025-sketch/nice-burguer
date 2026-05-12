@@ -383,7 +383,7 @@ ${observacao || "Nenhuma"}
 <p
   className="mt-5 text-4xl leading-8 text-orange-700"
   style={{ fontFamily: "Pacifico" }}
->             O Burguer que voce merece!
+>             O Burguer Que Voçe Merece!
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
