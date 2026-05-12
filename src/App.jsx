@@ -426,7 +426,7 @@ ${observacao || "Nenhuma"}
               <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
             </div><div className="mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
   <img
-    src="/img/1.ok.png"
+    src="/img/1.0.png"
     alt="Burguer 1.0"
     className="max-h-[250px] w-auto object-contain"
   />
