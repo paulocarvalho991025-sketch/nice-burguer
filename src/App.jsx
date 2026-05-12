@@ -105,11 +105,11 @@ const produtos = [
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Ketchup.",
     preco: "R$ 9,99",
-    imagem:"/img/1.ok.png"
+    imagem:"/img/1.0.png"
   },
   {
     nome: "Burguer 2.0",
-    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Ketchup.",
+    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Ketchup.",
     preco: "R$ 14,99",
     imagem: "/img/2.0.png"
   },
