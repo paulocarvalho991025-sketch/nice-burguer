@@ -423,10 +423,10 @@ ${observacao || "Nenhuma"}
               <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
                 O Mais Pedido
               </span>
-              <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
+              <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
             </div><div className="mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
   <img
-    src="/img/1.0.png"
+    src="/img/2.0.png"
     alt="Burguer 1.0"
   
   />
