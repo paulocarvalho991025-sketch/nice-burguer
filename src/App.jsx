@@ -12,11 +12,30 @@ const [carrinho, setCarrinho] = useState(() => {
 });
 
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
-const [endereco, setEndereco] = useState("");
-const [observacao, setObservacao] = useState("");
-const [pagamento, setPagamento] = useState("");
+const [endereco, setEndereco] = useState(() => {
+  return localStorage.getItem("endereco") || "";
+});
+
+const [observacao, setObservacao] = useState(() => {
+  return localStorage.getItem("observacao") || "";
+});
+
+const [pagamento, setPagamento] = useState(() => {
+  return localStorage.getItem("pagamento") || "";
+});
 const [trocoPara, setTrocoPara] = useState("");
 useEffect(() => {
+  useEffect(() => {
+  localStorage.setItem("endereco", endereco);
+}, [endereco]);
+
+useEffect(() => {
+  localStorage.setItem("pagamento", pagamento);
+}, [pagamento]);
+
+useEffect(() => {
+  localStorage.setItem("observacao", observacao);
+}, [observacao]);
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }, [carrinho]);
 const taxaEntrega = 3;
