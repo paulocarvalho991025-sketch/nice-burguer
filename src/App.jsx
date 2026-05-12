@@ -176,10 +176,12 @@ return (
   }, {})
 ).map((item, index) => (
       <div key={index} className="mb-3 rounded-xl bg-orange-50 p-3">
-        <p className="font-bold">{item.nome}</p>
-
-        <p className="text-sm text-stone-600">{item.preco}</p>
-
+<p className="font-bold">
+  {item.quantidade}x {item.nome}
+</p>
+<p className="text-sm text-stone-600">
+  R$ {item.total.toFixed(2).replace(".", ",")}
+</p>
         <button
           onClick={() => removerDoCarrinho(index)}
           className="mt-2 text-xs font-bold text-red-500 hover:text-red-700"
