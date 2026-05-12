@@ -31,17 +31,7 @@ useEffect(() => {
   localStorage.setItem("trocoPara", trocoPara);
 }, [trocoPara]);
 useEffect(() => {
-  useEffect(() => {
-  localStorage.setItem("endereco", endereco);
-}, [endereco]);
-
-useEffect(() => {
-  localStorage.setItem("observacao", observacao);
-}, [observacao]);
-
-useEffect(() => {
-  localStorage.setItem("pagamento", pagamento);
-}, [pagamento]);
+  
   
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }, [carrinho]);
