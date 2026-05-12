@@ -381,7 +381,7 @@ ${observacao || "Nenhuma"}
   </h1>
 </div>
 <p
-  className="mt-5 text-4xl leading-8 text-orange-700"
+  className="mt-5 text-4xl leading-8 text-black-700"
   style={{ fontFamily: "Pacifico" }}
 >             O Burguer Que Voçe Merece!
           </p>
