@@ -103,19 +103,19 @@ const produtos = [
 
   {
     nome: "Burguer 1.0",
-    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Ketchup.",
+    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
     preco: "R$ 9,99",
-    imagem:"/img/1.0.png"
+    imagem:"/img/1.0.png",
   },
   {
     nome: "Burguer 2.0",
-    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Ketchup.",
+    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
     preco: "R$ 14,99",
     imagem: "/img/2.0.png"
   },
   {
     nome: "Burguer 3.0",
-    descricao: "Pão Brioche, 2 Blend Bovino 80g, 2 Fatias de Queijo Mussarela, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Ketchup.",
+    descricao: "Pão Brioche, 2 Blend Bovino 80g, 2 Fatias de Queijo Mussarela, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.",
     preco: "R$ 21,99",
     imagem: "/img/novo3.0.png"
   },
@@ -302,11 +302,8 @@ ${Object.values(
   )
   .join("\n")}
 
-💰 ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
-🛵 ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
-
-💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
 
@@ -347,11 +344,8 @@ ${Object.values(
   )
   .join("\n")}
 
-💰 ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
-🛵 ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
-
-💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
 
@@ -423,11 +417,12 @@ ${observacao || "Nenhuma"}
               <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
                 O Mais Pedido
               </span>
-              <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
+              <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
             </div><div className="mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
   <img
+    src="/img/burguer 1.0 att.png"
     alt="Burguer 1.0"
-  
+    className="max-h-[250px] w-auto object-contain"
   />
 </div>
             <h2 className="mt-5 text-2xl font-black">Burguer 1.0</h2>
