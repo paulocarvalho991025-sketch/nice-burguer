@@ -155,7 +155,26 @@ return (
       Nenhum item ainda.
     </p>
   ) : (
-    carrinho.map((item, index) => (
+    Object.values(
+  carrinho.reduce((acc, item) => {
+
+    if (!acc[item.nome]) {
+      acc[item.nome] = {
+        ...item,
+        quantidade: 0,
+        total: 0,
+      };
+    }
+
+    acc[item.nome].quantidade += 1;
+    acc[item.nome].total += Number(
+      item.preco.replace("R$", "").replace(",", ".").trim()
+    );
+
+    return acc;
+
+  }, {})
+).map((item, index) => (
       <div key={index} className="mb-3 rounded-xl bg-orange-50 p-3">
         <p className="font-bold">{item.nome}</p>
 
