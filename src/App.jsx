@@ -16,7 +16,9 @@ const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
 const [pagamento, setPagamento] = useState("");
 const [trocoPara, setTrocoPara] = useState("");
-
+useEffect(() => {
+  localStorage.setItem("carrinho", JSON.stringify(carrinho));
+}, [carrinho]);
 const taxaEntrega = 3;
 
 const totalCarrinho = carrinho.reduce((total, item) => {
