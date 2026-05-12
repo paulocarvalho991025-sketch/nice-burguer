@@ -382,7 +382,7 @@ ${observacao || "Nenhuma"}
 </div>
 <p
   className="mt-5 text-5xl text-black-700"
-  style={{ fontFamily: "Permanent Marker" }}
+  style={{ fontFamily: "Yellowtail" }}
 >
   O Burguer que você merece!
 </p>
