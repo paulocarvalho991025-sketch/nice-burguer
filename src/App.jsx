@@ -380,8 +380,10 @@ ${observacao || "Nenhuma"}
   
   </h1>
 </div>
-<p className="mt-5 text-3xl font-black leading-8 text-stone-1000">             O Hamburguer que voce merece!
-          </p>
+<p
+  className="mt-5 text-4xl leading-8 text-orange-700"
+  style={{ fontFamily: "Pacifico" }}
+>          </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           
@@ -500,7 +502,7 @@ className="h-full w-auto object-contain"          />
 
           <div className="grid gap-5 md:grid-cols-3">
             <div className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur">
-              <h3 className="text-2xl font-black">Combo Essencial</h3>
+              <h3 className="text-2xl font-black">Opção Individual</h3>
               <p className="mt-3 text-orange-100">
                 Burguer 1.0 + Coca-Cola Garrafinha 250ml
               </p>
@@ -508,7 +510,7 @@ className="h-full w-auto object-contain"          />
             </div>
 
             <div className="rounded-3xl bg-orange-500 p-6 text-stone-900 shadow-xl">
-              <h3 className="text-2xl font-black">Combo Econômico</h3>
+              <h3 className="text-2xl font-black">Opção  </h3>
               <p className="mt-3">Burguer 2.0 + Coca Lata</p>
               <p className="mt-6 text-3xl font-black">R$ 20,98</p>
             </div>
