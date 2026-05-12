@@ -428,7 +428,7 @@ ${observacao || "Nenhuma"}
   <img
     src="/img/1.0.png"
     alt="Burguer 1.0"
-    className="max-h-[250px] w-auto object-contain"
+  
   />
 </div>
             <h2 className="mt-5 text-2xl font-black">Burguer 1.0</h2>
