@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 export default function App() {
 const [menuAberto, setMenuAberto] = useState(false);
+
 const [carrinho, setCarrinho] = useState(() => {
   const carrinhoSalvo = localStorage.getItem("carrinho");
 
@@ -24,6 +25,8 @@ const [pagamento, setPagamento] = useState(() => {
   return localStorage.getItem("pagamento") || "";
 });
 const [trocoPara, setTrocoPara] = useState(() => {
+  const taxaEntrega = 3;
+const totalFinal = totalCarrinho + taxaEntrega;
   return localStorage.getItem("trocoPara") || "";
 });
 
@@ -42,6 +45,7 @@ const totalCarrinho = carrinho.reduce((total, item) => {
   return total + valor;
 }, 0);
 
+const taxaEntrega = 5;
 const totalFinal = totalCarrinho + taxaEntrega;
 
 function adicionarAoCarrinho(produto) {
@@ -99,19 +103,19 @@ const produtos = [
 
   {
     nome: "Burguer 1.0",
-    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
+    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Ketchup.",
     preco: "R$ 9,99",
-    imagem:"/img/1.0.png",
+    imagem:"/img/1.ok.png"
   },
   {
     nome: "Burguer 2.0",
-    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
+    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Ketchup.",
     preco: "R$ 14,99",
     imagem: "/img/2.0.png"
   },
   {
     nome: "Burguer 3.0",
-    descricao: "Pão Brioche, 2 Blend Bovino 80g, 2 Fatias de Queijo Mussarela, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.",
+    descricao: "Pão Brioche, 2 Blend Bovino 80g, 2 Fatias de Queijo Mussarela, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Ketchup.",
     preco: "R$ 21,99",
     imagem: "/img/novo3.0.png"
   },
@@ -218,8 +222,16 @@ return (
 </div>
 
 <div className="mt-4 border-t pt-4">
-  <p className="text-lg font-black text-orange-700">
-    Total: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
+  <p className="text-sm font-bold text-stone-600">
+    Itens: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
+  </p>
+
+  <p className="text-sm font-bold text-stone-600">
+    Entrega: R$ {taxaEntrega.toFixed(2).replace(".", ",")}
+  </p>
+
+  <p className="mt-2 text-lg font-black text-orange-700">
+    Total: R$ {totalFinal.toFixed(2).replace(".", ",")}
   </p>
 </div>
 
@@ -290,8 +302,11 @@ ${Object.values(
   )
   .join("\n")}
 
-  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+💰 ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
+🛵 ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
+
+💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
 
@@ -332,8 +347,11 @@ ${Object.values(
   )
   .join("\n")}
 
-  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+💰 ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
+🛵 ENTREGA: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
+
+💵 TOTAL FINAL: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 📍 ENDEREÇO:
 ${endereco || "Não informado"}
 
@@ -408,7 +426,7 @@ ${observacao || "Nenhuma"}
               <span className="text-2xl font-black text-orange-700">R$ 9,99</span>
             </div><div className="mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
   <img
-    src="/img/burguer 1.0 att.png"
+    src="/img/1.ok.png"
     alt="Burguer 1.0"
     className="max-h-[250px] w-auto object-contain"
   />
