@@ -232,7 +232,7 @@ return (
   <option value="Dinheiro">Dinheiro</option>
   <option value="Cartão">Cartão</option>
 </select>
-select
+
 {pagamento === "Dinheiro" && (
   <input
     type="text"
