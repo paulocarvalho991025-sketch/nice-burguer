@@ -373,7 +373,7 @@ ${observacao || "Nenhuma"}
   <img
     src="/img/NiceBurguer.jpeg"
     alt="Nice Burguer"
-    className="h-80 w-80 rounded-full object-cover shadow-lg"
+    className="h-110 w-110 rounded-full object-cover shadow-lg"
   />
 
   <h1 className="text-2xl font-black text-orange-100">
