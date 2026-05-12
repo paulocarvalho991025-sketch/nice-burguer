@@ -15,7 +15,13 @@ const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [endereco, setEndereco] = useState("");
 const [observacao, setObservacao] = useState("");
 const [pagamento, setPagamento] = useState("");
-const [trocoPara, setTrocoPara] = useState("");
+const [trocoPara, setTrocoPara] = useState(() => {
+  return localStorage.getItem("trocoPara") || "";
+});
+
+useEffect(() => {
+  localStorage.setItem("trocoPara", trocoPara);
+}, [trocoPara]);
 useEffect(() => {
   
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
@@ -226,7 +232,16 @@ return (
   <option value="Dinheiro">Dinheiro</option>
   <option value="Cartão">Cartão</option>
 </select>
-
+select
+{pagamento === "Dinheiro" && (
+  <input
+    type="text"
+    value={trocoPara}
+    onChange={(e) => setTrocoPara(e.target.value)}
+    placeholder="Troco para quanto?"
+    className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+  />
+)}
 <textarea
   value={observacao}
   onChange={(e) => setObservacao(e.target.value)}
