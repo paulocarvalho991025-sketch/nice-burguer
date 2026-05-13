@@ -512,10 +512,11 @@ className="h-full w-auto object-contain"          />
       </div>
   ))}
 </>
+
   </div>
 </section>
       <section id="combos" className="bg-stone-900 py-16 text-white">
-      
+        <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
             <p className="font-bold text-orange-300">Em Nossa Hamburgueria Delivery </p>
             <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
@@ -548,6 +549,7 @@ className="h-full w-auto object-contain"          />
       </button>
     </div>
   ))}
+</div>
 </div>
       </section>
 
