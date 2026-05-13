@@ -515,36 +515,40 @@ className="h-full w-auto object-contain"          />
   </div>
 </section>
       <section id="combos" className="bg-stone-900 py-16 text-white">
-        <div className="mx-auto max-w-6xl px-5">
+      
           <div className="mb-10 text-center">
             <p className="font-bold text-orange-300">Em Nossa Hamburgueria Delivery </p>
             <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
-            <div className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur">
-              <h3 className="text-2xl font-black">Combo Prime</h3>
-              <p className="mt-3 text-orange-100">
-                Burguer 1.0 + Coca-Cola Garrafinha 250ml
-              </p>
-              <p className="mt-6 text-3xl font-black text-orange-300">R$ 13,98</p>
-            </div>
+<div className="grid gap-5 md:grid-cols-3">
+  {combos.map((combo) => (
+    <div
+      key={combo.nome}
+      className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"
+    >
+      <h3 className="text-2xl font-black">
+        {combo.nome}
+      </h3>
 
-            <div className="rounded-3xl bg-orange-500 p-6 text-stone-900 shadow-xl">
-              <h3 className="text-2xl font-black">Combo Street</h3>
-              <p className="mt-3">Burguer 2.0 + Coca Lata 350ml</p>
-              <p className="mt-6 text-3xl font-black">R$ 20,98</p>
-            </div>
+      <p className="mt-3 text-orange-100">
+        {combo.descricao}
+      </p>
 
-            <div className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur">
-              <h3 className="text-2xl font-black">Combo Turbo</h3>
-              <p className="mt-3 text-orange-100">
-                2 Burguer's 1.0 + Coca-Cola 1 Litro
-              </p>
-              <p className="mt-6 text-3xl font-black text-orange-300">R$29,97</p>
-            </div>
-          </div>
-        </div>
+      <p className="mt-6 text-3xl font-black text-orange-300">
+        {combo.preco}
+      </p>
+
+      <button
+        type="button"
+        onClick={() => adicionarAoCarrinho(combo)}
+        className="mt-4 rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+      >
+        Adicionar
+      </button>
+    </div>
+  ))}
+</div>
       </section>
 
       <section id="local" className="mx-auto max-w-6xl px-5 py-16">
