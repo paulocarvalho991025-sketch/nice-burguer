@@ -549,7 +549,7 @@ whileHover={{ scale: 1.05 }}
   onClick={() => adicionarItem(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
-  {comboAdicionado === produto.nome ? "✓ Adicionado!" : "Adicionar"}
+  {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
 </motion.button>
         </div>
       </motion.div>
