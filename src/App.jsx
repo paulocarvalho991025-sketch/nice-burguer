@@ -6,7 +6,7 @@ const [menuAberto, setMenuAberto] = useState(false);
 
 const [carrinho, setCarrinho] = useState(() => {
   const carrinhoSalvo = localStorage.getItem("carrinho");
-return
+
   return carrinhoSalvo
     ? JSON.parse(carrinhoSalvo)
     : [];
