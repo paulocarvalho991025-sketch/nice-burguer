@@ -442,7 +442,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
     className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
   />
 
-  <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black" />
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/20 to-black opacity-100" />
 
   <img
     src="/img/2.0.png"
