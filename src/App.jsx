@@ -114,7 +114,7 @@ Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
-Eendereço:
+Endereço:
 ${endereco || "Não informado"}
 
 Pagamento:
@@ -305,7 +305,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   onChange={(e) => setPagamento(e.target.value)}
   className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 >
-  <option value="">Forma de pagamento</option>
+  
   <option value="Pix">Pix</option>
   <option value="Dinheiro">Dinheiro</option>
   <option value="Cartão">Cartão</option>
