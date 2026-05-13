@@ -278,9 +278,17 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 </div>
 
 <div className="mt-4 border-t pt-4">
-  <p className="text-lg font-black text-orange-700">
-    Total: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
-  </p>
+  <p className="text-sm font-bold text-stone-600">
+  Itens: R$ {totalCarrinho.toFixed(2).replace(".", ",")}
+</p>
+
+<p className="text-sm font-bold text-stone-600">
+  Taxa de entrega: R$ {taxaEntrega.toFixed(2).replace(".", ",")}
+</p>
+
+<p className="mt-2 text-lg font-black text-orange-700">
+  Total: R$ {totalFinal.toFixed(2).replace(".", ",")}
+</p>
 </div>
 
 <input
