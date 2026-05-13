@@ -140,17 +140,20 @@ const combos = [
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Coca-Cola Garrafinha 250ml",
     preco: "R$ 13,98",
+    imagem: "/img/Combo Prime.png",
   },
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Coca Lata 350ml",
     preco: "R$ 20,98",
+    imagem: "/img/Combo Street.png",
     
   },
   {
     nome: "Combo Turbo",
     descricao: "Burguer 1.0 + Burguer 2.0 + Coca-Cola 1 Litro",
     preco: "R$ 34,97",
+    imagem: "/img/Combo Turbo.png",
   },
 ];
     function adicionarAoCarrinho(produto) {
@@ -526,8 +529,13 @@ className="h-full w-auto object-contain"          />
   {combos.map((combo) => (
     <div
       key={combo.nome}
-      className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"
+      className="relative overflow-hidden rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"
     >
+      <img
+  src={combo.imagem}
+  alt={combo.nome}
+  className="absolute bottom-0 right-0 h-36 w-36 object-contain opacity-15 pointer-events-none"
+/>
       <h3 className="text-2xl font-black">
         {combo.nome}
       </h3>
