@@ -432,12 +432,24 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
                 O Mais Pedido
               </span>
               <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
-            </div><div className="mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
+            </div>
+            
+            <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
+
+  <img
+    src="/img/2.0.png"
+    alt=""
+    className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" />
+
   <img
     src="/img/2.0.png"
     alt="Burguer 2.0"
-    className="max-h-[250px] w-auto object-contain"
+    className="relative z-10 max-h-[250px] w-auto object-contain"
   />
+
 </div>
             <h2 className="mt-5 text-2xl font-black">Burguer 2.0</h2>
             <p className="mt-2 text-stone-700">
