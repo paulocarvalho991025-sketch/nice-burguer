@@ -533,10 +533,10 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           </span>
 <button
   type="button"
-  onClick={() => adicionarItem(produto)}
+  onClick={() => adicionarAoCarrinho(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
-  {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
+  Adicionar
 </button>
         </div>
       </div>
@@ -568,13 +568,15 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 
 
 <motion.button
-  type="button"
-  onClick={() => adicionarCombo(combo)}
-  whileTap={{ scale: 0.9 }}
-  whileHover={{ scale: 1.05 }}
-  className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl"
+ type="button"
+ onClick={() => adicionarAoCarrinho(combo)}
+ whileTap={{ scale: 0.9 }}
+ whileHover={{ scale: 1.05 }}
+ animate={{ y: [0, -2, 0] }}
+ transition={{ duration: 0.3 }}
+ className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl transition hover:scale-105 hover:bg-orange-500"
 >
-  {comboAdicionado === combo.nome ? "Adicionado!" : "Adicionar"}
+  Adicionar
 </motion.button>
 
     </div>
