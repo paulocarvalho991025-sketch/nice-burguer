@@ -468,9 +468,9 @@ ${observacao || "Nenhuma"}
 
           <div className="rounded-2xl bg-orange-50 p-5 shadow-sm">
             <ShoppingBag className="mb-3 text-orange-600" />
-            <h3 className="font-black">Combos econômicos</h3>
+            <h3 className="font-black">Combos especiais</h3>
             <p className="mt-2 text-sm text-stone-700">
-              Opções para comer bem gastando pouco.
+              Opções para comer sua fome.
             </p>
           </div>
         </div>
@@ -491,7 +491,7 @@ ${observacao || "Nenhuma"}
   <img
     src={produto.imagem}
     alt=""
-    className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-110"
+    className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
   />
 
   <img
