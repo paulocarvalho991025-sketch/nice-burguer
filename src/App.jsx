@@ -108,7 +108,7 @@ ${Object.values(
 )
 .join("\n")}
 
-TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+Total dos itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
