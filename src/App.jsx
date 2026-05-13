@@ -550,13 +550,13 @@ ${observacao || "Nenhuma"}
 
 
 
-      <button
-        type="button"
-        onClick={() => adicionarAoCarrinho(combo)}
-        className="mt-4 rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
-      >
-        Adicionar
-      </button>
+     <button
+  type="button"
+  onClick={() => adicionarAoCarrinho(combo)}
+  className="absolute bottom-6 left-6 right-6 z-20 rounded-full bg-orange-600 py-4 text-xl font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500"
+>
+  Adicionar
+</button>
     </div>
   ))}
 </div>
