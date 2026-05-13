@@ -428,7 +428,7 @@ ${observacao || "Nenhuma"}
 className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"        >
           <div className="rounded-[1.5rem] bg-white p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
-              <span className="rounded-full bg-orange-100 px-3 py-1 text-x1 font-bold text-orange-700">
+              <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
                 O Mais Pedido
               </span>
               <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
