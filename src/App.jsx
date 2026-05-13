@@ -146,7 +146,7 @@ const combos = [
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Coca Lata 350ml",
     preco: "R$ 20,98",
-    imagem: "/img/Combo Street.png",
+    imagem: "/img/Combo Street1.png",
     
   },
   {
@@ -536,7 +536,7 @@ ${observacao || "Nenhuma"}
   {combos.map((combo) => (
     <div
       key={combo.nome}
-className="relative overflow-hidden rounded-3xl bg-white/10 pt-0 px-6 pb-6 shadow-xl backdrop-blur"    >
+className="relative min-h-[500px] overflow-hidden rounded-3xl bg-white/10 pt-0 px-6 pb-6 shadow-xl backdrop-blur">
       <img
   src={combo.imagem}
   alt={combo.nome}
