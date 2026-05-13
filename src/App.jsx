@@ -576,7 +576,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
  transition={{ duration: 0.3 }}
  className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl transition hover:scale-105 hover:bg-orange-500"
 >
-  Adicionar
+  {comboAdicionado === combo.nome ? "Adicionado!" : "Adicionar"}
 </motion.button>
 
     </div>
