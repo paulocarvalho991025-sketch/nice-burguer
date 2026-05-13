@@ -536,7 +536,8 @@ ${observacao || "Nenhuma"}
   {combos.map((combo) => (
     <div
       key={combo.nome}
-className="relative flex h-full flex-col overflow-hidden rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"    >
+      className="relative overflow-hidden rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"
+    >
       <img
   src={combo.imagem}
   alt={combo.nome}
@@ -546,18 +547,19 @@ className="relative flex h-full flex-col overflow-hidden rounded-3xl bg-white/10
         {combo.nome}
       </h3>
 
-      <p className="relative z-10 mt-3 text-lg font-bold text-white drop-shadow-xl">
+      <p className="mt-3 text-orange-100">
         {combo.descricao}
       </p>
 
-      <p className="relative z-10 mt-6 text-5xl font-black text-orange-300 drop-shadow-2xl">
+      <p className="mt-6 text-3xl font-black text-orange-300">
         {combo.preco}
       </p>
 
       <button
         type="button"
         onClick={() => adicionarAoCarrinho(combo)}
-className="relative z-10 mt-auto rounded-full bg-orange-600 px-6 py-3 text-lg font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500" >
+        className="mt-4 rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+      >
         Adicionar
       </button>
     </div>
