@@ -536,8 +536,7 @@ ${observacao || "Nenhuma"}
   {combos.map((combo) => (
     <div
       key={combo.nome}
-      className="relative overflow-hidden rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"
-    >
+className="relative flex h-full flex-col overflow-hidden rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"    >
       <img
   src={combo.imagem}
   alt={combo.nome}
@@ -558,7 +557,7 @@ ${observacao || "Nenhuma"}
       <button
         type="button"
         onClick={() => adicionarAoCarrinho(combo)}
-className="relative z-10 mt-4 rounded-full bg-orange-600 px-6 py-3 text-lg font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500"      >
+className="relative z-10 mt-auto rounded-full bg-orange-600 px-6 py-3 text-lg font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500" >
         Adicionar
       </button>
     </div>
