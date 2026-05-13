@@ -330,7 +330,7 @@ ${Object.values(
 
   Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
-📍 Endereço:
+Endereço:
 ${endereco || "Não informado"}
 
 Pagamento:
@@ -341,9 +341,9 @@ ${observacao || "Nenhuma"}
 `)}`}
 
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
-🍔 NOVO PEDIDO - NICE BURGUER
+Novo Pedido - NiceBurguer!
 
-🛒 ITENS:
+ITENS:
 ${Object.values(
   carrinho.reduce((acc, item) => {
     if (!acc[item.nome]) {
@@ -372,13 +372,13 @@ ${Object.values(
 
   💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
-📍 ENDEREÇO:
+Endereço:
 ${endereco || "Não informado"}
 
-💳 PAGAMENTO:
+Pagamento:
 ${pagamento || "Não informado"}
 
-📝 OBSERVAÇÃO:
+Observação:
 ${observacao || "Nenhuma"}
 `)}`}
   target="_blank"
