@@ -543,7 +543,7 @@ ${observacao || "Nenhuma"}
   alt={combo.nome}
   className="absolute inset-0 h-full w-full object-cover opacity-15 pointer-events-none"
 />
-      <h3 className="text-2xl font-black">
+      <h3 className="relative z-10 text-3xl font-black text-white drop-shadow-2xl">
         {combo.nome}
       </h3>
 
