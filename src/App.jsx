@@ -542,7 +542,7 @@ className="relative min-h-[500px] overflow-hidden rounded-3xl bg-white/10 pt-0 p
   alt={combo.nome}
   className="absolute inset-0 h-full w-full object-cover opacity-15 pointer-events-none"
 />
-      <h3 className="relative z-10 mt-14 rounded-full bg-orange-600 px-6 py-3 text-lg font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500">
+      <h3 className="relative z-10 mt-4 rounded-full bg-orange-600 px-6 py-3 text-lg font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500">
         {combo.nome}
       </h3>
 
