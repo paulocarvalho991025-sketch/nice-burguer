@@ -299,9 +299,9 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
 <a
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
-🍔 NOVO PEDIDO - NICE BURGUER
+Novo Pedido - NiceBurguer!
 
-🛒 ITENS:
+ITENS:
 ${Object.values(
   carrinho.reduce((acc, item) => {
     if (!acc[item.nome]) {
@@ -328,15 +328,15 @@ ${Object.values(
   )
   .join("\n")}
 
-  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+  Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
-📍 ENDEREÇO:
+📍 Endereço:
 ${endereco || "Não informado"}
 
-💳 PAGAMENTO:
+Pagamento:
 ${pagamento || "Não informado"}
 
-📝 OBSERVAÇÃO:
+Observação:
 ${observacao || "Nenhuma"}
 `)}`}
 
