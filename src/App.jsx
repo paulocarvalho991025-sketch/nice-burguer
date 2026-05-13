@@ -162,8 +162,8 @@ const combos = [
 return (
   <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
     <div className="absolute inset-0 opacity-20 pointer-events-none">
-      <div className="absolute top-0 left-0 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
-      <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
+      <div className="absolute top-0 left-6 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
+      <div className="absolute bottom-6 right-6 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
       <div className="absolute top-[40%] left-[40%] h-[300px] w-[300px] rounded-full bg-yellow-400 blur-[120px]" />
     </div>
 
