@@ -388,7 +388,7 @@ ${observacao || "Nenhuma"}
     className="flex flex-col items-center text-center"
   >
           <p className="mb-4 inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-bold text-orange-9900">
-            Hamburguer Artesanal
+            Hamburgueria Artesanal
           </p>
 
           <div className="flex flex-col items-center justify-center">
@@ -559,15 +559,14 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   
 
 
-
-   <motion.button
-  type="button"
-  onClick={() => adicionarAoCarrinho(combo)}
-  whileTap={{ scale: 0.9 }}
-whileHover={{ scale: 1.05 }}
-animate={{ y: [0, -2, 0] }}
-transition={{ duration: 0.3 }}
-  className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl transition hover:scale-105 hover:bg-orange-500"
+<motion.button
+ type="button"
+ onClick={() => adicionarAoCarrinho(combo)}
+ whileTap={{ scale: 0.9 }}
+ whileHover={{ scale: 1.05 }}
+ animate={{ y: [0, -2, 0] }}
+ transition={{ duration: 0.3 }}
+ className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl transition hover:scale-105 hover:bg-orange-500"
 >
   Adicionar
 </motion.button>
