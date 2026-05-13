@@ -491,7 +491,7 @@ ${observacao || "Nenhuma"}
   <img
     src={produto.imagem}
     alt=""
-    className="absolute inset-0 h-full w-full object-cover opacity-30 blur-md scale-110"
+    className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-110"
   />
 
   <img
