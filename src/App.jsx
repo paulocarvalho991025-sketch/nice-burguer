@@ -425,8 +425,7 @@ ${observacao || "Nenhuma"}
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="rounded-[2rem] bg-gradient-to-br from-orange-500 to-amber-300 p-6 shadow-1xl"
-        >
+className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"        >
           <div className="rounded-[1.5rem] bg-white p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
               <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
