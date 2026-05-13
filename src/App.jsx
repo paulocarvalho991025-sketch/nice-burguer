@@ -302,7 +302,8 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
 Novo Pedido - NiceBurguer!
 
-ITENS:
+Itens:
+
 ${Object.values(
   carrinho.reduce((acc, item) => {
     if (!acc[item.nome]) {
