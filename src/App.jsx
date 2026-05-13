@@ -553,7 +553,7 @@ whileHover={{ scale: 1.05 }}
       ✓ Adicionado!
     </motion.span>
   ) : (
-    "✓ Adicionado!"
+    "Adicionar"
   )}
 </>
 </motion.button>
