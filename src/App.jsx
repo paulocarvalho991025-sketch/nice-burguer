@@ -19,7 +19,7 @@ const [endereco, setEndereco] = useState(() => {
 });
 
 const [observacao, setObservacao] = useState(() => {
-const [nomeCliente, setNomeCliente] = useState("");
+  
   return localStorage.getItem("observacao") || "";
 });
 
@@ -108,19 +108,19 @@ ${Object.values(
 )
 .join("\n")}
 
-Total Dos Itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
-Endereço:
+📍 ENDEREÇO:
 ${endereco || "Não informado"}
 
-Pagamento:
+💳 PAGAMENTO:
 ${pagamento || "Não informado"}
 
 ${pagamento === "Dinheiro" ? `💸 TROCO PARA: R$ ${trocoPara || "Não informado"}` : ""}
 
-Observação:
+📝 OBSERVAÇÃO:
 ${observacao || "Nenhuma"}
 `);
 
