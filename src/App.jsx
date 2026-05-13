@@ -491,16 +491,14 @@ ${observacao || "Nenhuma"}
   <img
     src={produto.imagem}
     alt=""
-    className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
+    className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
   />
 
   <img
     src={produto.imagem}
     alt={produto.nome}
-    className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
-/>
-  
-  <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
+    className="relative z-10 h-full w-auto object-contain"
+  />
 </div>
 
         <h3 className="text-xl font-black">{produto.nome}</h3>
