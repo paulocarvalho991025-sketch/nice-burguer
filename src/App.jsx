@@ -364,6 +364,7 @@ ${observacao || "Nenhuma"}
     initial={{ opacity: 0, y: 18 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
+    className="flex flex-col items-center text-center"
   >
           <p className="mb-4 inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-bold text-orange-9900">
             Hamburguer Artesanal
@@ -499,7 +500,7 @@ className="h-full w-auto object-contain"          />
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
             <p className="font-bold text-orange-300">Em Nossa Hamburgueria Delivery </p>
-            <h2 className="text-3xl font-black md:text-4xl">Voçe aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
+            <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
