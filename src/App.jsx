@@ -503,10 +503,14 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 
   <div className="grid gap-5 md:grid-cols-3">
 <>
-{produtos.map((produto) => (      <div
-        key={produto.nome}
-        className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-      >
+{produtos.map((produto) => (      
+  <motion.div
+  key={produto.nome}
+  whileHover={{ y: -8, scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+  transition={{ duration: 0.2 }}
+  className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:shadow-xl"
+>
         <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
   <img
     src={produto.imagem}
@@ -531,15 +535,17 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           <span className="text-2xl font-black text-orange-700">
             {produto.preco}
           </span>
-<button
+<motion.button
   type="button"
+  whileTap={{ scale: 0.9 }}
+whileHover={{ scale: 1.05 }}
   onClick={() => adicionarAoCarrinho(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
   Adicionar
-</button>
+</motion.button>
         </div>
-      </div>
+      </motion.div>
   ))}
 </>
 
