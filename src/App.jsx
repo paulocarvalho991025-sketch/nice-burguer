@@ -141,7 +141,6 @@ const combos = [
     descricao: "Burguer 1.0 + Coca-Cola Garrafinha 250ml",
     preco: "R$ 13,98",
   },
-  
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Coca Lata 350ml",
@@ -480,33 +479,40 @@ ${observacao || "Nenhuma"}
   </div>
 
   <div className="grid gap-5 md:grid-cols-3">
-  {combos.map((combo) => (
-    <div
-      key={combo.nome}
-      className="rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"
-    >
-      <h3 className="text-2xl font-black">
-        {combo.nome}
-      </h3>
-
-      <p className="mt-3 text-orange-100">
-        {combo.descricao}
-      </p>
-
-      <p className="mt-6 text-3xl font-black text-orange-300">
-        {combo.preco}
-      </p>
-
-      <button
-        type="button"
-        onClick={() => adicionarAoCarrinho(combo)}
-        className="mt-4 rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+<>
+{produtos.map((produto) => (      <div
+        key={produto.nome}
+        className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
       >
-        Adicionar
-      </button>
-    </div>
+        <div className="mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+          <img
+            src={produto.imagem}
+            alt={produto.nome}
+className="h-full w-auto object-contain"          />
+        </div>
+
+        <h3 className="text-xl font-black">{produto.nome}</h3>
+
+        <p className="mt-2 min-h-16 text-sm leading-6 text-stone-700">
+          {produto.descricao}
+        </p>
+
+        <div className="mt-5 flex items-center justify-between">
+          <span className="text-2xl font-black text-orange-700">
+            {produto.preco}
+          </span>
+<button
+  type="button"
+  onClick={() => adicionarAoCarrinho(produto)}
+  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+>
+  Adicionar
+</button>
+        </div>
+      </div>
   ))}
-</div>
+</>
+  </div>
 </section>
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
