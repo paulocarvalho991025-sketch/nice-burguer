@@ -120,7 +120,7 @@ ${endereco || "Não informado"}
 Pagamento:
 ${pagamento || "Não informado"}
 
-${pagamento === "Dinheiro" ? `💸 TROCO PARA: R$ ${trocoPara || "Não informado"}` : ""}
+${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` : ""}
 
 Observação:
 ${observacao || "Nenhuma"}
