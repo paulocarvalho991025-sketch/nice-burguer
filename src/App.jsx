@@ -533,10 +533,10 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           </span>
 <button
   type="button"
-  onClick={() => adicionarAoCarrinho(produto)}
+  onClick={() => adicionarItem(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
-  Adicionar
+  {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
 </button>
         </div>
       </div>
