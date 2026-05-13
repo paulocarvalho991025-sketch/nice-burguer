@@ -39,7 +39,7 @@ useEffect(() => {
   
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }, [carrinho]);
-const taxaEntrega = 3;
+const taxaEntrega = 6;
 
 const totalCarrinho = carrinho.reduce((total, item) => {
   const valor = Number(item.preco.replace("R$", "").replace(",", ".").trim());
@@ -109,18 +109,20 @@ ${Object.values(
 .join("\n")}
 
 Total dos itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+
 Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
+
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
-📍 ENDEREÇO:
+Eendereço:
 ${endereco || "Não informado"}
 
-💳 PAGAMENTO:
+Pagamento:
 ${pagamento || "Não informado"}
 
 ${pagamento === "Dinheiro" ? `💸 TROCO PARA: R$ ${trocoPara || "Não informado"}` : ""}
 
-📝 OBSERVAÇÃO:
+Observação:
 ${observacao || "Nenhuma"}
 `);
 
