@@ -149,8 +149,8 @@ const combos = [
   },
   {
     nome: "Combo Turbo",
-    descricao: "2 Burguer's 1.0 + Coca-Cola 1 Litro",
-    preco: "R$ 29,97",
+    descricao: "Burguer 1.0 + Burguer 2.0 + Coca-Cola 1 Litro",
+    preco: "R$ 34,97",
   },
 ];
     function adicionarAoCarrinho(produto) {
