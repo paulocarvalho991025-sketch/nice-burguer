@@ -159,16 +159,6 @@ const combos = [
 ];
     function adicionarAoCarrinho(produto) {
   setCarrinho((atual) => [...atual, produto]);
-}
-
-function adicionarItem(item) {
-  adicionarAoCarrinho(item);
-  setComboAdicionado(item.nome);
-
-  setTimeout(() => {
-    setComboAdicionado("");
-  }, 1000);
-}
 }function adicionarCombo(combo) {
   adicionarAoCarrinho(combo);
   setComboAdicionado(combo.nome);
@@ -549,23 +539,10 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   type="button"
   whileTap={{ scale: 0.9 }}
 whileHover={{ scale: 1.05 }}
-  onClick={() => adicionarItem(produto)}
+  onClick={() => adicionarAoCarrinho(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
-  <>
-  {comboAdicionado === produto.nome ? (
-    <motion.span
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.2 }}
-      className="text-green-200"
-    >
-      ✓ Adicionado!
-    </motion.span>
-  ) : (
-    "Adicionar"
-  )}
-</>
+  Adicionar
 </motion.button>
         </div>
       </motion.div>
@@ -655,3 +632,4 @@ whileHover={{ scale: 1.05 }}
 
 </main>
   );
+}
