@@ -271,6 +271,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 />
 
 <select
+
   value={pagamento}
   onChange={(e) => setPagamento(e.target.value)}
   className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
@@ -280,7 +281,17 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   <option value="Dinheiro">Dinheiro</option>
   <option value="Cartão">Cartão</option>
 </select>
+{pagamento === "Pix" && (
+  <div className="mt-3 rounded-xl border border-orange-200 bg-orange-50 p-3 text-sm">
+    <p className="font-bold text-orange-700">Chave Pix:</p>
+    <p className="font-black text-stone-800">08977689490</p>
 
+    <p className="mt-2 font-bold text-orange-700">Valor total:</p>
+    <p className="font-black text-stone-800">
+      R$ {totalFinal.toFixed(2).replace(".", ",")}
+    </p>
+  </div>
+)}
 {pagamento === "Dinheiro" && (
   <input
     type="text"
