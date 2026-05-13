@@ -487,12 +487,19 @@ ${observacao || "Nenhuma"}
         key={produto.nome}
         className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
       >
-        <div className="mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-          <img
-            src={produto.imagem}
-            alt={produto.nome}
-className="h-full w-auto object-contain"          />
-        </div>
+        <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+  <img
+    src={produto.imagem}
+    alt=""
+    className="absolute inset-0 h-full w-full object-cover opacity-30 blur-md scale-110"
+  />
+
+  <img
+    src={produto.imagem}
+    alt={produto.nome}
+    className="relative z-10 h-full w-auto object-contain"
+  />
+</div>
 
         <h3 className="text-xl font-black">{produto.nome}</h3>
 
