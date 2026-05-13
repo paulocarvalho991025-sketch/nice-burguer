@@ -140,7 +140,7 @@ const combos = [
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Coca-Cola Garrafinha 250ml",
     preco: "R$ 13,98",
-    imagem: "/img/Combo Prime.png",
+    imagem: "/img/Combo Prime1.png",
   },
   {
     nome: "Combo Street",
@@ -153,7 +153,7 @@ const combos = [
     nome: "Combo Turbo",
     descricao: "Burguer 1.0 + Burguer 2.0 + Coca-Cola 1 Litro",
     preco: "R$ 34,97",
-    imagem: "/img/Combo Turbo.png",
+    imagem: "/img/Combo Turbo1.png",
   },
 ];
     function adicionarAoCarrinho(produto) {
