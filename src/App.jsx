@@ -544,16 +544,14 @@ ${observacao || "Nenhuma"}
     className="absolute inset-0 h-full w-full object-cover opacity-15 pointer-events-none"
   />
 
-  <h3 className="relative z-10 mt-14 rounded-full bg-orange-600 px-6 py-3 text-lg font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500">
-    {combo.nome}
-  </h3>
+  
 
 
 
-     <button
+   <button
   type="button"
   onClick={() => adicionarAoCarrinho(combo)}
-  className="absolute bottom-6 left-6 right-6 z-20 rounded-full bg-orange-600 py-4 text-xl font-black text-white shadow-2xl transition hover:scale-105 hover:bg-orange-500"
+  className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl transition hover:scale-105 hover:bg-orange-500"
 >
   Adicionar
 </button>
