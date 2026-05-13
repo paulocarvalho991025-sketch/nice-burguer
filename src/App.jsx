@@ -448,7 +448,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   <img
     src="/img/2.0.png"
     alt="Burguer 2.0"
-    className="relative z-10 max-h-[250px] w-auto object-contain"
+    className="relative z-10 max-h-[320px] w-auto object-contain"
   />
 
 </div>
