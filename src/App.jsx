@@ -61,7 +61,25 @@ function adicionarItem(item) {
 function removerDoCarrinho(index) {
   setCarrinho((atual) => atual.filter((_, i) => i !== index));
 }
+function finalizarPedido() {
 
+  if (carrinho.length === 0) {
+    alert("Adicione pelo menos um item ao carrinho.");
+    return;
+  }
+
+  if (!endereco.trim()) {
+    alert("Digite seu endereço antes de finalizar o pedido.");
+    return;
+  }
+
+  if (!pagamento) {
+    alert("Selecione a forma de pagamento.");
+    return;
+  }
+
+  window.open(linkWhatsapp, "_blank");
+}
 const mensagemPedido = encodeURIComponent(`
 Novo Pedido - NiceBurguer!
 
@@ -309,97 +327,12 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 />
 
 
-<a
-  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
-Novo Pedido - NiceBurguer!
-
-Itens:
-
-${Object.values(
-  carrinho.reduce((acc, item) => {
-    if (!acc[item.nome]) {
-      acc[item.nome] = {
-        ...item,
-        quantidade: 0,
-        total: 0,
-      };
-    }
-
-    acc[item.nome].quantidade += 1;
-    acc[item.nome].total += Number(
-      item.preco.replace("R$", "").replace(",", ".").trim()
-    );
-
-    return acc;
-  }, {})
-)
-  .map(
-    (item) =>
-      `${item.quantidade}x ${item.nome} - R$ ${item.total
-        .toFixed(2)
-        .replace(".", ",")}`
-  )
-  .join("\n")}
-
-  Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
-
-Endereço:
-${endereco || "Não informado"}
-
-Pagamento:
-${pagamento || "Não informado"}
-
-Observação:
-${observacao || "Nenhuma"}
-`)}`}
-
-  href={`https://wa.me/5584997063345?text=${encodeURIComponent(`
-Novo Pedido - NiceBurguer!
-
-ITENS:
-${Object.values(
-  carrinho.reduce((acc, item) => {
-    if (!acc[item.nome]) {
-      acc[item.nome] = {
-        ...item,
-        quantidade: 0,
-        total: 0,
-      };
-    }
-
-    acc[item.nome].quantidade += 1;
-    acc[item.nome].total += Number(
-      item.preco.replace("R$", "").replace(",", ".").trim()
-    );
-
-    return acc;
-  }, {})
-)
-  .map(
-    (item) =>
-      `${item.quantidade}x ${item.nome} - R$ ${item.total
-        .toFixed(2)
-        .replace(".", ",")}`
-  )
-  .join("\n")}
-
-Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
-
-Endereço:
-${endereco || "Não informado"}
-
-Pagamento:
-${pagamento || "Não informado"}
-
-Observação:
-${observacao || "Nenhuma"}
-`)}`}
-  target="_blank"
-  rel="noreferrer"
+<button
+  onClick={finalizarPedido}
   className="mt-4 block w-full rounded-xl bg-orange-600 py-3 text-center font-bold text-white hover:bg-orange-700"
 >
   Finalizar Pedido
-</a>
+</button>
 
     </div>
   )}
