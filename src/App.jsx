@@ -536,8 +536,7 @@ ${observacao || "Nenhuma"}
   {combos.map((combo) => (
     <div
       key={combo.nome}
-      className="relative overflow-hidden rounded-3xl bg-white/10 p-6 shadow-xl backdrop-blur"
-    >
+className="relative overflow-hidden rounded-3xl bg-white/10 pt-0 px-6 pb-6 shadow-xl backdrop-blur"    >
       <img
   src={combo.imagem}
   alt={combo.nome}
