@@ -56,9 +56,9 @@ function removerDoCarrinho(index) {
 }
 
 const mensagemPedido = encodeURIComponent(`
-🍔 NOVO PEDIDO - NICE BURGUER
+Novo Pedido - NiceBurguer!
 
-🛒 ITENS:
+ITENS:
 ${Object.values(
   carrinho.reduce((acc, item) => {
 
@@ -542,7 +542,20 @@ whileHover={{ scale: 1.05 }}
   onClick={() => adicionarAoCarrinho(produto)}
   className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
-  Adicionar
+  <>
+  {comboAdicionado === produto.nome ? (
+    <motion.span
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.2 }}
+      className="text-green-200"
+    >
+      ✓ Adicionado!
+    </motion.span>
+  ) : (
+    "Adicionar"
+  )}
+</>
 </motion.button>
         </div>
       </motion.div>
