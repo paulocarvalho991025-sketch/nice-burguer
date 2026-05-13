@@ -165,11 +165,10 @@ return (
 
 </header>
   
-<div className="fixed right-5 top-24 z-50 w-72">
+<div className="fixed right-2 top-20 z-50">
 <button
   onClick={() => setCarrinhoAberto(!carrinhoAberto)}
-  className="flex items-center justify-center gap-2 rounded-2xl bg-orange-600 px-4 py-3 text-lg font-black text-white shadow-2xl"
->
+className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-4 py-3 text-lg font-black text-white shadow-xl transition hover:scale-105">
   <ShoppingBag size={22} />
   <span>{carrinho.length}</span>
 </button>
