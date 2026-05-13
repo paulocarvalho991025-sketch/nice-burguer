@@ -534,7 +534,7 @@ className="h-full w-auto object-contain"          />
       <img
   src={combo.imagem}
   alt={combo.nome}
-  className="absolute bottom-0 right-0 h-36 w-36 object-contain opacity-15 pointer-events-none"
+  className="absolute inset-0 h-full w-full object-cover opacity-15 pointer-events-none"
 />
       <h3 className="text-2xl font-black">
         {combo.nome}
