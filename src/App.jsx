@@ -548,13 +548,7 @@ ${observacao || "Nenhuma"}
     {combo.nome}
   </h3>
 
-      <p className="mt-3 text-orange-100">
-        {combo.descricao}
-      </p>
 
-      <p className="mt-6 text-3xl font-black text-orange-300">
-        {combo.preco}
-      </p>
 
       <button
         type="button"
