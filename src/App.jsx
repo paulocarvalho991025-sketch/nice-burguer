@@ -491,7 +491,7 @@ ${observacao || "Nenhuma"}
           <img
             src={produto.imagem}
             alt={produto.nome}
-className="h-full w-auto object-contain"          />
+className="h-full w-full rounded-2xl object-cover"/>
         </div>
 
         <h3 className="text-xl font-black">{produto.nome}</h3>
