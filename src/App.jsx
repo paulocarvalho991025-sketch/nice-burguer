@@ -65,7 +65,7 @@ function removerDoCarrinho(index) {
 const mensagemPedido = encodeURIComponent(`
 Novo Pedido - NiceBurguer!
 
-ITENS:
+Itens:
 ${Object.values(
   carrinho.reduce((acc, item) => {
 
@@ -370,7 +370,7 @@ ${Object.values(
   )
   .join("\n")}
 
-  💰 TOTAL: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+Total: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 Endereço:
 ${endereco || "Não informado"}
