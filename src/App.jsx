@@ -107,19 +107,19 @@ ${Object.values(
 )
 .join("\n")}
 
-Total dos itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
+TOTAL DOS ITENS: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
-Endereço:
+📍 ENDEREÇO:
 ${endereco || "Não informado"}
 
-Pagamento:
+💳 PAGAMENTO:
 ${pagamento || "Não informado"}
 
-${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` : ""}
+${pagamento === "Dinheiro" ? `💸 TROCO PARA: R$ ${trocoPara || "Não informado"}` : ""}
 
-Observação:
+📝 OBSERVAÇÃO:
 ${observacao || "Nenhuma"}
 `);
 
