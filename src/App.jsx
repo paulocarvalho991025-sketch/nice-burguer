@@ -541,7 +541,7 @@ ${observacao || "Nenhuma"}
   <img
     src={combo.imagem}
     alt={combo.nome}
-    className="absolute inset-0 h-full w-full object-cover opacity-20 pointer-events-none"
+    className="absolute inset-0 h-full w-full object-cover opacity-25 pointer-events-none"
   />
 
   
