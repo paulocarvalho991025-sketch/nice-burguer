@@ -66,6 +66,7 @@ const mensagemPedido = encodeURIComponent(`
 Novo Pedido - NiceBurguer!
 
 Itens:
+
 ${Object.values(
   carrinho.reduce((acc, item) => {
 
