@@ -294,6 +294,15 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   placeholder="Qual seu nome?"
   className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
+
+
+<input
+  type="text"
+  value={endereco}
+  onChange={(e) => setEndereco(e.target.value)}
+  placeholder="Digite seu endereço"
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+/>
 <select
   value={bairro}
   onChange={(e) => setBairro(e.target.value)}
@@ -313,21 +322,6 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
     Tirol - R$ 10,00
   </option>
 </select>
-
-<select
-  value={pagamento}
-  onChange={(e) => setPagamento(e.target.value)}
-  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm"
-></select>
-
-<input
-  type="text"
-  value={endereco}
-  onChange={(e) => setEndereco(e.target.value)}
-  placeholder="Digite seu endereço"
-  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
-/>
-
 <select
 
   value={pagamento}
