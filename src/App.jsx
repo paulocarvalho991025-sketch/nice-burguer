@@ -292,6 +292,14 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
 <input
   type="text"
+  value={nomeCliente}
+  onChange={(e) => setNomeCliente(e.target.value)}
+  placeholder="Qual seu nome?"
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+/>
+
+<input
+  type="text"
   value={endereco}
   onChange={(e) => setEndereco(e.target.value)}
   placeholder="Digite seu endereço"
