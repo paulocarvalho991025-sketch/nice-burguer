@@ -84,8 +84,6 @@ function finalizarPedido() {
 const mensagemPedido = encodeURIComponent(`
 Novo Pedido - NiceBurguer!
 
-Nome: ${nomeCliente}
-
 Itens:
 
 ${Object.values(
