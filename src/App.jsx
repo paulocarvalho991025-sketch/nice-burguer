@@ -140,6 +140,13 @@ ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` :
 
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
+  {
+  nome: "Mini Burguer",
+  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento.",
+  preco: "R$ 2,99",
+  imagem: "/img/MiniBurguer.png",
+  tipo: "mini-burguer",
+},
 {
   nome: "Batata Frita Pequena",
   descricao: "Porção Pequena De Batata Frita Crocante.",
@@ -554,8 +561,17 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   type="button"
   whileTap={{ scale: 0.9 }}
 whileHover={{ scale: 1.05 }}
-  onClick={() => adicionarItem(produto)}
-  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+onClick={() => {
+  if (produto.tipo === "mini-burguer") {
+    adicionarItem({
+      ...produto,
+      nome: "25x Mini Burguer",
+      preco: "R$ 74,75",
+    });
+  } else {
+    adicionarItem(produto);
+  }
+}}  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
   {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
 </motion.button>
