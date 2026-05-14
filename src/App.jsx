@@ -125,14 +125,14 @@ Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 Total dos itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
-Bairro:
-${bairro || "Não informado"}
+Bairro: ${bairro || "Não informado"}
 
-Endereço:
-${endereco || "Não informado"}
 
-Pagamento:
-${pagamento || "Não informado"}
+Endereço: ${endereco || "Não informado"}
+
+
+Pagamento: ${pagamento || "Não informado"}
+
 
 ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` : ""}
 `);
