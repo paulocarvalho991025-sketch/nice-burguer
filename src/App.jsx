@@ -198,20 +198,20 @@ const combos = [
   {
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml",
-    preco: "R$ 13,98",
+    preco: "R$ 20,97",
     imagem: "/img/ComboPrimecombatata.png",
   },
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Coca Lata 350ml",
-    preco: "R$ 20,98",
-    imagem: "/img/Combo Street2.png",
+    preco: "R$ 33,97",
+    imagem: "/img/ComboStreetcombatata.png",
     
   },
   {
     nome: "Combo Turbo",
-    descricao: "Burguer 1.0 + Burguer 2.0 + Coca-Cola 1 Litro",
-    preco: "R$ 34,97",
+    descricao: "Burguer 3.0 + Burguer 2.0 + Burguer 1.0 + Batata Frita Grande + Coca-Cola 1 Litro",
+    preco: "R$ 70,95",
     imagem: "/img/Combo Turbo1.png",
   },
 ];
