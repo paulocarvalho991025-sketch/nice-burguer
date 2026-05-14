@@ -212,7 +212,7 @@ const combos = [
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Burguer 2.0 + Burguer 1.0 + Batata Frita Grande + Coca-Cola 1 Litro",
     preco: "R$ 48,96",
-    imagem: "/img/ComboTurbocombatata.png",
+    imagem: "/img/t.png",
   },
 ];
 function adicionarCombo(combo) {
