@@ -63,7 +63,10 @@ function removerDoCarrinho(index) {
   setCarrinho((atual) => atual.filter((_, i) => i !== index));
 }
 function finalizarPedido() {
-
+if (!nomeCliente.trim()) {
+  alert("Digite seu nome antes de finalizar o pedido.");
+  return;
+}
   if (carrinho.length === 0) {
     alert("Adicione pelo menos um item ao carrinho.");
     return;
@@ -83,6 +86,8 @@ function finalizarPedido() {
 }
 const mensagemPedido = encodeURIComponent(`
 Novo Pedido - NiceBurguer!
+
+Nome: ${nomeCliente}
 
 Itens:
 
@@ -290,7 +295,13 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   Total: R$ {totalFinal.toFixed(2).replace(".", ",")}
 </p>
 </div>
-
+<input
+  type="text"
+  value={nomeCliente}
+  onChange={(e) => setNomeCliente(e.target.value)}
+  placeholder="Qual seu nome?"
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+/>
 <input
   type="text"
   value={endereco}
@@ -305,7 +316,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   onChange={(e) => setPagamento(e.target.value)}
   className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 >
-  <option value="">Forma de pagamento</option>
+  <option value="">Escolha a forma de pagamento</option>
   <option value="Pix">Pix</option>
   <option value="Dinheiro">Dinheiro</option>
   <option value="Cartão">Cartão</option>
