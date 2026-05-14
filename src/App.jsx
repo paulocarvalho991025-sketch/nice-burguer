@@ -88,8 +88,6 @@ Novo Pedido - NiceBurguer!
 Cliente:
 ${nomeCliente || "Não informado"}
 
-Itens:
-
 ${Object.values(
   carrinho.reduce((acc, item) => {
 
@@ -112,9 +110,9 @@ ${Object.values(
 )
 .join("\n")}
 
-Total dos itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
-
 Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
+
+Total dos itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
 
