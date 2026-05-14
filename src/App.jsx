@@ -141,9 +141,23 @@ ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` :
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
   {
-  nome: "Mini Burguer",
-  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento.",
+  nome: "25 Mini Burguer",
+  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
   preco: "R$ 74,75",
+  imagem: "/img/MiniBurguer.png",
+  tipo: "mini-burguer",
+},
+{
+  nome: "50 Mini Burguer",
+  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,89",
+  preco: "R$ 144,50",
+  imagem: "/img/MiniBurguer.png",
+  tipo: "mini-burguer",
+},
+{
+  nome: "100 Mini Burguer",
+  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,84",
+  preco: "R$ 284,00",
   imagem: "/img/MiniBurguer.png",
   tipo: "mini-burguer",
 },
