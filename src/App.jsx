@@ -14,6 +14,7 @@ const [carrinho, setCarrinho] = useState(() => {
 
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [comboAdicionado, setComboAdicionado] = useState("");
+const [nomeCliente, setNomeCliente] = useState("");
 const [endereco, setEndereco] = useState(() => {
   return localStorage.getItem("endereco") || "";
 });
@@ -186,9 +187,7 @@ const combos = [
     imagem: "/img/Combo Turbo1.png",
   },
 ];
-    function adicionarAoCarrinho(produto) {
-  setCarrinho((atual) => [...atual, produto]);
-}function adicionarCombo(combo) {
+function adicionarCombo(combo) {
   adicionarAoCarrinho(combo);
   setComboAdicionado(combo.nome);
 
