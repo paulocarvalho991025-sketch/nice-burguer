@@ -15,6 +15,7 @@ const [carrinho, setCarrinho] = useState(() => {
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [comboAdicionado, setComboAdicionado] = useState("");
 const [nomeCliente, setNomeCliente] = useState("");
+const [bairro, setBairro] = useState("");
 const [endereco, setEndereco] = useState(() => {
   return localStorage.getItem("endereco") || "";
 });
@@ -40,7 +41,14 @@ useEffect(() => {
   
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }, [carrinho]);
-const taxaEntrega = 6;
+const taxasPorBairro = {
+  "Nova Descoberta": 6,
+  "Lagoa Nova": 8,
+  "Tirol": 10,
+  "Petrópolis": 12,
+};
+
+const taxaEntrega = bairro ? taxasPorBairro[bairro] : 0;
 
 const totalCarrinho = carrinho.reduce((total, item) => {
   const valor = Number(item.preco.replace("R$", "").replace(",", ".").trim());
@@ -69,7 +77,10 @@ function finalizarPedido() {
     alert("Adicione pelo menos um item ao carrinho.");
     return;
   }
-
+if (!bairro) {
+  alert("Selecione seu bairro.");
+  return;
+}
   if (!endereco.trim()) {
     alert("Digite seu endereço antes de finalizar o pedido.");
     return;
@@ -114,6 +125,8 @@ Taxa de entrega: R$ ${taxaEntrega.toFixed(2).replace(".", ",")}
 Total dos itens: R$ ${totalCarrinho.toFixed(2).replace(".", ",")}
 
 Total final: R$ ${totalFinal.toFixed(2).replace(".", ",")}
+Bairro:
+${bairro || "Não informado"}
 
 Endereço:
 ${endereco || "Não informado"}
@@ -294,7 +307,29 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   placeholder="Qual seu nome?"
   className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
+<select
+  value={bairro}
+  onChange={(e) => setBairro(e.target.value)}
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+>
+  <option value="">Selecione seu bairro</option>
 
+  <option value="Nova Descoberta">
+    Nova Descoberta - R$ 6,00
+  </option>
+
+  <option value="Lagoa Nova">
+    Lagoa Nova - R$ 8,00
+  </option>
+
+  <option value="Tirol">
+    Tirol - R$ 10,00
+  </option>
+
+  <option value="Petrópolis">
+    Petrópolis - R$ 12,00
+  </option>
+</select>
 
 <input
   type="text"
