@@ -204,7 +204,7 @@ const combos = [
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Coca Lata 350ml",
-    preco: "R$ 33,97",
+    preco: "R$ 27,97",
     imagem: "/img/ComboStreetcombatata.png",
     
   },
@@ -212,7 +212,7 @@ const combos = [
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Burguer 2.0 + Burguer 1.0 + Batata Frita Grande + Coca-Cola 1 Litro",
     preco: "R$ 48,96",
-    imagem: "/img/t.png",
+    imagem: "/img/tt.png",
   },
 ];
 function adicionarCombo(combo) {
