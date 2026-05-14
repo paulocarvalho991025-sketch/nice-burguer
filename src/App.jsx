@@ -141,7 +141,7 @@ ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` :
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
 {
-  nome: "Batata Frita ",
+  nome: "Batata Frita Pequena",
   descricao: "Porção pequena de batata frita crocante.",
   preco: "R$ 6,99",
   imagem: "/img/BatataFrita.png",
@@ -151,6 +151,12 @@ const produtos = [
   descricao: "Porção média de batata frita crocante.",
   preco: "R$ 9,99",
   imagem: "/img/BatataFritam.png",
+},
+{
+  nome: "Batata Frita Grande",
+  descricao: "Porção grande de batata frita crocante.",
+  preco: "R$ 13,99",
+  imagem: "/img/BatataFritag.png",
 },
   {
     nome: "Burguer 1.0",
