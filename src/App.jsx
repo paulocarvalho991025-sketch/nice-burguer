@@ -335,13 +335,6 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
     className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
   />
 )}
-<textarea
-  value={observacao}
-  onChange={(e) => setObservacao(e.target.value)}
-  placeholder="Observação do pedido"
-  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
-/>
-
 
 <button
   onClick={finalizarPedido}
