@@ -122,7 +122,6 @@ Pagamento:
 ${pagamento || "Não informado"}
 
 ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` : ""}
-
 `);
 
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
