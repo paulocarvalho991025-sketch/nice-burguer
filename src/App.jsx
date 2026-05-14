@@ -569,7 +569,7 @@ onClick={() => {
       preco: "R$ 74,75",
     });
   } else {
-    adicionarItem(produto);
+    adicionarItem(produto);{comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
   }
 }}  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
