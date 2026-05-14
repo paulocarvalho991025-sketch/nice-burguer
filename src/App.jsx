@@ -146,6 +146,12 @@ const produtos = [
   preco: "R$ 6,99",
   imagem: "/img/BatataFrita.png",
 },
+{
+  nome: "Batata Frita ",
+  descricao: "Porção média de batata frita crocante.",
+  preco: "R$ 9,99",
+  imagem: "/img/BatataFritam.png",
+},
   {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
@@ -185,9 +191,9 @@ const produtos = [
 const combos = [
   {
     nome: "Combo Prime",
-    descricao: "Burguer 1.0 + Coca-Cola Garrafinha 250ml",
+    descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml",
     preco: "R$ 13,98",
-    imagem: "/img/Combo Prime1.png",
+    imagem: "/img/ComboPrimecombatata.png",
   },
   {
     nome: "Combo Street",
