@@ -303,31 +303,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   placeholder="Digite seu endereço"
   className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
 />
-<select
-  value={bairro}
-  onChange={(e) => setBairro(e.target.value)}
-  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm"
->
-  <option value="">Selecione seu bairro</option>
 
-  <option value="Nova Descoberta">
-    Nova Descoberta - R$ 6,00
-  </option>
-
-  <option value="Lagoa Nova">
-    Lagoa Nova - R$ 8,00
-  </option>
-
-  <option value="Tirol">
-    Tirol - R$ 10,00
-  </option>
-</select>
-
-<select
-  value={pagamento}
-  onChange={(e) => setPagamento(e.target.value)}
-  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm"
-></select>
 <select
 
   value={pagamento}
