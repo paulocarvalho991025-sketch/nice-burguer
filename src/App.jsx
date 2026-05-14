@@ -85,8 +85,7 @@ function finalizarPedido() {
 const mensagemPedido = encodeURIComponent(`
 Novo Pedido - NiceBurguer!
 
-Cliente: ${nomeCliente || "Não informado"}
-
+Cliente ${nomeCliente || "Não informado"}
 
 ${Object.values(
   carrinho.reduce((acc, item) => {
@@ -124,8 +123,6 @@ ${pagamento || "Não informado"}
 
 ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` : ""}
 
-Observação:
-${observacao || "Nenhuma"}
 `);
 
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
