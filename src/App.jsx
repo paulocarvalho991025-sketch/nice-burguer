@@ -140,7 +140,12 @@ ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` :
 
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
-
+{
+  nome: "Batata Frita ",
+  descricao: "Porção pequena de batata frita crocante.",
+  preco: "R$ 6,99",
+  imagem: "/img/BatataFrita.png",
+},
   {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
