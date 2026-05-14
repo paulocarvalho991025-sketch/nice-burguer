@@ -454,7 +454,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
             <ShoppingBag className="mb-3 text-orange-600" />
             <h3 className="font-black">Combos especiais</h3>
             <p className="mt-2 text-sm text-stone-700">
-              Opções para comer sua fome.
+              Opções para saciar sua fome.
             </p>
           </div>
         </div>
