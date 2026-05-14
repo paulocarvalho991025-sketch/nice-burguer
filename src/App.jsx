@@ -142,19 +142,19 @@ const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
 {
   nome: "Batata Frita Pequena",
-  descricao: "Porção pequena de batata frita crocante.",
+  descricao: "Porção Pequena De Batata Frita Crocante.",
   preco: "R$ 6,99",
-  imagem: "/img/BatataFrita.png",
+  imagem: "/img/BatataFritap.png",
 },
 {
   nome: "Batata Frita Média ",
-  descricao: "Porção média de batata frita crocante.",
+  descricao: "Porção Média De Batata Frita Crocante.",
   preco: "R$ 9,99",
-  imagem: "/img/BatataFritam.png",
+  imagem: "/img/BatataFritamm.png",
 },
 {
   nome: "Batata Frita Grande",
-  descricao: "Porção grande de batata frita crocante.",
+  descricao: "Porção Grande De Batata Frita Crocante.",
   preco: "R$ 13,99",
   imagem: "/img/BatataFritag.png",
 },
