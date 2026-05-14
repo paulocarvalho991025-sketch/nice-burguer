@@ -143,7 +143,7 @@ const produtos = [
   {
   nome: "Mini Burguer",
   descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento.",
-  preco: "R$ 2,99",
+  preco: "R$ 74,75",
   imagem: "/img/MiniBurguer.png",
   tipo: "mini-burguer",
 },
@@ -573,7 +573,14 @@ onClick={() => {
   }
 }}  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
-  {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
+  {comboAdicionado === produto.nome
+  ? produto.tipo === "mini-burguer"
+    ? "Adicionado à sacola!"
+    : "Adicionado!"
+  : produto.tipo === "mini-burguer"
+    ? "Agendar"
+    : "Adicionar"}
+
 </motion.button>
         </div>
       </motion.div>
