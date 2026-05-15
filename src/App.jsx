@@ -585,7 +585,7 @@ onClick={() => adicionarItem(produto)}  className="rounded-full bg-orange-600 px
   {comboAdicionado === produto.nome
     ? produto.tipo === "mini-burguer"
       ? "Adicionado à sacola!"
-      : "Adicionado!"
+      : "Adicionado à sacola!"
     : produto.tipo === "mini-burguer"
       ? "Agendar"
       : "Adicionar"}
