@@ -728,15 +728,15 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   ))}
 </div>
 <div className="mt-24 text-center">
-  <h2 className="text-4xl font-black text-white">
+  <h2 className="text-4xl font-black text-black">
     Festas & Eventos
   </h2>
 
-  <p className="mt-4 text-xl font-bold text-orange-300">
+  <p className="mt-4 text-xl font-bold text-black-300">
     Já pensou a NiceBurguer na sua festa ou evento?
   </p>
 
-  <p className="mt-2 text-lg font-black text-stone-200">
+  <p className="mt-2 text-lg font-black text-black-200">
     Faça já seu agendamento!
   </p>
 </div>
