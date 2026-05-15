@@ -742,55 +742,33 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           </div>
 
 <div className="grid gap-5 md:grid-cols-3">
-{combosNormais.map((combo) => (  
+{combosNormais.map((combo) => (
   <motion.div
     key={combo.nome}
     whileHover={{ y: -8, scale: 1.02 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-    className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:shadow-xl"
+    className="relative min-h-[420px] overflow-hidden rounded-3xl bg-white/10 shadow-xl backdrop-blur"
   >
-    <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-      <img
-        src={combo.imagem}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
-      />
+    <img
+      src={combo.imagem}
+      alt={combo.nome}
+      className="absolute inset-0 h-full w-full object-cover opacity-90"
+    />
 
-      <img
-        src={combo.imagem}
-        alt={combo.nome}
-        className="relative z-10 h-full w-auto object-contain"
-      />
-    </div>
+    <div className="absolute inset-0 bg-black/30" />
 
-    <h3 className="text-xl font-black text-black">
-      {combo.nome}
-    </h3>
-
-    <p className="mt-2 min-h-16 text-sm leading-6 text-stone-700">
-      {combo.descricao}
-    </p>
-
-    <div className="mt-5 flex items-center justify-between">
-      <span className="text-2xl font-black text-orange-700">
-        {combo.preco}
-      </span>
-
+    <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
       <motion.button
         type="button"
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.05 }}
         onClick={() => adicionarItem(combo)}
-        className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+        className="rounded-full bg-orange-600 px-5 py-3 text-sm font-black text-white shadow-xl hover:bg-orange-500"
       >
         {comboAdicionado === combo.nome
-          ? combo.tipo === "mini-burguer"
-            ? "Agendado!"
-            : "Adicionado à sacola!"
-          : combo.tipo === "mini-burguer"
-            ? "Agendar"
-            : "Adicionar"}
+          ? "Adicionado à sacola!"
+          : "Adicionar"}
       </motion.button>
     </div>
   </motion.div>
