@@ -497,10 +497,10 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"        >
           <div className="rounded-[1.5rem] bg-white p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
-              <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
+              <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-black-900">
                 O Mais Pedido
               </span>
-              <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
+              <span className="text-2xl font-black text-black-800">R$ 27,97</span>
             </div>
             
             <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
@@ -515,15 +515,17 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   />
 
   <img
-    src="/img/2.0.png"
-    alt="Burguer 2.0"
+    src="/img/street.png"
+    alt="Combo Street"
     className="relative z-10 max-h-[300px] w-auto object-contain"
   />
 
 </div>
             <h2 className="mt-5 text-2xl font-black">Burguer 2.0</h2>
             <p className="mt-2 text-stone-700">
-              Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.
+              Burguer 2.0 +
+              Batata Frita +
+              Coca-Cola Lata 350ml
             </p>
           </div>
         </motion.div>
