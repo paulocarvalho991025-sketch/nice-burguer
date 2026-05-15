@@ -304,7 +304,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   <span>{carrinho.length}</span>
 </button>
   {carrinhoAberto && (
-    <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-2xl">
+    <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-bg-[#3a2b25] p-5 shadow-2xl">
 
 <div className="mt-4 max-h-64 overflow-y-auto">
   {carrinho.length === 0 ? (
@@ -369,13 +369,11 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   value={nomeCliente}
   onChange={(e) => setNomeCliente(e.target.value)}
   placeholder="Qual seu nome?"
-  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
-/>
+className="mt-4 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 outline-none focus:border-orange-500"/>
 <select
   value={bairro}
   onChange={(e) => setBairro(e.target.value)}
-  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
->
+className="mt-4 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 outline-none focus:border-orange-500">
   <option value="">Selecione seu bairro</option>
 
   <option value="Nova Descoberta">
@@ -400,15 +398,13 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   value={endereco}
   onChange={(e) => setEndereco(e.target.value)}
   placeholder="Digite seu endereço"
-  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
-/>
+className="mt-4 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 placeholder:text-stone-500 outline-none focus:border-orange-500"/>
 
 <select
 
   value={pagamento}
   onChange={(e) => setPagamento(e.target.value)}
-  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
->
+className="mt-3 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 outline-none focus:border-orange-500">
   <option value="">Escolha a forma de pagamento</option>
   <option value="Pix">Pix</option>
   <option value="Dinheiro">Dinheiro</option>
@@ -782,11 +778,11 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
     Festas & Eventos
   </h2>
 
-  <p className="mt-4 text-xl font-bold text-white-300">
+  <p className="mt-4 text-xl font-bold text-white">
     Já pensou a NiceBurguer na sua festa ou evento?
   </p>
 
-  <p className="mt-2 text-lg font-black text-white-200">
+  <p className="mt-2 text-lg font-black text-white">
     Faça já seu agendamento!
   </p>
 </div>
