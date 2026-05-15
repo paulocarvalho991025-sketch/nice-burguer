@@ -806,7 +806,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           </div>
 
 <div className="grid gap-5 md:grid-cols-3">
-  {combos.map((combo) => (
+{combosNormais.map((combo) => (  
   <motion.div
     key={combo.nome}
     whileHover={{ y: -8, scale: 1.02 }}
@@ -862,7 +862,13 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 </div>
 </div>
       </section>
+<div className="mt-24 text-center">
+...
+</div>
 
+<div className="mt-12 grid gap-5 md:grid-cols-3">
+...
+</div>
       <section id="local" className="mx-auto max-w-6xl px-5 py-16">
         <div className="rounded-[2rem] bg-white p-8 shadow-xl md:flex md:items-center md:justify-between">
           <div>
