@@ -539,7 +539,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 <section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
   <div className="mb-10 text-center">
     <p className="font-bold text-orange-700">Cardápio</p>
-    <h2 className="text-3xl font-black md:text-4xl">Escolha Seu Burguer</h2>
+    <h2 className="text-3xl font-black md:text-4xl">Burguer's</h2>
   </div>
 
   <div className="grid gap-5 md:grid-cols-3">
