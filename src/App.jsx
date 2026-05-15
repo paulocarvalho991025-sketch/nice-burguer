@@ -560,10 +560,10 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   />
 
   <img
-  src={produto.imagem}
-  alt={produto.nome}
-  className="absolute inset-0 h-full w-full object-cover opacity-30 pointer-events-none"
-/>
+    src={produto.imagem}
+    alt={produto.nome}
+    className="relative z-10 h-full w-auto object-contain"
+  />
 </div>
 
         <h3 className="text-xl font-black">{produto.nome}</h3>
