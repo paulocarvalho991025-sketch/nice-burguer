@@ -145,60 +145,6 @@ ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` :
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
   {
-    nome: "Burguer 1.0",
-    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
-    preco: "R$ 9,99",
-    imagem:"/img/1.0.png",
-  },
-  {
-    nome: "Burguer 2.0",
-    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
-    preco: "R$ 14,99",
-    imagem: "/img/2.0.png"
-  },
-  {
-    nome: "Burguer 3.0",
-    descricao: "Pão Brioche, 2 Blend Bovino 80g, 2 Fatias de Queijo Mussarela, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.",
-    preco: "R$ 21,99",
-    imagem: "/img/3.png"
-  },
-  
-{
-  nome: "Batata Frita Pequena",
-  descricao: "Porção Pequena De Batata Frita Crocante.",
-  preco: "R$ 6,99",
-  imagem: "/img/BatataFritap.png",
-},
-{
-  nome: "Batata Frita Média ",
-  descricao: "Porção Média De Batata Frita Crocante.",
-  preco: "R$ 9,99",
-  imagem: "/img/BatataFritamm.png",
-},
-{
-  nome: "Batata Frita Grande",
-  descricao: "Porção Grande De Batata Frita Crocante.",
-  preco: "R$ 13,99",
-  imagem: "/img/BatataFritag.png",
-},
-{
-    nome: "Coca-Cola Garrafinha 250ml",
-    descricao: "Coca-Cola Garrafinha 250ml",
-    preco: "R$ 3,99",
-    imagem: "/img/coca250.png"
-  },
-{
-    nome: "Coca-Cola Lata 350 ml",
-    descricao: "Coca-Cola Lata 350 ml",
-    preco: "R$ 5,99",
-    imagem: "/img/coca coca.png",
-  },{
-    nome: "Coca-Cola Garrafa 1 Litro",
-    descricao: "oca-Cola Garrafa 1 Litro",
-    preco: "R$ 9,99",
-    imagem: "/img/coca1.png",
-  },
-  {
   nome: "25 Mini Burguer",
   descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
   preco: "R$ 74,75",
@@ -219,7 +165,59 @@ const produtos = [
   imagem: "/img/MiniBurguer.png",
   tipo: "mini-burguer",
 },
- 
+{
+  nome: "Batata Frita Pequena",
+  descricao: "Porção Pequena De Batata Frita Crocante.",
+  preco: "R$ 6,99",
+  imagem: "/img/BatataFritap.png",
+},
+{
+  nome: "Batata Frita Média ",
+  descricao: "Porção Média De Batata Frita Crocante.",
+  preco: "R$ 9,99",
+  imagem: "/img/BatataFritamm.png",
+},
+{
+  nome: "Batata Frita Grande",
+  descricao: "Porção Grande De Batata Frita Crocante.",
+  preco: "R$ 13,99",
+  imagem: "/img/BatataFritag.png",
+},
+  {
+    nome: "Burguer 1.0",
+    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
+    preco: "R$ 9,99",
+    imagem:"/img/1.0.png",
+  },
+  {
+    nome: "Burguer 2.0",
+    descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
+    preco: "R$ 14,99",
+    imagem: "/img/2.0.png"
+  },
+  {
+    nome: "Burguer 3.0",
+    descricao: "Pão Brioche, 2 Blend Bovino 80g, 2 Fatias de Queijo Mussarela, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.",
+    preco: "R$ 21,99",
+    imagem: "/img/3.png"
+  },
+  {
+    nome: "Coca-Cola Garrafinha 250ml",
+    descricao: "Coca-Cola Garrafinha 250ml",
+    preco: "R$ 3,99",
+    imagem: "/img/coca250.png"
+  },
+{
+    nome: "Coca-Cola Lata 350 ml",
+    descricao: "Coca-Cola Lata 350 ml",
+    preco: "R$ 5,99",
+    imagem: "/img/coca coca.png",
+  },{
+    nome: "Coca-Cola Garrafa 1 Litro",
+    descricao: "oca-Cola Garrafa 1 Litro",
+    preco: "R$ 9,99",
+    imagem: "/img/coca1.png",
+  },
 ]; 
 const combos = [
   {
@@ -546,7 +544,6 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   <div className="grid gap-5 md:grid-cols-3">
 <>
 {produtos.map((produto) => (      
-  
   <motion.div
   key={produto.nome}
   whileHover={{ y: -8, scale: 1.02 }}
