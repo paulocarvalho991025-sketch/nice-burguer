@@ -430,46 +430,30 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   id="inicio"
   className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-10 md:grid-cols-2 md:py-16"
 >
-  <motion.div
-    initial={{ opacity: 0, y: 18 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-    className="flex flex-col items-center text-center"
+{combos.map((combo) => (
+  <div
+    key={combo.nome}
+    className="relative min-h-[420px] overflow-hidden rounded-3xl bg-white/10 pt-0 px-6 pb-6 shadow-xl backdrop-blur"
   >
-          <p className="mb-4 inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-bold text-orange-9900">
-            Hamburgueria Artesanal
-          </p>
+    <img
+      src={combo.imagem}
+      alt={combo.nome}
+      className="absolute inset-0 h-full w-full object-cover opacity-25 pointer-events-none"
+    />
 
-          <div className="flex flex-col items-center justify-center">
-  <img
-    src="/img/NiceBurguer.jpeg"
-    alt="Nice Burguer"
-    className="h-85 w-85 rounded-full object-cover shadow-lg"
-  />
-
-  <h1 className="text-2xl font-black text-orange-100">
-  
-  </h1>
-</div>
-<p
-  className="mt-5 text-5xl text-black-700"
-  style={{ fontFamily: "Kaushan Script" }}
->
-  O Burguer que você merece!
-</p>
-
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          
-
-            <a
-              href="#cardapio"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-orange-100"
-            >
-              Ver cardápio
-            </a>
-            
-          </div>
-          </motion.div>
+    <motion.button
+      type="button"
+      onClick={() => adicionarAoCarrinho(combo)}
+      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.05 }}
+      className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl hover:bg-orange-500"
+    >
+      {comboAdicionado === combo.nome
+        ? "Adicionado à sacola!"
+        : "Adicionar"}
+    </motion.button>
+  </div>
+))}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
