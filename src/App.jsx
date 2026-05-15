@@ -242,8 +242,26 @@ const combos = [
 },
 ];
 function agendar(combo) {
+  const burguers = produtos.filter((produto) =>
+  produto.nome.includes("Burguer")
+);
 
-adicionarAoCarrinho(combo);
+const fritas = produtos.filter((produto) =>
+  produto.nome.includes("Batata")
+);
+
+const bebidas = produtos.filter((produto) =>
+  produto.nome.includes("Coca-Cola")
+);
+
+const eventos = combos.filter((combo) =>
+  combo.tipo === "mini-burguer"
+);
+
+const combosNormais = combos.filter((combo) =>
+  combo.tipo !== "mini-burguer"
+);
+  adicionarAoCarrinho(combo);
   setComboAdicionado(combo.nome);
 
   setTimeout(() => {
@@ -659,7 +677,6 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 ))}
 </div>
 </div>
-
       </section>
 
       <section id="local" className="mx-auto max-w-6xl px-5 py-16">
