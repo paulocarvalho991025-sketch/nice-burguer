@@ -500,13 +500,13 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
               <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
                 O Mais Pedido
               </span>
-              <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
+              <span className="text-2xl font-black text-orange-700">R$ 27,97</span>
             </div>
             
             <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
 
   <img
-    src="/img/2.0.png"
+    src="/img/street.png"
     alt=""
     className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
   />
