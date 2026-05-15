@@ -6,10 +6,7 @@ const [menuAberto, setMenuAberto] = useState(false);
 
 const [carrinho, setCarrinho] = useState(() => {
   const carrinhoSalvo = localStorage.getItem("carrinho");
-const burguers = produtos.filter((produto) => produto.categoria === "burguer");
-const batatas = produtos.filter((produto) => produto.categoria === "batata");
-const bebidas = produtos.filter((produto) => produto.categoria === "bebida");
-const eventos = produtos.filter((produto) => produto.categoria === "evento");
+
   return carrinhoSalvo
     ? JSON.parse(carrinhoSalvo)
     : [];
