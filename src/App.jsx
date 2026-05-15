@@ -517,15 +517,15 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   />
 
   <img
-    src="/img/2.0.png"
-    alt="Burguer 2.0"
+    src="/img/street.png"
+    alt="Combo Street"
     className="relative z-10 max-h-[300px] w-auto object-contain"
   />
 
 </div>
-            <h2 className="mt-5 text-2xl font-black">Burguer 2.0</h2>
+            <h2 className="mt-5 text-2xl font-black">Combo Street</h2>
             <p className="mt-2 text-stone-700">
-              Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.
+              Burguer 2.0 + Batata Frita + Coca-Cola 350ml
             </p>
           </div>
         </motion.div>
