@@ -521,7 +521,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   />
 
 </div>
-            <h2 className="mt-5 text-2xl font-black">Burguer 2.0</h2>
+            <h2 className="mt-5 text-2xl font-black">Combo Street</h2>
             <p className="mt-2 text-stone-700">
               Burguer 2.0 +
               Batata Frita +
