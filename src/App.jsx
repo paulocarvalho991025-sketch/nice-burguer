@@ -604,33 +604,58 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 
 <div className="grid gap-5 md:grid-cols-3">
   {combos.map((combo) => (
-    <div
-  key={combo.nome}
-  className="relative min-h-[420px] overflow-hidden rounded-3xl bg-white/10 pt-0 px-6 pb-6 shadow-xl backdrop-blur"
->
-  <img
-    src={combo.imagem}
-    alt={combo.nome}
-    className="absolute inset-0 h-full w-full object-cover opacity-25 pointer-events-none"
-  />
+  <motion.div
+    key={combo.nome}
+    whileHover={{ y: -8, scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+    transition={{ duration: 0.2 }}
+    className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:shadow-xl"
+  >
+    <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+      <img
+        src={combo.imagem}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
+      />
 
-  
-
-
-<motion.button
- type="button"
- onClick={() => adicionarCombo(combo)}
- whileTap={{ scale: 0.9 }}
- whileHover={{ scale: 1.05 }}
- animate={{ y: [0, -2, 0] }}
- transition={{ duration: 0.3 }}
- className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl transition hover:scale-105 hover:bg-orange-500"
->
-{comboAdicionado === combo.nome ? "Adicionado à sacola!" : "Adicionar"}
-</motion.button>
-
+      <img
+        src={combo.imagem}
+        alt={combo.nome}
+        className="relative z-10 h-full w-auto object-contain"
+      />
     </div>
-  ))}
+
+    <h3 className="text-xl font-black text-black">
+      {combo.nome}
+    </h3>
+
+    <p className="mt-2 min-h-16 text-sm leading-6 text-stone-700">
+      {combo.descricao}
+    </p>
+
+    <div className="mt-5 flex items-center justify-between">
+      <span className="text-2xl font-black text-orange-700">
+        {combo.preco}
+      </span>
+
+      <motion.button
+        type="button"
+        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.05 }}
+        onClick={() => adicionarItem(combo)}
+        className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+      >
+        {comboAdicionado === combo.nome
+          ? combo.tipo === "mini-burguer"
+            ? "Agendado!"
+            : "Adicionado!"
+          : combo.tipo === "mini-burguer"
+            ? "Agendar"
+            : "Adicionar"}
+      </motion.button>
+    </div>
+  </motion.div>
+))}
 </div>
 </div>
       </section>
