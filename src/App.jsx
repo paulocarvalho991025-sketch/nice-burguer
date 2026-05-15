@@ -242,32 +242,14 @@ const combos = [
 },
 ];
 function agendar(combo) {
-  adicionarAoCarrinho(combo);
+
+adicionarAoCarrinho(combo);
   setComboAdicionado(combo.nome);
 
   setTimeout(() => {
     setComboAdicionado("");
   }, 1000);
 }
-const burguers = produtos.filter((produto) =>
-  produto.nome.includes("Burguer´s")
-);
-
-const fritas = produtos.filter((produto) =>
-  produto.nome.includes("Fritas")
-);
-
-const bebidas = produtos.filter((produto) =>
-  produto.nome.includes("Bebidas")
-);
-
-const eventos = combos.filter((combo) =>
-  combo.tipo === "Festas E Eventos"
-);
-
-const combosNormais = combos.filter((combo) =>
-  combo.tipo !== "Combos"
-);
 return (
   <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
     <div className="absolute inset-0 opacity-20 pointer-events-none">
