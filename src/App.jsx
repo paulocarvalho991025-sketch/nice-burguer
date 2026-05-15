@@ -331,16 +331,16 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
   }, {})
 ).map((item, index) => (
-      <div key={index} className="mb-3 rounded-xl border border-orange-500/30 bg-[#2b211d] p-3 shadow-lg">
-<p className="font-bold text-white">
+      <div key={index} className="mb-3 rounded-xl bg-orange-50 p-3">
+<p className="font-bold">
   {item.quantidade}x {item.nome}
 </p>
-<p className="text-sm text-stone-200">
+<p className="text-sm text-stone-600">
   R$ {item.total.toFixed(2).replace(".", ",")}
 </p>
         <button
           onClick={() => removerDoCarrinho(index)}
-          className="mt-2 text-xs font-bold text-red-400 hover:text-red-700"
+          className="mt-2 text-xs font-bold text-red-500 hover:text-red-700"
         >
           Remover
         </button>
@@ -482,7 +482,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
             <a
               href="#cardapio"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-[#2b211d]"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-orange-100"
             >
               Ver cardápio
             </a>
@@ -496,13 +496,13 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"        >
           <div className="rounded-[1.5rem] bg-[#1f1a18] p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
-              <span className="rounded-full bg-[#2b211d] px-3 py-1 text-sm font-bold text-black-900">
+              <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-black-900">
                 O Mais Pedido
               </span>
               <span className="text-2xl font-black text-black-800">R$ 27,97</span>
             </div>
             
-            <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[#2b211d]">
+            <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
 
   <img
     src="/img/2.0.png"
@@ -545,7 +545,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   transition={{ duration: 0.2 }}
   className="rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl"
 >
-  <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
+  <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
     <img
       src={produto.imagem}
       alt=""
@@ -603,7 +603,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
     transition={{ duration: 0.2 }}
     className="rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl"
   >
-    <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
+    <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
       <img
         src={produto.imagem}
         alt=""
@@ -658,7 +658,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
       transition={{ duration: 0.2 }}
       className="rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl"
     >
-      <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
+      <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
         <img
           src={produto.imagem}
           alt=""
