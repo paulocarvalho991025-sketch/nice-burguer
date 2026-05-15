@@ -574,27 +574,17 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 <motion.button
   type="button"
   whileTap={{ scale: 0.9 }}
-whileHover={{ scale: 1.05 }}
-onClick={() => {
-  if (produto.tipo === "mini-burguer") {
-    adicionarItem({
-      ...produto,
-      nome: "25x Mini Burguer",
-      preco: "R$ 74,75",
-    });
-  } else {
-    adicionarItem(produto);{comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
-  }
-}}  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+  whileHover={{ scale: 1.05 }}
+  onClick={() => adicionarItem(produto)}
+  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
   {comboAdicionado === produto.nome
-  ? produto.tipo === "mini-burguer"
-    ? "Adicionado à sacola!"
-    : "Adicionado!"
-  : produto.tipo === "mini-burguer"
-    ? "Agendar"
-    : "Adicionar"}
-
+    ? produto.tipo === "mini-burguer"
+      ? "Agendado à sacola!"
+      : "Adicionado!"
+    : produto.tipo === "mini-burguer"
+      ? "Agendar"
+      : "Adicionar"}
 </motion.button>
         </div>
       </motion.div>
