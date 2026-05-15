@@ -279,7 +279,7 @@ return (
 
     <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <a href="#inicio" className="text-xl font-black text-orange-700">
+        <a href="#inicio" className="text-xl font-black text-black-800">
           NiceBurguer!
         </a>
 
