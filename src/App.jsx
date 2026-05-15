@@ -196,6 +196,26 @@ const produtos = [
     preco: "R$ 9,99",
     imagem: "/img/coca1.png",
   },
+
+  {
+    nome: "Combo Prime",
+    descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml",
+    preco: "R$ 20,97",
+    imagem: "/img/sss.png",
+  },
+  {
+    nome: "Combo Street",
+    descricao: "Burguer 2.0 + Coca Lata 350ml",
+    preco: "R$ 27,97",
+    imagem: "/img/street.png",
+    
+  },
+  {
+    nome: "Combo Turbo",
+    descricao: "Burguer 3.0 + Batata Frita + Coca-Cola Lata 350ml",
+    preco: "R$ 34,97",
+    imagem: "/img/s.png",
+  },
   {
   nome: "25 Mini Burguer",
   descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
@@ -218,27 +238,7 @@ const produtos = [
   tipo: "mini-burguer",
 },
 ]; 
-const combos = [
-  {
-    nome: "Combo Prime",
-    descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml",
-    preco: "R$ 20,97",
-    imagem: "/img/sss.png",
-  },
-  {
-    nome: "Combo Street",
-    descricao: "Burguer 2.0 + Coca Lata 350ml",
-    preco: "R$ 27,97",
-    imagem: "/img/street.png",
-    
-  },
-  {
-    nome: "Combo Turbo",
-    descricao: "Burguer 3.0 + Batata Frita + Coca-Cola Lata 350ml",
-    preco: "R$ 34,97",
-    imagem: "/img/s.png",
-  },
-];
+
 function adicionarCombo(combo) {
   adicionarAoCarrinho(combo);
   setComboAdicionado(combo.nome);
