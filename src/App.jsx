@@ -242,25 +242,6 @@ const combos = [
 },
 ];
 function agendar(combo) {
-  const burguers = produtos.filter((produto) =>
-  produto.nome.includes("Burguer")
-);
-
-const fritas = produtos.filter((produto) =>
-  produto.nome.includes("Batata")
-);
-
-const bebidas = produtos.filter((produto) =>
-  produto.nome.includes("Coca-Cola")
-);
-
-const eventos = combos.filter((combo) =>
-  combo.tipo === "mini-burguer"
-);
-
-const combosNormais = combos.filter((combo) =>
-  combo.tipo !== "mini-burguer"
-);
   adicionarAoCarrinho(combo);
   setComboAdicionado(combo.nome);
 
@@ -558,12 +539,12 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 <section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
   <div className="mb-10 text-center">
     <p className="font-bold text-orange-700">Cardápio</p>
-    <h2 className="text-4xl font-black md:text-4xl">Burguer's</h2>
+    <h2 className="text-3xl font-black md:text-4xl">Burguer's</h2>
   </div>
 
   <div className="grid gap-5 md:grid-cols-3">
 <>
-{burguers.map((produto) => (      
+{produtos.map((produto) => (      
   <motion.div
   key={produto.nome}
   whileHover={{ y: -8, scale: 1.02 }}
