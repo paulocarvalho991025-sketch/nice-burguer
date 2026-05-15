@@ -731,7 +731,6 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 </section>
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
-    Combos
   </h2>
 </div>
       <section id="combos" className="bg-stone-900 py-16 text-white">
