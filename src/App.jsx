@@ -213,7 +213,6 @@ const combos = [
     imagem: "/img/street.png",
     
   },
-  
   {
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Batata Frita + Coca-Cola Lata 350ml",
@@ -545,23 +544,6 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 
   <div className="grid gap-5 md:grid-cols-3">
 <>
-<div className="my-16 rounded-3xl bg-stone-900 px-6 py-12 text-center text-white shadow-2xl">
-  <p className="font-bold text-orange-300">
-    Eventos e festas
-  </p>
-
-  <h2 className="mt-3 text-3xl font-black md:text-5xl">
-    Já pensou a NiceBurguer na sua festa ou evento?
-  </h2>
-
-  <p className="mt-5 text-xl font-bold text-orange-300">
-    Turbine sua comemoração com os Mini Burguer’s
-  </p>
-
-  <p className="mt-3 text-2xl font-black">
-    Faça já seu agendamento!
-  </p>
-</div>
 {produtos.map((produto) => (      
   <motion.div
   key={produto.nome}
