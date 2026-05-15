@@ -844,14 +844,6 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
             </p>
           </div>
 
-          <a
-            href={linkWhatsapp}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-6 inline-flex rounded-full bg-orange-600 px-7 py-4 font-bold text-white shadow hover:bg-orange-700 md:mt-0"
-          >
-            Chamar no WhatsApp
-          </a>
         </div>
       </section>
 
