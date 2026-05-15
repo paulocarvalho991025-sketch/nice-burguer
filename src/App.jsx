@@ -209,7 +209,7 @@ const combos = [
   },
   {
     nome: "Combo Street",
-    descricao: "Burguer 2.0 + Coca Lata 350ml",
+    descricao: "Burguer 2.0 + Batata Frita + Coca Lata 350ml",
     preco: "R$ 27,97",
     imagem: "/img/street.png",
     
@@ -727,7 +727,77 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
     </motion.div>
   ))}
 </div>
+<div className="mt-24 text-center">
+  <h2 className="text-4xl font-black text-white">
+    Festas & Eventos
+  </h2>
+
+  <p className="mt-4 text-xl font-bold text-orange-300">
+    Já pensou a NiceBurguer na sua festa ou evento?
+  </p>
+
+  <p className="mt-2 text-lg font-black text-stone-200">
+    Faça já seu agendamento!
+  </p>
+</div>
+
+<div className="mt-12 grid gap-5 md:grid-cols-3">
+  {eventos.map((produto) => (
+    <motion.div
+      key={produto.nome}
+      whileHover={{ y: -8, scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ duration: 0.2 }}
+      className="rounded-3xl border border-orange-100 bg-white p-5 shadow-sm transition hover:shadow-xl"
+    >
+      <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+        <img
+          src={produto.imagem}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
+        />
+
+        <img
+          src={produto.imagem}
+          alt={produto.nome}
+          className="relative z-10 h-full w-auto object-contain"
+        />
+      </div>
+
+      <h3 className="text-xl font-black text-black">
+        {produto.nome}
+      </h3>
+
+      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-700">
+        {produto.descricao}
+      </p>
+
+      <div className="mt-5 flex items-center justify-between">
+        <span className="text-2xl font-black text-orange-700">
+          {produto.preco}
+        </span>
+
+        <motion.button
+          type="button"
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.05 }}
+          onClick={() => agendar(produto)}
+          className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+        >
+          {comboAdicionado === produto.nome
+            ? "Agendado!"
+            : "Agendar"}
+        </motion.button>
+      </div>
+    </motion.div>
+  ))}
+</div>
 </section>
+<div className="mb-10 mt-20 text-center">
+  <h2 className="text-4xl font-black md:text-4xl">
+    Combos
+  </h2>
+</div>
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
