@@ -331,16 +331,16 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
   }, {})
 ).map((item, index) => (
-      <div key={index} className="mb-3 rounded-xl bg-orange-50 p-3">
-<p className="font-bold">
+      <div key={index} className="mb-3 rounded-xl border border-orange-500/30 bg-[#2b211d] p-3 shadow-lg">
+<p className="font-bold text-white">
   {item.quantidade}x {item.nome}
 </p>
-<p className="text-sm text-stone-600">
+<p className="text-sm text-orange-200">
   R$ {item.total.toFixed(2).replace(".", ",")}
 </p>
         <button
           onClick={() => removerDoCarrinho(index)}
-          className="mt-2 text-xs font-bold text-red-500 hover:text-red-700"
+          className="mt-2 text-xs font-bold text-red-400 hover:text-red-700"
         >
           Remover
         </button>
