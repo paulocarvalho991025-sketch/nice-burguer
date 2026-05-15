@@ -648,10 +648,10 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
         {comboAdicionado === combo.nome
           ? combo.tipo === "mini-burguer"
             ? "Agendado!"
-            : "Adicionado!"
+            : "Adicionado à sacola!"
           : combo.tipo === "mini-burguer"
             ? "Agendar"
-            : "Adicionado à sacola!"}
+            : "Adicionar!"}
       </motion.button>
     </div>
   </motion.div>
