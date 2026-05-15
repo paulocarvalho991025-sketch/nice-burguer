@@ -651,7 +651,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
             : "Adicionado à sacola!"
           : combo.tipo === "mini-burguer"
             ? "Agendar"
-            : "Adicionar!"}
+            : "Adicionar"}
       </motion.button>
     </div>
   </motion.div>
