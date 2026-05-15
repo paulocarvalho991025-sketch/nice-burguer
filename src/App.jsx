@@ -249,6 +249,25 @@ function agendar(combo) {
     setComboAdicionado("");
   }, 1000);
 }
+const burguers = produtos.filter((produto) =>
+  produto.nome.includes("Burguer´s")
+);
+
+const fritas = produtos.filter((produto) =>
+  produto.nome.includes("Fritas")
+);
+
+const bebidas = produtos.filter((produto) =>
+  produto.nome.includes("Bebidas")
+);
+
+const eventos = combos.filter((combo) =>
+  combo.tipo === "Festas E Eventos"
+);
+
+const combosNormais = combos.filter((combo) =>
+  combo.tipo !== "Combos"
+);
 return (
   <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
     <div className="absolute inset-0 opacity-20 pointer-events-none">
@@ -544,7 +563,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 
   <div className="grid gap-5 md:grid-cols-3">
 <>
-{produtos.map((produto) => (      
+{burguers.map((produto) => (      
   <motion.div
   key={produto.nome}
   whileHover={{ y: -8, scale: 1.02 }}
@@ -603,8 +622,8 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           </div>
 
 <div className="grid gap-5 md:grid-cols-3">
-  {combos.map((combo) => (
-  <motion.div
+{combosNormais.map((combo) => (
+    <motion.div
     key={combo.nome}
     whileHover={{ y: -8, scale: 1.02 }}
     whileTap={{ scale: 0.98 }}
@@ -658,6 +677,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 ))}
 </div>
 </div>
+
       </section>
 
       <section id="local" className="mx-auto max-w-6xl px-5 py-16">
