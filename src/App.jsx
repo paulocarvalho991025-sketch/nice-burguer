@@ -192,7 +192,7 @@ const produtos = [
     imagem: "/img/coca coca.png",
   },{
     nome: "Coca-Cola Garrafa 1 Litro",
-    descricao: "oca-Cola Garrafa 1 Litro",
+    descricao: "Coca-Cola Garrafa 1 Litro",
     preco: "R$ 9,99",
     imagem: "/img/coca1.png",
   },
