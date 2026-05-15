@@ -196,7 +196,10 @@ const produtos = [
     preco: "R$ 9,99",
     imagem: "/img/coca1.png",
   },
-
+  
+  
+]; 
+const combos = [
   {
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml",
@@ -237,8 +240,7 @@ const produtos = [
   imagem: "/img/MiniBurguer.png",
   tipo: "mini-burguer",
 },
-]; 
-
+];
 function adicionarCombo(combo) {
   adicionarAoCarrinho(combo);
   setComboAdicionado(combo.nome);
