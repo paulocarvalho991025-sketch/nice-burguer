@@ -270,7 +270,7 @@ const combosNormais = combos.filter((combo) =>
   combo.tipo !== "mini-burguer"
 );
 return (
-  <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
+  <main className="min-h-screen bg-[#14100f]">
     <div className="absolute inset-0 opacity-20 pointer-events-none">
       <div className="absolute top-0 left-6 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
       <div className="absolute bottom-6 right-6 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
@@ -304,7 +304,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   <span>{carrinho.length}</span>
 </button>
   {carrinhoAberto && (
-    <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-white p-5 shadow-2xl">
+    <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-2xl">
 
 <div className="mt-4 max-h-64 overflow-y-auto">
   {carrinho.length === 0 ? (
@@ -472,7 +472,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   </h1>
 </div>
 <p
-  className="mt-5 text-5xl text-black-700"
+  className="mt-5 text-5xl text-white-700"
   style={{ fontFamily: "Kaushan Script" }}
 >
   O Burguer que você merece!
@@ -483,7 +483,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
             <a
               href="#cardapio"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-orange-100"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-[#2a211d]"
             >
               Ver cardápio
             </a>
@@ -586,7 +586,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
     />
   </div>
 
-  <h3 className="text-xl font-black text-black">
+  <h3 className="text-xl font-black text-white">
     {produto.nome}
   </h3>
 
@@ -644,7 +644,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
       />
     </div>
 
-    <h3 className="text-xl font-black text-black">
+    <h3 className="text-xl font-black text-white">
       {produto.nome}
     </h3>
 
@@ -699,7 +699,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
         />
       </div>
 
-      <h3 className="text-xl font-black text-black">
+      <h3 className="text-xl font-black text-white">
         {produto.nome}
       </h3>
 
@@ -776,15 +776,15 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 </div>
       </section>
       <div className="mt-24 text-center">
-  <h2 className="text-4xl font-black text-black">
+  <h2 className="text-4xl font-black text-white">
     Festas & Eventos
   </h2>
 
-  <p className="mt-4 text-xl font-bold text-black-300">
+  <p className="mt-4 text-xl font-bold text-white-300">
     Já pensou a NiceBurguer na sua festa ou evento?
   </p>
 
-  <p className="mt-2 text-lg font-black text-black-200">
+  <p className="mt-2 text-lg font-black text-white-200">
     Faça já seu agendamento!
   </p>
 </div>
@@ -812,11 +812,11 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
         />
       </div>
 
-      <h3 className="text-xl font-black text-black">
+      <h3 className="text-xl font-black text-white">
         {produto.nome}
       </h3>
 
-      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-700">
+      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-300">
         {produto.descricao}
       </p>
 
@@ -881,7 +881,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
         </div>
       </section>
 
-<footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
+<footer className="border-t border-orange-900/30 px-5 py-8 text-center text-sm text-stone-700">
   © 2026 Hamburgueria Delivery.
 </footer>
 
