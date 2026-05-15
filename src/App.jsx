@@ -622,8 +622,8 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           </div>
 
 <div className="grid gap-5 md:grid-cols-3">
-{combosNormais.map((combo) => (
-    <motion.div
+  {combos.map((combo) => (
+  <motion.div
     key={combo.nome}
     whileHover={{ y: -8, scale: 1.02 }}
     whileTap={{ scale: 0.98 }}
