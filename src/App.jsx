@@ -475,7 +475,9 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   className="mt-5 text-5xl text-white-700"
   style={{ fontFamily: "Kaushan Script" }}
 >
+<h2 className="text-5xl font-black italic text-white drop-shadow-[0_0_15px_rgba(255,120,0,0.35)]">
   O Burguer que você merece!
+</h2>
 </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -483,7 +485,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
             <a
               href="#cardapio"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-[#2a211d]"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg--[#2a211d]"
             >
               Ver cardápio
             </a>
@@ -500,7 +502,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
               <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
                 O Mais Pedido
               </span>
-              <span className="text-2xl font-black text-orange-700">R$ 27,97</span>
+              <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
             </div>
             
             <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
