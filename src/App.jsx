@@ -575,12 +575,11 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   type="button"
   whileTap={{ scale: 0.9 }}
   whileHover={{ scale: 1.05 }}
-  onClick={() => adicionarItem(produto)}
-  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+onClick={() => adicionarItem(produto)}  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
 >
   {comboAdicionado === produto.nome
     ? produto.tipo === "mini-burguer"
-      ? "Agendado à sacola!"
+      ? "Adicionado à sacola!"
       : "Adicionado!"
     : produto.tipo === "mini-burguer"
       ? "Agendar"
