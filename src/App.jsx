@@ -530,34 +530,6 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
           </div>
         </motion.div>
       </section>
-
-      <section className="bg-white py-10">
-        <div className="mx-auto grid max-w-6xl gap-4 px-5 md:grid-cols-3">
-          <div className="rounded-2xl bg-orange-50 p-5 shadow-sm">
-            <Clock className="mb-3 text-orange-600" />
-            <h3 className="font-black">Pedido rápido</h3>
-            <p className="mt-2 text-sm text-stone-700">
-              Clique no botão e peça direto pelo WhatsApp.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-orange-50 p-5 shadow-sm">
-            <Star className="mb-3 text-orange-600" />
-            <h3 className="font-black">Sabor caseiro</h3>
-            <p className="mt-2 text-sm text-stone-700">
-              Lanches preparados com cuidado e ingredientes selecionados.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-orange-50 p-5 shadow-sm">
-            <ShoppingBag className="mb-3 text-orange-600" />
-            <h3 className="font-black">Combos especiais</h3>
-            <p className="mt-2 text-sm text-stone-700">
-              Opções para saciar sua fome.
-            </p>
-          </div>
-        </div>
-      </section>
 <section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
   <div className="mb-10 text-center">
     <p className="font-bold text-orange-700">Cardápio</p>
