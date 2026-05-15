@@ -608,13 +608,44 @@ onClick={() => adicionarItem(produto)}  className="rounded-full bg-orange-600 px
   {combos.map((combo) => (
     <div
   key={combo.nome}
-  className="relative min-h-[420px] overflow-hidden rounded-3xl bg-white/10 pt-0 px-6 pb-6 shadow-xl backdrop-blur"
->
+className="relative min-h-[420px] overflow-hidden rounded-3xl bg-white/10 pt-0 px-6 pb-6 shadow-xl backdrop-blur">
+  <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+  <img
+    src={combo.imagem}
+    alt=""
+    className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
+  />
+
   <img
     src={combo.imagem}
     alt={combo.nome}
-    className="absolute inset-0 h-full w-full object-cover opacity-25 pointer-events-none"
+    className="relative z-10 h-full w-auto object-contain"
   />
+</div>
+
+<h3 className="text-xl font-black text-white">
+  {combo.nome}
+</h3>
+
+<p className="mt-2 min-h-16 text-sm leading-6 text-stone-200">
+  {combo.descricao}
+</p>
+
+<div className="mt-5 flex items-center justify-between">
+  <span className="text-2xl font-black text-orange-300">
+    {combo.preco}
+  </span>
+
+  <motion.button
+    type="button"
+    whileTap={{ scale: 0.9 }}
+    whileHover={{ scale: 1.05 }}
+    onClick={() => adicionarAoCarrinho(combo)}
+    className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+  >
+    Adicionar
+  </motion.button>
+</div>
 
   
 
