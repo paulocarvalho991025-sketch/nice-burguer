@@ -270,7 +270,7 @@ const combosNormais = combos.filter((combo) =>
   combo.tipo !== "mini-burguer"
 );
 return (
-  <main className="min-h-screen bg-[#14100f]">
+  <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
     <div className="absolute inset-0 opacity-20 pointer-events-none">
       <div className="absolute top-0 left-6 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
       <div className="absolute bottom-6 right-6 h-[400px] w-[400px] rounded-full bg-red-500 blur-[140px]" />
@@ -279,7 +279,7 @@ return (
 
     <header className="sticky top-0 z-50 border-b bg-orange-50/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <a href="#inicio" className="text-xl font-black text-black-800">
+        <a href="#inicio" className="text-xl font-black text-orange-700">
           NiceBurguer!
         </a>
 
@@ -304,7 +304,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   <span>{carrinho.length}</span>
 </button>
   {carrinhoAberto && (
-    <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-bg-[#3a2b25] p-5 shadow-2xl">
+    <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-white p-5 shadow-2xl">
 
 <div className="mt-4 max-h-64 overflow-y-auto">
   {carrinho.length === 0 ? (
@@ -369,11 +369,13 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   value={nomeCliente}
   onChange={(e) => setNomeCliente(e.target.value)}
   placeholder="Qual seu nome?"
-className="mt-4 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 outline-none focus:border-orange-500"/>
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+/>
 <select
   value={bairro}
   onChange={(e) => setBairro(e.target.value)}
-className="mt-4 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 outline-none focus:border-orange-500">
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+>
   <option value="">Selecione seu bairro</option>
 
   <option value="Nova Descoberta">
@@ -398,13 +400,15 @@ className="mt-4 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text
   value={endereco}
   onChange={(e) => setEndereco(e.target.value)}
   placeholder="Digite seu endereço"
-className="mt-4 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 placeholder:text-stone-500 outline-none focus:border-orange-500"/>
+  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+/>
 
 <select
 
   value={pagamento}
   onChange={(e) => setPagamento(e.target.value)}
-className="mt-3 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text-sm text-stone-900 outline-none focus:border-orange-500">
+  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+>
   <option value="">Escolha a forma de pagamento</option>
   <option value="Pix">Pix</option>
   <option value="Dinheiro">Dinheiro</option>
@@ -468,12 +472,10 @@ className="mt-3 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text
   </h1>
 </div>
 <p
-  className="mt-5 text-5xl text-white-700"
+  className="mt-5 text-5xl text-black-700"
   style={{ fontFamily: "Kaushan Script" }}
 >
-<h2 className="text-5xl font-black italic text-white drop-shadow-[0_0_15px_rgba(255,120,0,0.35)]">
   O Burguer que você merece!
-</h2>
 </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -481,7 +483,7 @@ className="mt-3 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text
 
             <a
               href="#cardapio"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg--[#2a211d]"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-orange-100"
             >
               Ver cardápio
             </a>
@@ -495,16 +497,16 @@ className="mt-3 w-full rounded-xl border border-orange-300 bg-[#fff7ed] p-3 text
 className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"        >
           <div className="rounded-[1.5rem] bg-white p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
-              <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-black-800">
+              <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
                 O Mais Pedido
               </span>
-              <span className="text-2xl font-black text-black-800">R$ 27,97</span>
+              <span className="text-2xl font-black text-orange-700">R$ 14,99</span>
             </div>
             
             <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
 
   <img
-    src="/img/street.png"
+    src="/img/2.0.png"
     alt=""
     className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
   />
@@ -513,15 +515,15 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   />
 
   <img
-    src="/img/street.png"
-    alt="Combo Street"
+    src="/img/2.0.png"
+    alt="Burguer 2.0"
     className="relative z-10 max-h-[300px] w-auto object-contain"
   />
 
 </div>
-            <h2 className="mt-5 text-2xl font-black">Combo Street</h2>
+            <h2 className="mt-5 text-2xl font-black">Burguer 2.0</h2>
             <p className="mt-2 text-stone-700">
-              Burguer 2.0 + Batata Frita + Coca-Cola 350ml
+              Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.
             </p>
           </div>
         </motion.div>
@@ -584,7 +586,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
     />
   </div>
 
-  <h3 className="text-xl font-black text-white">
+  <h3 className="text-xl font-black text-black">
     {produto.nome}
   </h3>
 
@@ -642,7 +644,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
       />
     </div>
 
-    <h3 className="text-xl font-black text-white">
+    <h3 className="text-xl font-black text-black">
       {produto.nome}
     </h3>
 
@@ -697,7 +699,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
         />
       </div>
 
-      <h3 className="text-xl font-black text-white">
+      <h3 className="text-xl font-black text-black">
         {produto.nome}
       </h3>
 
@@ -729,12 +731,13 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 </section>
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
+    Combos
   </h2>
 </div>
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
-            <p className="font-bold text-orange-300 md:text-3xl">Em Nossa Hamburgueria Delivery </p>
+            <p className="font-bold text-orange-300 md:text-xl">Em Nossa Hamburgueria Delivery </p>
             <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
           </div>
 
@@ -774,15 +777,15 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 </div>
       </section>
       <div className="mt-24 text-center">
-  <h2 className="text-4xl font-black text-white">
+  <h2 className="text-4xl font-black text-black">
     Festas & Eventos
   </h2>
 
-  <p className="mt-4 text-xl font-bold text-white">
+  <p className="mt-4 text-xl font-bold text-black-300">
     Já pensou a NiceBurguer na sua festa ou evento?
   </p>
 
-  <p className="mt-2 text-lg font-black text-white">
+  <p className="mt-2 text-lg font-black text-black-200">
     Faça já seu agendamento!
   </p>
 </div>
@@ -810,11 +813,11 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
         />
       </div>
 
-      <h3 className="text-xl font-black text-white">
+      <h3 className="text-xl font-black text-black">
         {produto.nome}
       </h3>
 
-      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-300">
+      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-700">
         {produto.descricao}
       </p>
 
@@ -879,7 +882,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
         </div>
       </section>
 
-<footer className="border-t border-orange-900/30 px-5 py-8 text-center text-sm text-stone-700">
+<footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
   © 2026 Hamburgueria Delivery.
 </footer>
 
