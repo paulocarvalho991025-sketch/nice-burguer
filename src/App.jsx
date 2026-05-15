@@ -623,7 +623,7 @@ onClick={() => adicionarItem(produto)}  className="rounded-full bg-orange-600 px
  transition={{ duration: 0.3 }}
  className="absolute bottom-4 left-4 z-20 rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white shadow-xl transition hover:scale-105 hover:bg-orange-500"
 >
-{comboAdicionado === combo.nome ? "Adicionado!" : "Adicionar"}
+{comboAdicionado === combo.nome ? "Adicionado à sacola!" : "Adicionar"}
 </motion.button>
 
     </div>
