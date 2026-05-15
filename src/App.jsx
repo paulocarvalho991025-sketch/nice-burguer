@@ -11,7 +11,8 @@ const [carrinho, setCarrinho] = useState(() => {
     ? JSON.parse(carrinhoSalvo)
     : [];
 });
-
+const [agendamentoAberto, setAgendamentoAberto] = useState(false);
+const [produtoAgendamento, setProdutoAgendamento] = useState(null);
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [comboAdicionado, setComboAdicionado] = useState("");
 const [nomeCliente, setNomeCliente] = useState("");
@@ -245,6 +246,7 @@ function adicionarCombo(combo) {
   }, 1000);
 }
 return (
+  
   <main className="min-h-screen bg-[#f6f0e7] relative overflow-hidden">
     <div className="absolute inset-0 opacity-20 pointer-events-none">
       <div className="absolute top-0 left-6 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
@@ -575,8 +577,14 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   type="button"
   whileTap={{ scale: 0.9 }}
   whileHover={{ scale: 1.05 }}
-onClick={() => adicionarItem(produto)}  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
->
+onClick={() => {
+  if (produto.tipo === "mini-burguer") {
+    setProdutoAgendamento(produto);
+    setAgendamentoAberto(true);
+  } else {
+    adicionarItem(produto);
+  }
+}}>
   {comboAdicionado === produto.nome
     ? produto.tipo === "mini-burguer"
       ? "Adicionado à sacola!"
@@ -670,6 +678,11 @@ onClick={() => adicionarItem(produto)}  className="rounded-full bg-orange-600 px
 <footer className="border-t border-orange-100 px-5 py-8 text-center text-sm text-stone-700">
   © 2026 Hamburgueria Delivery.
 </footer>
+{agendamentoAberto && (
+  <div>
+    Modal aqui
+  </div>
+)}
 
 </main>
   );
