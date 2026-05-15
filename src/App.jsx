@@ -496,7 +496,7 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"        >
           <div className="rounded-[1.5rem] bg-[#1f1a18] p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
-              <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-black-900">
+              <span className="rounded-full bg-orange-500 px-3 py-1 text-sm font-black text-white shadow-lg">
                 O Mais Pedido
               </span>
               <span className="text-2xl font-black text-white-800">R$ 27,97</span>
