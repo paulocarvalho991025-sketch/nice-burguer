@@ -602,7 +602,7 @@ className="flex min-h-[340px] flex-col justify-between rounded-3xl border border
     transition={{ duration: 0.2 }}
     className="rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl"
   >
-    <div className="relative mb-4 flex h-32 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+    <div className="relative mb-4 flex h-16 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
       <img
         src={produto.imagem}
         alt=""
