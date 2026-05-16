@@ -502,7 +502,8 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
               <span className="text-2xl font-black text-white-800">R$ 27,97</span>
             </div>
             
-<div className="relative mb-5 flex h-[420px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[#1b1614]">
+            <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
+
   <img
     src="/img/st.png"
     alt=""
@@ -515,7 +516,8 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   <img
     src="/img/st.png"
     alt="Combo street"
-className="relative z-10 h-full w-full object-cover"  />
+    className="relative z-10 max-h-[300px] w-auto object-contain"
+  />
 
 </div>
             <h2 className="mt-5 text-2xl font-black">Combo Street</h2>
@@ -542,18 +544,18 @@ className="relative z-10 h-full w-full object-cover"  />
   whileHover={{ y: -8, scale: 1.02 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-className="relative overflow-hidden rounded-[40px] border border-orange-500/30 bg-[#181312] p-6 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition">
-<div className="relative mb-6 overflow-hidden rounded-[30px] bg-black">
+className="flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
+  <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+    
 
-  <img
-    src={produto.imagem}
-    alt={produto.nome}
-    className="h-[320px] w-full object-cover"
-  />
+    <img
+      src={produto.imagem}
+      alt={produto.nome}
+      className="relative z-10 h-full w-auto object-contain"
+    />
+  </div>
 
-</div>
-
-  <h3 className="text-4xl font-black tracking-tight text-white">
+  <h3 className="text-xl font-black text-white">
     {produto.nome}
   </h3>
 
@@ -561,22 +563,21 @@ className="relative overflow-hidden rounded-[40px] border border-orange-500/30 b
     {produto.descricao}
   </p>
 
-<div className="mt-8 flex items-center justify-between gap-4">
+  <div className="mt-5 flex items-center justify-between">
+    <span className="text-2xl font-black text-orange-700">
+      {produto.preco}
+    </span>
 
-  <span className="text-5xl font-black text-orange-500">
-    {produto.preco}
-  </span>
-
-  <motion.button
-    whileTap={{ scale: 0.92 }}
-    whileHover={{ scale: 1.04 }}
-    onClick={() => adicionarItem(produto)}
-    className="rounded-2xl bg-orange-600 px-8 py-4 text-lg font-black text-white shadow-xl transition hover:bg-orange-500"
-  >
-    Adicionar
-  </motion.button>
-
-</div>
+    <motion.button
+      type="button"
+      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.05 }}
+      onClick={() => adicionarItem(produto)}
+      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+    >
+      {comboAdicionado === produto.nome ? "Adicionado à sacola!" : "Adicionar"}
+    </motion.button>
+  </div>
 </motion.div>
   ))}
 </>
@@ -607,11 +608,11 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       />
     </div>
 
-    <h3 className="text-4xl font-black tracking-tight text-white">
+    <h3 className="text-xl font-black text-white">
       {produto.nome}
     </h3>
 
-    <p className="mt-4 min-h-[80px] text-lg leading-8 text-stone-300">
+    <p className="mt-2 min-h-[70px] text-sm leading-6 text-stone-300">
       {produto.descricao}
     </p>
 
@@ -657,11 +658,11 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
         />
       </div>
 
-      <h3 className="text-4xl font-black tracking-tight text-white">
+      <h3 className="text-xl font-black text-white">
         {produto.nome}
       </h3>
 
-      <p className="mt-4 min-h-[80px] text-lg leading-8 text-stone-300">
+      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-300">
         {produto.descricao}
       </p>
 
@@ -743,7 +744,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
     Já pensou a NiceBurguer na sua festa ou evento?
   </p>
 
-  <p className="mt-4 min-h-[80px] text-lg leading-8 text-stone-300">
+  <p className="mt-2 text-lg font-black text-white-200">
     Faça já seu agendamento!
   </p>
 </div>
@@ -755,7 +756,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-className="relative overflow-hidden rounded-[40px] border border-orange-500/30 bg-[#181312] p-6 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition"   >
+className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"    >
       <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
         
 
@@ -766,11 +767,11 @@ className="relative overflow-hidden rounded-[40px] border border-orange-500/30 b
         />
       </div>
 
-      <h3 className="text-4xl font-black tracking-tight text-white">
+      <h3 className="text-xl font-black text-white">
         {produto.nome}
       </h3>
 
-      <p className="mt-4 min-h-[80px] text-lg leading-8 text-stone-300">
+      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-300">
         {produto.descricao}
       </p>
 
