@@ -220,7 +220,7 @@ const combos = [
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca Lata 350ml",
     preco: "R$ 27,97",
-    imagem: "/img/maisquerido.png",
+    imagem: "/img/cst.png",
     
   },
   {
@@ -540,7 +540,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       <img
         src="/img/maisquerido.png"
         alt="Combo Street"
-        className="h-[360px] w-full object-cover"
+        className="h-[340px] w-full object-cover"
       />
 
     </div>
