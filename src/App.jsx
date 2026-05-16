@@ -46,9 +46,11 @@ const taxasPorBairro = {
   "Cidade da Esperança": 5,
   "Dix-Sept Rosado": 5,
   "Nossa Senhora de Nazaré": 5,
+
   "Lagoa Nova": 7,
   "Alecrim": 7,
   "Tirol": 7,
+
   "Nova Descoberta": 9,
   "Cidade Alta": 9,
   "Candelária": 9,
@@ -384,36 +386,42 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 >
   <option value="">Selecione seu bairro</option>
 
-  <option value="Nova Descoberta">
+  <option value="Cidade da Esperança">
     Cidade da Esperança - R$ 5,00
   </option>
-  <option value="Nova Descoberta">
+  
+  <option value="Dix-Sept Rosado">
     Dix-Sept Rosado - R$ 5,00
   </option>
-  <option value="Nova Descoberta">
+
+  <option value="Nossa Senhora de Nazaré">
     Nossa Senhora de Nazaré - R$ 5,00
-  </option>
-  <option value="Nova Descoberta">
-    Lagoa Nova - R$ 7,00
-  </option>
-  <option value="Nova Descoberta">
-    Alecrim - R$ 7,00
   </option>
 
   <option value="Lagoa Nova">
-    Tirol - R$ 7,00
+    Lagoa Nova - R$ 7,00
+  </option>
+
+  <option value="Alecrim">
+    Alecrim - R$ 7,00
   </option>
 
   <option value="Tirol">
+    Tirol - R$ 7,00
+  </option>
+
+  <option value="Nova Descoberta">
     Nova Descoberta  R$9,00
   </option>
 
-  <option value="Petrópolis">
+  <option value="Cidade Alta">
     Cidade Alta R$9,00
   </option>
-  <option value="Petrópolis">
+
+  <option value="Candelária">
     Candelária R$9,00
   </option>
+
 </select>
 
 <input
