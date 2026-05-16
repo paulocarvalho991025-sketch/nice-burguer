@@ -11,6 +11,14 @@ const [carrinho, setCarrinho] = useState(() => {
     ? JSON.parse(carrinhoSalvo)
     : [];
 });
+
+const [carrinhoEventos, setCarrinhoEventos] = useState(() => {
+  const salvo = localStorage.getItem("carrinhoEventos");
+
+  return salvo
+    ? JSON.parse(salvo)
+    : [];
+});
 const [agendamentoAberto, setAgendamentoAberto] = useState(false);
 const [produtoAgendamento, setProdutoAgendamento] = useState(null);
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
@@ -37,11 +45,16 @@ const [trocoPara, setTrocoPara] = useState(() => {
 useEffect(() => {
   localStorage.setItem("trocoPara", trocoPara);
 }, [trocoPara]);
+
 useEffect(() => {
-  
-  
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }, [carrinho]);
+useEffect(() => {
+  localStorage.setItem(
+    "carrinhoEventos",
+    JSON.stringify(carrinhoEventos)
+  );
+}, [carrinhoEventos]);
 const taxasPorBairro = {
   "Cidade da Esperança": 5,
   "Dix-Sept Rosado": 5,
@@ -250,7 +263,7 @@ const combos = [
 },
 ];
 function agendar(combo) {
-  adicionarAoCarrinho(combo);
+  setCarrinhoEventos((atual) => [...atual, combo]);
   setComboAdicionado(combo.nome);
 
   setTimeout(() => {
