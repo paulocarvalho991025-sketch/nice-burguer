@@ -519,45 +519,55 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
           </div>
           </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"        >
-          <div className="rounded-[1.5rem] bg-[#1f1a18] p-6 shadow-xl">
-            <div className="mb-4 flex items-center justify-between">
-              <span className="rounded-full bg-orange-500 px-3 py-1 text-sm font-black text-white shadow-lg">
-                O Mais Pedido
-              </span>
-              <span className="text-2xl font-black text-white-800">R$ 27,97</span>
-            </div>
-            
-            <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
+  initial={{ opacity: 0, scale: 0.96 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5 }}
+  className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"
+>
 
-  <img
-    src="/img/st.png"
-    alt=""
-    className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
-  />
+  <div className="rounded-[1.5rem] bg-[#1f1a18] p-6 shadow-xl">
 
-  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/20 to-black opacity-100" 
-  />
+    <div className="mb-4 flex items-center justify-between">
 
-  <img
-    src="/img/st.png"
-    alt="Combo street"
-    className="relative z-10 max-h-[300px] w-auto object-contain"
-  />
+      <span className="rounded-full bg-orange-500 px-4 py-2 text-sm font-black text-white">
+        O Mais Pedido
+      </span>
 
-</div>
-            <h2 className="mt-5 text-2xl font-black">Combo Street</h2>
-            <p className="mt-2 text-stone-300">
-              Burguer 2.0 +
-              Batata Frita +
-              Coca-Cola Lata 350ml +
-              Molho Especial
-            </p>
-          </div>
-        </motion.div>
+      <span className="text-3xl font-black text-white">
+        R$ 27,97
+      </span>
+
+    </div>
+
+    <div className="overflow-hidden rounded-[2rem]">
+
+      <img
+        src="/img/cst.png"
+        alt="Combo Street"
+        className="h-[420px] w-full object-cover"
+      />
+
+    </div>
+
+    <h2 className="mt-5 text-4xl font-black text-white">
+      Combo Street
+    </h2>
+
+    <p className="mt-4 text-lg leading-8 text-stone-300">
+      Burguer 2.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial
+    </p>
+
+    <motion.button
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.03 }}
+      className="mt-8 rounded-2xl bg-orange-600 px-8 py-4 text-lg font-black text-white shadow-xl transition hover:bg-orange-500"
+    >
+      Adicionar
+    </motion.button>
+
+  </div>
+
+</motion.div>
       </section>
 <section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
   <div className="mb-10 text-center">
