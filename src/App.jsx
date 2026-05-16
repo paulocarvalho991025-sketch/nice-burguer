@@ -297,18 +297,8 @@ function finalizarAgendamento() {
     return;
   }
 
-  if (!bairroEvento) {
-    alert("Selecione o bairro.");
-    return;
-  }
-
   if (!enderecoEvento.trim()) {
     alert("Digite o endereço.");
-    return;
-  }
-
-  if (!horarioEvento) {
-    alert("Selecione o horário.");
     return;
   }
 
@@ -316,6 +306,7 @@ function finalizarAgendamento() {
     alert("Selecione a forma de pagamento.");
     return;
   }
+  
 
   const mensagemAgendamento = encodeURIComponent(`
 Novo Agendamento - NiceBurguer!
