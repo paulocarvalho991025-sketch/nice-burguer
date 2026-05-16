@@ -551,7 +551,7 @@ className="flex min-h-[340px] flex-col justify-between rounded-3xl border border
     <img
       src={produto.imagem}
       alt={produto.nome}
-      className="relative z-10 h-full w-full object-cover"
+      className="relative z-10 h-full w-auto object-contain"
     />
   </div>
 
@@ -756,8 +756,8 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-className="rounded-3xl bg-[#1f1a18]/80 p-4 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"    >
-      <div className="relative mb-4 flex h-[160px] items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
+className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"    >
+      <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
         
 
         <img
