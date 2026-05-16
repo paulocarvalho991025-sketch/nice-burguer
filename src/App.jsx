@@ -146,7 +146,7 @@ const produtos = [
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
     preco: "R$ 9,99",
-    imagem:"/img/1.png",
+    imagem:"/img/um.png",
   },
   {
     nome: "Burguer 2.0",
