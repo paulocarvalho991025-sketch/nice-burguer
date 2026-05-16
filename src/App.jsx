@@ -94,6 +94,11 @@ function adicionarItem(item) {
 function removerDoCarrinho(index) {
   setCarrinho((atual) => atual.filter((_, i) => i !== index));
 }
+function removerAgendamento(index) {
+  setCarrinhoEventos((atual) =>
+    atual.filter((_, i) => i !== index)
+  );
+}
 function finalizarPedido() {
 
   if (carrinho.length === 0) {
@@ -540,6 +545,12 @@ transition={{
           >
             <p className="font-bold text-white">{item.nome}</p>
             <p className="text-sm font-black text-yellow-400">{item.preco}</p>
+            <button
+  onClick={() => removerAgendamento(index)}
+  className="mt-2 text-xs font-bold text-red-400 hover:text-red-600"
+>
+  Remover
+</button>
           </div>
         ))
       )}
