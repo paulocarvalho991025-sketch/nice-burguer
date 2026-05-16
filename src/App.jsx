@@ -321,8 +321,6 @@ return (
 >
 </motion.button>
 
-  <ShoppingBag size={22} />
-  <span>{carrinho.length}</span>
   {carrinhoAberto && (
     <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-2xl">
 
