@@ -543,7 +543,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       <img
         src="/img/cst.png"
         alt="Combo Street"
-        className="h-[400px] w-full object-cover"
+        className="h-[380px] w-full object-cover"
       />
 
     </div>
