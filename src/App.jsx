@@ -305,18 +305,31 @@ return (
 <div className="fixed right-2 top-20 z-50">
 <motion.button
   onClick={() => setCarrinhoAberto(!carrinhoAberto)}
-  animate={{
-    scale: carrinho.length > 0 ? [1, 1.15, 1] : 1,
-    boxShadow:
-      carrinho.length > 0
-        ? [
-            "0 0 0px rgba(255,120,0,0)",
-            "0 0 28px rgba(255,120,0,0.8)",
-            "0 0 0px rgba(255,120,0,0)",
-          ]
-        : "0 0 0px rgba(255,120,0,0)",
-  }}
-  transition={{ duration: 0.35 }}
+animate={{
+  scale:
+    carrinho.length > 0
+      ? [1, 1.35, 0.92, 1.18, 1]
+      : 1,
+
+  rotate:
+    carrinho.length > 0
+      ? [0, -8, 8, -4, 0]
+      : 0,
+
+  boxShadow:
+    carrinho.length > 0
+      ? [
+          "0 0 0px rgba(255,120,0,0)",
+          "0 0 45px rgba(255,120,0,1)",
+          "0 0 20px rgba(255,180,0,0.9)",
+          "0 0 0px rgba(255,120,0,0)",
+        ]
+      : "0 0 0px rgba(255,120,0,0)",
+}}
+transition={{
+  duration: 0.8,
+  ease: "easeInOut",
+}}
   className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-4 py-3 text-lg font-black text-white shadow-xl transition hover:scale-105"
 >
   <ShoppingBag size={22} />
