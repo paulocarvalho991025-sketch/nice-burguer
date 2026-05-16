@@ -544,8 +544,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
 className="flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
-  <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-    <img
+<div className="relative mb-5 h-[360px] overflow-hidden rounded-3xl bg-black shadow-xl">    <img
       src={produto.imagem}
       alt=""
       className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
@@ -655,18 +654,17 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
 className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur"  >
-      <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-        <img
+<div className="relative mb-5 h-[360px] overflow-hidden rounded-3xl bg-black shadow-xl">        <img
           src={produto.imagem}
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
         />
 
         <img
-          src={produto.imagem}
-          alt={produto.nome}
-          className="relative z-10 h-full w-auto object-contain"
-        />
+  src={produto.imagem}
+  alt={produto.nome}
+  className="h-full w-full object-cover"
+/>
       </div>
 
       <h3 className="text-xl font-black text-white">
@@ -720,11 +718,8 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
     transition={{ duration: 0.2 }}
     className="relative min-h-[420px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
   >
-    <img
-      src={combo.imagem}
-      alt={combo.nome}
-      className="absolute inset-0 h-full w-full object-cover opacity-90"
-    />
+    
+    /
 
     <div className="absolute inset-0 bg-black/30" />
 
