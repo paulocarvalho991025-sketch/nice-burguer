@@ -522,10 +522,9 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
   initial={{ opacity: 0, scale: 0.96 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.5 }}
-  className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ffcc00] p-6 shadow-[0_0_80px_rgba(255,120,0,0.6)]"
->
+className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)]">
 
-  <div className="rounded-[1.5rem] bg-[#1f1a18] p-6 shadow-xl">
+<div className="rounded-[1.5rem] bg-[#1f1a18] p-5">
 
     <div className="mb-4 flex items-center justify-between">
 
@@ -549,21 +548,14 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 
     </div>
 
-    <h2 className="mt-5 text-4xl font-black text-white">
-      Combo Street
-    </h2>
-
-    <p className="mt-4 text-lg leading-8 text-stone-300">
-      Burguer 2.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial
-    </p>
-
+  
     <motion.button
-      whileTap={{ scale: 0.95 }}
-      whileHover={{ scale: 1.03 }}
-      className="mt-8 rounded-2xl bg-orange-600 px-8 py-4 text-lg font-black text-white shadow-xl transition hover:bg-orange-500"
-    >
-      Adicionar
-    </motion.button>
+  whileTap={{ scale: 0.95 }}
+  whileHover={{ scale: 1.03 }}
+  className="mt-6 w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl transition hover:bg-orange-500"
+>
+  Adicionar à sacola
+</motion.button>
 
   </div>
 
