@@ -171,7 +171,7 @@ const produtos = [
   nome: "Batata Frita Média ",
   descricao: "Porção Média De Batata Frita Crocante.",
   preco: "R$ 9,99",
-  imagem: "/img/batataFritamm.png",
+  imagem: "/img/BatataFritamm.png",
 },
 {
   nome: "Batata Frita Grande",
