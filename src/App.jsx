@@ -184,7 +184,7 @@ const produtos = [
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
     preco: "R$ 9,99",
-    imagem:"/img/.png",
+    imagem:"/img/Burguer 1.0.png",
   },
   {
     nome: "Burguer 2.0",
@@ -222,13 +222,13 @@ const produtos = [
     nome: "Coca-Cola Garrafinha 250ml",
     descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/Coca-Cola Garrafinha 250ml.png"
+    imagem: "/img/Coca-Cola Garrafinha250ml.png"
   },
 {
     nome: "Coca-Cola Lata 350 ml",
     descricao: "Coca-Cola Lata 350 ml",
     preco: "R$ 5,99",
-    imagem: "/img/Coca-Cola Lata 350ml.png",
+    imagem: "/img/Coca-Cola Lata350ml.png",
   },{
     nome: "Coca-Cola Garrafa 1 Litro",
     descricao: "Coca-Cola Garrafa 1 Litro",
@@ -241,20 +241,20 @@ const combos = [
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
     preco: "R$ 20,97",
-    imagem: "/img/p.png",
+    imagem: "/img/Combo Prime.png",
   },
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca Lata 350ml + Molho Especial",
     preco: "R$ 27,97",
-    imagem: "/img/cst.png",
+    imagem: "/img/Combo Street.png",
     
   },
   {
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial",
     preco: "R$ 34,97",
-    imagem: "/img/t3.png",
+    imagem: "/img/Combo Turbo.png",
   },
   {
   nome: "25 Mini Burguer",
