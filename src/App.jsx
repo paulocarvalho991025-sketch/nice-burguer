@@ -774,7 +774,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     <div className="overflow-hidden rounded-[2rem]">
 
       <img
-        src="/img/maisquerido.png"
+        src="/img/cst.png"
         alt="Combo Street"
         className="h-[340px] w-full object-cover"
       />
