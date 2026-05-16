@@ -600,7 +600,7 @@ className="flex min-h-[340px] flex-col justify-between rounded-3xl border border
     whileHover={{ y: -8, scale: 1.02 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"  >
+className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
     <div className="relative mb-4 flex h-16 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
       <img
         src={produto.imagem}
@@ -654,7 +654,7 @@ className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition ho
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"    >
+className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur"  >
       <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
         <img
           src={produto.imagem}
@@ -767,7 +767,7 @@ className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition ho
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"    >
+className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur"   >
       <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
         <img
           src={produto.imagem}
