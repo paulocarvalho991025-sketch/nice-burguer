@@ -545,11 +545,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   transition={{ duration: 0.2 }}
 className="flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
   <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-    <img
-      src={produto.imagem}
-      alt=""
-      className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
-    />
+    
 
     <img
       src={produto.imagem}
@@ -602,11 +598,7 @@ className="flex min-h-[340px] flex-col justify-between rounded-3xl border border
     transition={{ duration: 0.2 }}
 className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
     <div className="relative mb-4 flex h-16 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-      <img
-        src={produto.imagem}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
-      />
+      
 
       <img
         src={produto.imagem}
@@ -656,11 +648,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       transition={{ duration: 0.2 }}
 className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur"  >
       <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-        <img
-          src={produto.imagem}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
-        />
+        
 
         <img
           src={produto.imagem}
@@ -769,11 +757,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       transition={{ duration: 0.2 }}
 className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"    >
       <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
-        <img
-          src={produto.imagem}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
-        />
+        
 
         <img
           src={produto.imagem}
