@@ -313,18 +313,42 @@ Novo Agendamento - NiceBurguer!
 
 Cliente: ${nomeEvento}
 
-${carrinhoEventos
-  .map((item, index) =>
-    `${index + 1}x ${item.nome} - ${item.preco}`
-  )
-  .join("\n")}
+${Object.values(
+  carrinhoEventos.reduce((acc, item) => {
+
+    if (!acc[item.nome]) {
+      acc[item.nome] = {
+        ...item,
+        quantidade: 0,
+        total: 0,
+      };
+    }
+
+    acc[item.nome].quantidade += 1;
+
+    acc[item.nome].total += Number(
+      item.preco.replace("R$", "").replace(",", ".").trim()
+    );
+
+    return acc;
+
+  }, {})
+)
+
+.map(
+  (item) =>
+    `${item.quantidade}x ${item.nome} - R$ ${item.total
+      .toFixed(2)
+      .replace(".", ",")}`
+)
+.join("\n")}
 
 Data do evento: ${dataEvento}
 
 Endereço: ${enderecoEvento}
 
 Pagamento: ${pagamentoEvento}
-
+Total: R$ ${totalAgendamento.toFixed(2).replace(".", ",")}
 
 `);
 
@@ -620,8 +644,12 @@ transition={{
     </p>
 
     <p className="text-sm font-black text-yellow-400">
-      {item.preco}
-    </p>
+  R$ {(item.quantidade * Number(
+    item.preco.replace("R$", "").replace(",", ".").trim()
+  ))
+    .toFixed(2)
+    .replace(".", ",")}
+</p>
 
     <button
       onClick={() => removerAgendamento(index)}
@@ -633,6 +661,9 @@ transition={{
 ))
       )}
      <div className="mt-4 border-t border-yellow-500/30 pt-4">
+     <p className="mb-4 text-lg font-black text-yellow-400">
+  Total: R$ {totalAgendamento.toFixed(2).replace(".", ",")}
+</p>
   <input
     type="text"
     value={nomeEvento}
