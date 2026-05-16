@@ -241,7 +241,7 @@ const combos = [
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
     preco: "R$ 20,97",
-    imagem: "/img/primi1.png",
+    imagem: "/img/p.png",
   },
   {
     nome: "Combo Street",
