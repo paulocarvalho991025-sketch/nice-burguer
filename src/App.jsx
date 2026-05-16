@@ -43,10 +43,17 @@ useEffect(() => {
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }, [carrinho]);
 const taxasPorBairro = {
-  "Nova Descoberta": 6,
-  "Lagoa Nova": 8,
-  "Tirol": 10,
-  "Petrópolis": 12,
+  "Cidade da Esperança": 5,
+  "Dix-Sept Rosado": 5,
+  "Nossa Senhora de Nazaré": 5,
+  "Lagoa Nova": 7,
+  "Alecrim": 7,
+  "Tirol": 7,
+  "Nova Descoberta": 9,
+  "Cidade Alta": 9,
+  "Candelária": 9,
+  
+  
 };
 
 const taxaEntrega = bairro ? taxasPorBairro[bairro] : 0;
