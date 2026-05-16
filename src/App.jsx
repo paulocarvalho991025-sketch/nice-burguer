@@ -211,7 +211,7 @@ const combos = [
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca Lata 350ml",
     preco: "R$ 27,97",
-    imagem: "/img/st.png",
+    imagem: "/img/cst.png",
     
   },
   {
