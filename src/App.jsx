@@ -505,7 +505,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
             <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
 
   <img
-    src="/img/2.0.png"
+    src="/img/st.png"
     alt=""
     className="absolute inset-0 h-full w-full object-cover opacity-40 blur-2xl scale-150 brightness-50"
   />
@@ -514,7 +514,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   />
 
   <img
-    src="/img/street.png"
+    src="/img/st.png.png"
     alt="Combo st"
     className="relative z-10 max-h-[300px] w-auto object-contain"
   />
