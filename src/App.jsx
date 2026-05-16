@@ -528,13 +528,10 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 
     <div className="mb-4 flex items-center justify-between">
 
-      <span className="rounded-full bg-black-500 px-4 py-2 text-sm font-black text-white">
+      <span className="rounded-full bg-black-500 px-4 py-2 text-3xl font-black text-white">
         O Mais Pedido
       </span>
 
-      <span className="text-3xl font-black text-white">
-        R$ 27,97
-      </span>
 
     </div>
 
@@ -543,7 +540,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       <img
         src="/img/cst.png"
         alt="Combo Street"
-        className="h-[380px] w-full object-cover"
+        className="h-[360px] w-full object-cover"
       />
 
     </div>
