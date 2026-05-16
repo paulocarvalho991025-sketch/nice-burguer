@@ -281,6 +281,69 @@ function agendar(combo) {
     setComboAdicionado("");
   }, 1000);
 }
+function finalizarAgendamento() {
+  if (carrinhoEventos.length === 0) {
+    alert("Adicione pelo menos um agendamento.");
+    return;
+  }
+
+  if (!nomeEvento.trim()) {
+    alert("Digite seu nome.");
+    return;
+  }
+
+  if (!dataEvento) {
+    alert("Selecione a data do evento.");
+    return;
+  }
+
+  if (!bairroEvento) {
+    alert("Selecione o bairro.");
+    return;
+  }
+
+  if (!enderecoEvento.trim()) {
+    alert("Digite o endereço.");
+    return;
+  }
+
+  if (!horarioEvento) {
+    alert("Selecione o horário.");
+    return;
+  }
+
+  if (!pagamentoEvento) {
+    alert("Selecione a forma de pagamento.");
+    return;
+  }
+
+  const mensagemAgendamento = encodeURIComponent(`
+Novo Agendamento - NiceBurguer!
+
+Cliente: ${nomeEvento}
+
+${carrinhoEventos
+  .map((item, index) =>
+    `${index + 1}x ${item.nome} - ${item.preco}`
+  )
+  .join("\n")}
+
+Data do evento: ${dataEvento}
+
+Horário: ${horarioEvento}
+
+Bairro: ${bairroEvento}
+
+Endereço: ${enderecoEvento}
+
+Pagamento: ${pagamentoEvento}
+`);
+
+  const linkAgendamento =
+    `https://wa.me/5584997063345?text=${mensagemAgendamento}`;
+
+  window.open(linkAgendamento, "_blank");
+}
 const burguers = produtos.filter((produto) =>
   produto.nome.includes("Burguer")
 );
@@ -618,6 +681,13 @@ transition={{
     <option value="Dinheiro">Dinheiro</option>
     <option value="Cartão">Cartão</option>
   </select>
+  <button
+  type="button"
+  onClick={finalizarAgendamento}
+  className="mt-4 w-full rounded-xl bg-yellow-500 py-3 text-center font-black text-black shadow-xl hover:bg-yellow-400"
+>
+  Finalizar Agendamento
+</button>
 </div>
     </div>
   )}
