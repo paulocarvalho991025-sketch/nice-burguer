@@ -535,12 +535,7 @@ transition={{
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           
 
-            <a
-              href="#combos"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-orange-100"
-            >
-              Ver Combos Exclusivos
-            </a>
+            
             
           </div>
           </motion.div>
@@ -566,7 +561,12 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
         alt="Combo Street"
         className="h-[340px] w-full object-cover"
       />
-
+<a
+              href="#combos"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-orange-100"
+            >
+              Ver Combos Exclusivos
+            </a>
     </div>
 
   
