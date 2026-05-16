@@ -549,8 +549,8 @@ className="flex min-h-[340px] flex-col justify-between rounded-3xl border border
     
 
     <img
-      src="/img/st.png."
-      alt="Combo street"
+      src={produto.imagem}
+      alt={produto.nome}
       className="relative z-10 h-full w-auto object-contain"
     />
   </div>
