@@ -254,7 +254,7 @@ const combos = [
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial",
     preco: "R$ 34,97",
-    imagem: "/img/cturbo.png",
+    imagem: "/img/t3.png",
   },
   {
   nome: "25 Mini Burguer",
