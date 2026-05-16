@@ -163,19 +163,19 @@ const produtos = [
   
 {
   nome: "Batata Frita Pequena",
-  descricao: "Porção Pequena De Batata Frita Crocante.",
+  descricao: "Porção Pequena De Batata Frita Crocante + Molho Cortesia da casa.",
   preco: "R$ 6,99",
   imagem: "/img/batatap.png",
 },
 {
   nome: "Batata Frita Média ",
-  descricao: "Porção Média De Batata Frita Crocante.",
+  descricao: "Porção Média De Batata Frita Crocante + Molho Cortesia da casa.",
   preco: "R$ 9,99",
   imagem: "/img/fritasm.png",
 },
 {
   nome: "Batata Frita Grande",
-  descricao: "Porção Grande De Batata Frita Crocante.",
+  descricao: "Porção Grande De Batata Frita Crocante + Molho Cortesia da casa.",
   preco: "R$ 13,99",
   imagem: "/img/fritasg.png",
 },
