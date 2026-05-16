@@ -303,12 +303,28 @@ return (
 </header>
   
 <div className="fixed right-2 top-20 z-50">
-<button
+<motion.button
   onClick={() => setCarrinhoAberto(!carrinhoAberto)}
-className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-4 py-3 text-lg font-black text-white shadow-xl transition hover:scale-105">
+  animate={{
+    scale: carrinho.length > 0 ? [1, 1.15, 1] : 1,
+    boxShadow:
+      carrinho.length > 0
+        ? [
+            "0 0 0px rgba(255,120,0,0)",
+            "0 0 28px rgba(255,120,0,0.8)",
+            "0 0 0px rgba(255,120,0,0)",
+          ]
+        : "0 0 0px rgba(255,120,0,0)",
+  }}
+  transition={{ duration: 0.35 }}
+  className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-4 py-3 text-lg font-black text-white shadow-xl transition hover:scale-105"
+>
   <ShoppingBag size={22} />
   <span>{carrinho.length}</span>
-</button>
+</motion.button>
+
+  <ShoppingBag size={22} />
+  <span>{carrinho.length}</span>
   {carrinhoAberto && (
     <div className="mt-3 max-h-[70vh] overflow-y-auto rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-2xl">
 
@@ -714,7 +730,6 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
     </motion.div>
   ))}
 </div>
-
 </section>
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
@@ -727,7 +742,6 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
             <p className="font-bold text-orange-300 md:text-xl">Em Nossa Hamburgueria Delivery </p>
             <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
           </div>
-
 <div className="grid gap-5 md:grid-cols-3">
 {combosNormais.map((combo) => (
   <motion.div
