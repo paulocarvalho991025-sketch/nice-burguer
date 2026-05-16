@@ -327,7 +327,7 @@ animate={{
       : "0 0 0px rgba(255,120,0,0)",
 }}
 transition={{
-  duration: 0.8,
+  duration: 1,
   ease: "easeInOut",
 }}
   className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-4 py-3 text-lg font-black text-white shadow-xl transition hover:scale-105"
