@@ -318,9 +318,7 @@ Endereço: ${enderecoEvento}
 
 Pagamento: ${pagamentoEvento}
 
-<p className="mt-4 text-lg font-black text-yellow-400">
-  Total: R$ {totalAgendamento.toFixed(2).replace(".", ",")}
-</p>
+
 `);
 
 
