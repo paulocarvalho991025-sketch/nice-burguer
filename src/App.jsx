@@ -321,10 +321,6 @@ ${carrinhoEventos
 
 Data do evento: ${dataEvento}
 
-Horário: ${horarioEvento}
-
-Bairro: ${bairroEvento}
-
 Endereço: ${enderecoEvento}
 
 Pagamento: ${pagamentoEvento}
