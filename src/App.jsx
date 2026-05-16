@@ -733,7 +733,7 @@ transition={{
 
           <div className="flex flex-col items-center justify-center">
   <img
-    src="/img/NiceBurguer.jpeg"
+    src="/img/NiceBurguer!.jpeg"
     alt="Nice Burguer"
     className="h-85 w-85 rounded-full object-cover shadow-lg"
   />
@@ -774,7 +774,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     <div className="overflow-hidden rounded-[2rem]">
 
       <img
-        src="/img/cst.png"
+        src="/img/Combo Street.png"
         alt="Combo Street"
         className="h-[340px] w-full object-cover"
       />
