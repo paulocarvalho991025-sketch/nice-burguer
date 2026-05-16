@@ -536,10 +536,10 @@ transition={{
           
 
             <a
-              href="#cardapio"
+              href="#Combos "
               className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-orange-600 px-7 py-4 font-bold text-orange-700 hover:bg-orange-100"
             >
-              Ver cardápio
+              Ver Combos Exclusivos
             </a>
             
           </div>
