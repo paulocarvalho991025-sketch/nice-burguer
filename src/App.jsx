@@ -502,8 +502,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
               <span className="text-2xl font-black text-white-800">R$ 27,97</span>
             </div>
             
-            <div className="relative mb-5 flex h-[280px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-orange-100">
-
+<div className="relative mb-5 flex h-[420px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[#1b1614]">
   <img
     src="/img/st.png"
     alt=""
@@ -516,8 +515,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   <img
     src="/img/st.png"
     alt="Combo street"
-    className="relative z-10 max-h-[300px] w-auto object-contain"
-  />
+className="relative z-10 h-full w-full object-cover"  />
 
 </div>
             <h2 className="mt-5 text-2xl font-black">Combo Street</h2>
