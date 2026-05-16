@@ -524,7 +524,8 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
             <p className="mt-2 text-stone-300">
               Burguer 2.0 +
               Batata Frita +
-              Coca-Cola Lata 350ml
+              Coca-Cola Lata 350ml +
+              Molho Especial
             </p>
           </div>
         </motion.div>
