@@ -211,7 +211,7 @@ const combos = [
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca Lata 350ml",
     preco: "R$ 27,97",
-    imagem: "/img/street.png",
+    imagem: "/img/st.png",
     
   },
   {
@@ -515,7 +515,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
 
   <img
     src="/img/street.png"
-    alt="Combo Street"
+    alt="Combo st"
     className="relative z-10 max-h-[300px] w-auto object-contain"
   />
 
