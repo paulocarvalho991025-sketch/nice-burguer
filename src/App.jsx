@@ -526,11 +526,9 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 
     <div className="mb-4 flex items-center justify-between">
 
-      <span className="rounded-full bg-black-500 px-4 py-2 text-3xl font-black text-white">
+      <span className="rounded-full bg-black-500 px-4 py-2 text-3xl fontFamily: Kaushan Script">
         O Mais Querido
       </span>
-
-
     </div>
 
     <div className="overflow-hidden rounded-[2rem]">
@@ -569,7 +567,6 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   <div className="mb-10 text-center">
     <h2 className="text-3xl font-black md:text-4xl">Burguer's</h2>
   </div>
-
   <div className="grid gap-5 md:grid-cols-3">
 <>
 {burguers.map((produto) => (     
@@ -580,8 +577,6 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   transition={{ duration: 0.2 }}
 className="flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
   <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-    
-
     <img
       src={produto.imagem}
       alt={produto.nome}
