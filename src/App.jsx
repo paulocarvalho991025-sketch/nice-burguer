@@ -373,24 +373,39 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 <select
   value={bairro}
   onChange={(e) => setBairro(e.target.value)}
-  className="mt-4 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+  className="mt-4 w-full rounded-xl border border-orange-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none focus:border-orange-500"
 >
   <option value="">Selecione seu bairro</option>
 
   <option value="Nova Descoberta">
-    Nova Descoberta - R$ 6,00
+    Cidade da Esperança - R$ 5,00
+  </option>
+  <option value="Nova Descoberta">
+    Dix-Sept Rosado - R$ 5,00
+  </option>
+  <option value="Nova Descoberta">
+    Nossa Senhora de Nazaré - R$ 5,00
+  </option>
+  <option value="Nova Descoberta">
+    Lagoa Nova - R$ 7,00
+  </option>
+  <option value="Nova Descoberta">
+    Alecrim - R$ 7,00
   </option>
 
   <option value="Lagoa Nova">
-    Lagoa Nova - R$ 8,00
+    Tirol - R$ 7,00
   </option>
 
   <option value="Tirol">
-    Tirol - R$ 10,00
+    Nova Descoberta  R$9,00
   </option>
 
   <option value="Petrópolis">
-    Petrópolis - R$ 12,00
+    Cidade Alta R$9,00
+  </option>
+  <option value="Petrópolis">
+    Candelária R$9,00
   </option>
 </select>
 
@@ -403,10 +418,9 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
 />
 
 <select
-
   value={pagamento}
   onChange={(e) => setPagamento(e.target.value)}
-  className="mt-3 w-full rounded-xl border border-orange-200 p-3 text-sm outline-none focus:border-orange-500"
+  className="mt-3 w-full rounded-xl border border-orange-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none focus:border-orange-500"
 >
   <option value="">Escolha a forma de pagamento</option>
   <option value="Pix">Pix</option>
