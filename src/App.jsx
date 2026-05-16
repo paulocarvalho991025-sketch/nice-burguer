@@ -297,16 +297,21 @@ function finalizarAgendamento() {
     return;
   }
 
+  if (!bairroEvento) {
+    alert("Selecione o bairro.");
+    return;
+  }
+
   if (!enderecoEvento.trim()) {
     alert("Digite o endereço.");
     return;
   }
 
+
   if (!pagamentoEvento) {
     alert("Selecione a forma de pagamento.");
     return;
   }
-  
 
   const mensagemAgendamento = encodeURIComponent(`
 Novo Agendamento - NiceBurguer!
@@ -320,6 +325,10 @@ ${carrinhoEventos
   .join("\n")}
 
 Data do evento: ${dataEvento}
+
+Horário: ${horarioEvento}
+
+Bairro: ${bairroEvento}
 
 Endereço: ${enderecoEvento}
 
@@ -770,6 +779,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
             >
               Ver Combos Exclusivos
             </a>
+            
       </section>
 <section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
   <div className="mb-10 text-center">
