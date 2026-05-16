@@ -600,7 +600,8 @@ transition={{
     </div>
   )}
 </div>
-<div className="fixed right-2 top-36 z-50">
+{carrinhoEventos.length > 0 && (
+  <div className="fixed left-2 top-36 z-50">
   <motion.button
     type="button"
     onClick={() => setAgendamentoAberto(!agendamentoAberto)}
@@ -717,6 +718,7 @@ transition={{
     </div>
   )}
 </div>
+)}
 <section
   id="inicio"
   className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-10 md:grid-cols-2 md:py-16"
