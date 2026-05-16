@@ -543,8 +543,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   whileHover={{ y: -8, scale: 1.02 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-  className="rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl"
->
+className="flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
   <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
     <img
       src={produto.imagem}
@@ -603,7 +602,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
     transition={{ duration: 0.2 }}
     className="rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl"
   >
-    <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+    <div className="relative mb-4 flex h-32 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
       <img
         src={produto.imagem}
         alt=""
@@ -621,7 +620,7 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
       {produto.nome}
     </h3>
 
-    <p className="mt-2 min-h-16 text-sm leading-6 text-stone-300">
+    <p className="mt-2 min-h-[70px] text-sm leading-6 text-stone-300">
       {produto.descricao}
     </p>
 
