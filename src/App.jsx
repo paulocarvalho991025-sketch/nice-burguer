@@ -764,11 +764,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       transition={{ duration: 0.2 }}
 className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur"   >
       <div className="relative mb-4 flex h-40 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
-        <img
-          src={produto.imagem}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-50 blur-md scale-150"
-        />
+        
 
         <img
           src={produto.imagem}
