@@ -529,7 +529,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     <div className="mb-4 flex items-center justify-between">
 
       <span className="rounded-full bg-black-500 px-4 py-2 text-3xl font-black text-white">
-        O Mais Pedido
+        O Mais Querido
       </span>
 
 
@@ -564,14 +564,11 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     ? "Adicionado à sacola!"
     : "Adicionar"}
 </motion.button>
-
   </div>
-
 </motion.div>
       </section>
 <section id="cardapio" className="mx-auto max-w-6xl px-5 py-16">
   <div className="mb-10 text-center">
-    <p className="font-bold text-orange-700">Cardápio</p>
     <h2 className="text-3xl font-black md:text-4xl">Burguer's</h2>
   </div>
 
