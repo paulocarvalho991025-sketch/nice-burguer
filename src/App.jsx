@@ -597,21 +597,40 @@ transition={{
           Nenhum agendamento ainda.
         </p>
       ) : (
-        carrinhoEventos.map((item, index) => (
-          <div
-            key={index}
-            className="mb-3 rounded-2xl border border-yellow-500/30 bg-[#2b211d] p-3"
-          >
-            <p className="font-bold text-white">{item.nome}</p>
-            <p className="text-sm font-black text-yellow-400">{item.preco}</p>
-            <button
-  onClick={() => removerAgendamento(index)}
-  className="mt-2 text-xs font-bold text-red-400 hover:text-red-600"
->
-  Remover
-</button>
-          </div>
-        ))
+        Object.values(
+  carrinhoEventos.reduce((acc, item) => {
+    if (!acc[item.nome]) {
+      acc[item.nome] = {
+        ...item,
+        quantidade: 1,
+      };
+    } else {
+      acc[item.nome].quantidade += 1;
+    }
+
+    return acc;
+  }, {})
+).map((item, index) => (
+  <div
+    key={index}
+    className="mb-3 rounded-2xl border border-yellow-500/30 bg-[#2b211d] p-3"
+  >
+    <p className="font-bold text-white">
+      {item.quantidade}x {item.nome}
+    </p>
+
+    <p className="text-sm font-black text-yellow-400">
+      {item.preco}
+    </p>
+
+    <button
+      onClick={() => removerAgendamento(index)}
+      className="mt-2 text-xs font-bold text-red-400 hover:text-red-600"
+    >
+      Remover
+    </button>
+  </div>
+))
       )}
      <div className="mt-4 border-t border-yellow-500/30 pt-4">
   <input
@@ -622,12 +641,18 @@ transition={{
     className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
   />
 
+  <div className="mt-3">
+  <label className="mb-2 block text-sm font-black text-yellow-400">
+    Qual a data do seu evento?
+  </label>
+
   <input
     type="date"
     value={dataEvento}
     onChange={(e) => setDataEvento(e.target.value)}
-    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+    className="w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none [color-scheme:light]"
   />
+</div>
 
   
 
