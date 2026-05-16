@@ -743,7 +743,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
     whileHover={{ y: -8, scale: 1.02 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-    className="relative min-h-[420px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
+    className="relative min-h-[400px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
   >
     <img
       src={combo.imagem}
