@@ -514,8 +514,8 @@ className="rounded-[2rem] bg-gradient-to-br from-[#ff3c00] via-[#ff7b00] to-[#ff
   />
 
   <img
-    src="/img/st.png.png"
-    alt="Combo st"
+    src="/img/st.png."
+    alt="Combo street"
     className="relative z-10 max-h-[300px] w-auto object-contain"
   />
 
