@@ -319,8 +319,6 @@ return (
   transition={{ duration: 0.35 }}
   className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-4 py-3 text-lg font-black text-white shadow-xl transition hover:scale-105"
 >
-  <ShoppingBag size={22} />
-  <span>{carrinho.length}</span>
 </motion.button>
 
   <ShoppingBag size={22} />
