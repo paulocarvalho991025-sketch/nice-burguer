@@ -486,7 +486,53 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
             >
               Ver cardápio
             </a>
-            
+            <div className="mb-10 mt-20 text-center">
+  <h2 className="text-4xl font-black md:text-4xl">
+    Combos
+  </h2>
+</div>
+      <section id="combos" className="bg-stone-900 py-16 text-white">
+        <div className="mx-auto max-w-6xl px-5">
+          <div className="mb-10 text-center">
+            <p className="font-bold text-orange-300 md:text-xl">Em Nossa Hamburgueria Delivery </p>
+            <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
+          </div>
+
+<div className="grid gap-5 md:grid-cols-3">
+{combosNormais.map((combo) => (
+  <motion.div
+    key={combo.nome}
+    whileHover={{ y: -8, scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+    transition={{ duration: 0.2 }}
+    className="relative min-h-[420px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
+  >
+    <img
+      src={combo.imagem}
+      alt={combo.nome}
+      className="absolute inset-0 h-full w-full object-cover opacity-90"
+    />
+
+    <div className="absolute inset-0 bg-black/30" />
+
+    <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
+      <motion.button
+        type="button"
+        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.05 }}
+        onClick={() => adicionarItem(combo)}
+        className="rounded-full bg-orange-600 px-5 py-3 text-sm font-black text-white shadow-xl hover:bg-orange-500"
+      >
+        {comboAdicionado === combo.nome
+          ? "Adicionado à sacola!"
+          : "Adicionar"}
+      </motion.button>
+    </div>
+  </motion.div>
+))}
+</div>
+</div>
+      </section>
           </div>
           </motion.div>
         <motion.div
@@ -688,53 +734,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
 </div>
 
 </section>
-<div className="mb-10 mt-20 text-center">
-  <h2 className="text-4xl font-black md:text-4xl">
-    Combos
-  </h2>
-</div>
-      <section id="combos" className="bg-stone-900 py-16 text-white">
-        <div className="mx-auto max-w-6xl px-5">
-          <div className="mb-10 text-center">
-            <p className="font-bold text-orange-300 md:text-xl">Em Nossa Hamburgueria Delivery </p>
-            <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
-          </div>
 
-<div className="grid gap-5 md:grid-cols-3">
-{combosNormais.map((combo) => (
-  <motion.div
-    key={combo.nome}
-    whileHover={{ y: -8, scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-    transition={{ duration: 0.2 }}
-    className="relative min-h-[420px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
-  >
-    <img
-      src={combo.imagem}
-      alt={combo.nome}
-      className="absolute inset-0 h-full w-full object-cover opacity-90"
-    />
-
-    <div className="absolute inset-0 bg-black/30" />
-
-    <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
-      <motion.button
-        type="button"
-        whileTap={{ scale: 0.9 }}
-        whileHover={{ scale: 1.05 }}
-        onClick={() => adicionarItem(combo)}
-        className="rounded-full bg-orange-600 px-5 py-3 text-sm font-black text-white shadow-xl hover:bg-orange-500"
-      >
-        {comboAdicionado === combo.nome
-          ? "Adicionado à sacola!"
-          : "Adicionar"}
-      </motion.button>
-    </div>
-  </motion.div>
-))}
-</div>
-</div>
-      </section>
       <div className="mt-24 text-center">
   <h2 className="text-4xl font-black text-white">
     Festas & Eventos
