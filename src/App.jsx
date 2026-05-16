@@ -83,6 +83,13 @@ const totalCarrinho = carrinho.reduce((total, item) => {
 }, 0);
 
 const totalFinal = totalCarrinho + taxaEntrega;
+const totalAgendamento = carrinhoEventos.reduce((total, item) => {
+  const valor = Number(
+    item.preco.replace("R$", "").replace(",", ".").trim()
+  );
+
+  return total + valor;
+}, 0);
 
 function adicionarAoCarrinho(produto) {
   setCarrinho((atual) => [...atual, produto]);
