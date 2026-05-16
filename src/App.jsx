@@ -177,7 +177,7 @@ const produtos = [
   nome: "Batata Frita Grande",
   descricao: "Porção Grande De Batata Frita Crocante.",
   preco: "R$ 13,99",
-  imagem: "/img/BatataFritag.png",
+  imagem: "/img/fritasg.png",
 },
 
   {
