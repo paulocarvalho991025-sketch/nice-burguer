@@ -190,7 +190,7 @@ const produtos = [
     nome: "Burguer 2.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
     preco: "R$ 14,99",
-    imagem: "/img/20.png"
+    imagem: "/img/2.png"
   },
   {
     nome: "Burguer 3.0",
@@ -241,7 +241,7 @@ const combos = [
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
     preco: "R$ 20,97",
-    imagem: "/img/p.png",
+    imagem: "/img/primi1.png",
   },
   {
     nome: "Combo Street",
