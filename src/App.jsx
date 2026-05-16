@@ -206,8 +206,6 @@ const produtos = [
     preco: "R$ 9,99",
     imagem: "/img/coca1.png",
   },
-  
-  
 ]; 
 const combos = [
   {
@@ -618,7 +616,6 @@ className="flex min-h-[340px] flex-col justify-between rounded-3xl border border
   ))}
 </>
 </div>
-
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
     Fritas
