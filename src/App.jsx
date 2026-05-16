@@ -42,7 +42,12 @@ const [trocoPara, setTrocoPara] = useState(() => {
   
   return localStorage.getItem("trocoPara") || "";
 });
-
+const [nomeEvento, setNomeEvento] = useState("");
+const [dataEvento, setDataEvento] = useState("");
+const [bairroEvento, setBairroEvento] = useState("");
+const [enderecoEvento, setEnderecoEvento] = useState("");
+const [horarioEvento, setHorarioEvento] = useState("");
+const [pagamentoEvento, setPagamentoEvento] = useState("");
 useEffect(() => {
   localStorage.setItem("trocoPara", trocoPara);
 }, [trocoPara]);
@@ -555,6 +560,65 @@ transition={{
           </div>
         ))
       )}
+     <div className="mt-4 border-t border-yellow-500/30 pt-4">
+  <input
+    type="text"
+    value={nomeEvento}
+    onChange={(e) => setNomeEvento(e.target.value)}
+    placeholder="Qual seu nome?"
+    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+  />
+
+  <input
+    type="date"
+    value={dataEvento}
+    onChange={(e) => setDataEvento(e.target.value)}
+    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+  />
+
+  <select
+    value={bairroEvento}
+    onChange={(e) => setBairroEvento(e.target.value)}
+    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+  >
+    <option value="">Selecione o bairro</option>
+    <option value="Cidade da Esperança">Cidade da Esperança</option>
+    <option value="Dix-Sept Rosado">Dix-Sept Rosado</option>
+    <option value="Nossa Senhora de Nazaré">Nossa Senhora de Nazaré</option>
+    <option value="Lagoa Nova">Lagoa Nova</option>
+    <option value="Alecrim">Alecrim</option>
+    <option value="Tirol">Tirol</option>
+    <option value="Nova Descoberta">Nova Descoberta</option>
+    <option value="Cidade Alta">Cidade Alta</option>
+    <option value="Candelária">Candelária</option>
+  </select>
+
+  <input
+    type="text"
+    value={enderecoEvento}
+    onChange={(e) => setEnderecoEvento(e.target.value)}
+    placeholder="Adicione seu endereço"
+    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+  />
+
+  <input
+    type="time"
+    value={horarioEvento}
+    onChange={(e) => setHorarioEvento(e.target.value)}
+    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+  />
+
+  <select
+    value={pagamentoEvento}
+    onChange={(e) => setPagamentoEvento(e.target.value)}
+    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+  >
+    <option value="">Forma de pagamento</option>
+    <option value="Pix">Pix</option>
+    <option value="Dinheiro">Dinheiro</option>
+    <option value="Cartão">Cartão</option>
+  </select>
+</div>
     </div>
   )}
 </div>
