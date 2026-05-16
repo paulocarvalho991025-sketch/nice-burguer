@@ -512,7 +512,40 @@ transition={{
     </div>
   )}
 </div>
+<div className="fixed right-2 top-36 z-50">
+  <motion.button
+    type="button"
+    onClick={() => setAgendamentoAberto(!agendamentoAberto)}
+    className="flex items-center justify-center gap-2 rounded-full bg-yellow-500 px-4 py-3 text-lg font-black text-black shadow-xl"
+  >
+    📅
+    <span>{carrinhoEventos.length}</span>
+  </motion.button>
 
+  {agendamentoAberto && (
+    <div className="mt-3 w-80 rounded-3xl border border-yellow-400 bg-[#1f1a18] p-5 shadow-2xl">
+      <h2 className="mb-4 text-xl font-black text-yellow-400">
+        Agendamentos
+      </h2>
+
+      {carrinhoEventos.length === 0 ? (
+        <p className="text-sm text-stone-400">
+          Nenhum agendamento ainda.
+        </p>
+      ) : (
+        carrinhoEventos.map((item, index) => (
+          <div
+            key={index}
+            className="mb-3 rounded-2xl border border-yellow-500/30 bg-[#2b211d] p-3"
+          >
+            <p className="font-bold text-white">{item.nome}</p>
+            <p className="text-sm font-black text-yellow-400">{item.preco}</p>
+          </div>
+        ))
+      )}
+    </div>
+  )}
+</div>
 <section
   id="inicio"
   className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-10 md:grid-cols-2 md:py-16"
