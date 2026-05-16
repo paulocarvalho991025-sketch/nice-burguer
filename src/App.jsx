@@ -44,9 +44,7 @@ const [trocoPara, setTrocoPara] = useState(() => {
 });
 const [nomeEvento, setNomeEvento] = useState("");
 const [dataEvento, setDataEvento] = useState("");
-const [bairroEvento, setBairroEvento] = useState("");
 const [enderecoEvento, setEnderecoEvento] = useState("");
-const [horarioEvento, setHorarioEvento] = useState("");
 const [pagamentoEvento, setPagamentoEvento] = useState("");
 useEffect(() => {
   localStorage.setItem("trocoPara", trocoPara);
@@ -286,28 +284,18 @@ function finalizarAgendamento() {
     alert("Adicione pelo menos um agendamento.");
     return;
   }
-
   if (!nomeEvento.trim()) {
     alert("Digite seu nome.");
     return;
   }
-
   if (!dataEvento) {
     alert("Selecione a data do evento.");
     return;
   }
-
-  if (!bairroEvento) {
-    alert("Selecione o bairro.");
-    return;
-  }
-
   if (!enderecoEvento.trim()) {
     alert("Digite o endereço.");
     return;
   }
-
-
   if (!pagamentoEvento) {
     alert("Selecione a forma de pagamento.");
     return;
@@ -326,14 +314,15 @@ ${carrinhoEventos
 
 Data do evento: ${dataEvento}
 
-Horário: ${horarioEvento}
-
-Bairro: ${bairroEvento}
-
 Endereço: ${enderecoEvento}
 
 Pagamento: ${pagamentoEvento}
+
+<p className="mt-4 text-lg font-black text-yellow-400">
+  Total: R$ {totalAgendamento.toFixed(2).replace(".", ",")}
+</p>
 `);
+
 
   const linkAgendamento =
     `https://wa.me/5584997063345?text=${mensagemAgendamento}`;
@@ -593,7 +582,7 @@ transition={{
   </motion.button>
 
   {agendamentoAberto && (
-    <div className="mt-3 w-80 rounded-3xl border border-yellow-400 bg-[#1f1a18] p-5 shadow-2xl">
+<div className="mt-3 max-h-[70vh] w-80 overflow-y-auto rounded-3xl border border-yellow-400 bg-[#1f1a18] p-5 shadow-2xl">
       <h2 className="mb-4 text-xl font-black text-yellow-400">
         Agendamentos
       </h2>
@@ -635,22 +624,7 @@ transition={{
     className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
   />
 
-  <select
-    value={bairroEvento}
-    onChange={(e) => setBairroEvento(e.target.value)}
-    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
-  >
-    <option value="">Selecione o bairro</option>
-    <option value="Cidade da Esperança">Cidade da Esperança</option>
-    <option value="Dix-Sept Rosado">Dix-Sept Rosado</option>
-    <option value="Nossa Senhora de Nazaré">Nossa Senhora de Nazaré</option>
-    <option value="Lagoa Nova">Lagoa Nova</option>
-    <option value="Alecrim">Alecrim</option>
-    <option value="Tirol">Tirol</option>
-    <option value="Nova Descoberta">Nova Descoberta</option>
-    <option value="Cidade Alta">Cidade Alta</option>
-    <option value="Candelária">Candelária</option>
-  </select>
+  
 
   <input
     type="text"
@@ -660,13 +634,7 @@ transition={{
     className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
   />
 
-  <input
-    type="time"
-    value={horarioEvento}
-    onChange={(e) => setHorarioEvento(e.target.value)}
-    className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
-  />
-
+ 
   <select
     value={pagamentoEvento}
     onChange={(e) => setPagamentoEvento(e.target.value)}
