@@ -494,6 +494,15 @@ className="flex items-center justify-center gap-2 rounded-full bg-orange-600 px-
     Combos
   </h2>
 </div>
+
+<section id="combos" className="bg-stone-900 py-16 text-white">
+  
+</section>
+          <div className="mb-10 mt-20 text-center">
+  <h2 className="text-4xl font-black md:text-4xl">
+    Combos
+  </h2>
+</div>
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
