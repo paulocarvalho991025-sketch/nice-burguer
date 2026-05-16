@@ -184,13 +184,13 @@ const produtos = [
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
     preco: "R$ 9,99",
-    imagem:"/img/bug1.png",
+    imagem:"/img/.png",
   },
   {
     nome: "Burguer 2.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
     preco: "R$ 14,99",
-    imagem: "/img/2.png"
+    imagem: "/img/Burguer 2.0.png"
   },
   {
     nome: "Burguer 3.0",
@@ -203,37 +203,37 @@ const produtos = [
   nome: "Batata Frita Pequena",
   descricao: "Porção Pequena De Batata Frita Crocante + Molho Cortesia da casa.",
   preco: "R$ 6,99",
-  imagem: "/img/batatap.png",
+  imagem: "/img/Batata Pequena.png",
 },
 {
   nome: "Batata Frita Média ",
   descricao: "Porção Média De Batata Frita Crocante + Molho Cortesia da casa.",
   preco: "R$ 9,99",
-  imagem: "/img/fritasm.png",
+  imagem: "/img/Batata Média.png",
 },
 {
   nome: "Batata Frita Grande",
   descricao: "Porção Grande De Batata Frita Crocante + Molho Cortesia da casa.",
   preco: "R$ 13,99",
-  imagem: "/img/fritasg.png",
+  imagem: "/img/Batata Grande.png",
 },
 
   {
     nome: "Coca-Cola Garrafinha 250ml",
     descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/coca250.png"
+    imagem: "/img/Coca-Cola Garrafinha 250ml.png"
   },
 {
     nome: "Coca-Cola Lata 350 ml",
     descricao: "Coca-Cola Lata 350 ml",
     preco: "R$ 5,99",
-    imagem: "/img/coca coca.png",
+    imagem: "/img/Coca-Cola Lata 350ml.png",
   },{
     nome: "Coca-Cola Garrafa 1 Litro",
     descricao: "Coca-Cola Garrafa 1 Litro",
     preco: "R$ 9,99",
-    imagem: "/img/coca1.png",
+    imagem: "/img/Coca-Cola Garrafa 1 Litro.png",
   },
 ]; 
 const combos = [
