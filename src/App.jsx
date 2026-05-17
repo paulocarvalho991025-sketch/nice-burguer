@@ -991,7 +991,7 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">{combosNormais.map((combo) => (
   <motion.div
     key={combo.nome}
-    whileHover={{ y: -8, scale: 1.005 }}
+    whileHover={{ y: -3, scale: 1.005 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative min-h-[400px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
