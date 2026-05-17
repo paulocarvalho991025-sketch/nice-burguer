@@ -839,8 +839,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     whileHover={{ y: -3, scale: 1.005 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-    className="relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
-  >
+className="min-w-[280px] md:min-w-0 relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"  >
     <img
       src={produto.imagem}
       alt={produto.nome}
