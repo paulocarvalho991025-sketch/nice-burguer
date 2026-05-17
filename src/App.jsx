@@ -1085,12 +1085,12 @@ className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl ba
             </p>
 
             <h2 className="mt-3 text-3xl font-black">
-              Rua professor saturnino 196
+              Rua Professor Saturnino, Nazaré
               
             </h2>
 
             <p className="mt-3 text-stone-300">
-              Atendimento por encomenda e retirada,
+              Delivery e retirada,
 
                              
                              faça já seu pedido!
