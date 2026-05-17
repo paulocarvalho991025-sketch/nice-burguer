@@ -839,7 +839,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   whileHover={{ y: -3, scale: 1.005 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl">
+className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-5 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition hover:shadow-[0_0_60px_rgba(255,120,0,0.25)]">
   <div className="relative mb-4 overflow-hidden rounded-2xl">
     <img
       src={produto.imagem}
@@ -998,8 +998,7 @@ className="min-w-[300px] md:min-w-0 relative min-h-[380px] overflow-hidden round
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.05 }}
         onClick={() => adicionarItem(combo)}
-        className="rounded-full bg-orange-600 px-5 py-3 text-sm font-black text-white shadow-xl hover:bg-orange-500"
-      >
+className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"      >
         {comboAdicionado === combo.nome
           ? "Adicionado à sacola!"
           : "Adicionar"}
