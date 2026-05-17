@@ -763,8 +763,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 
 <div className="rounded-[1.5rem] bg-[#1f1a18] p-5">
 
-    <div className="mb-4 flex items-center justify-between">
-
+<div className="mb-4 flex items-center justify-center">
       <div className="flex flex-col leading-none">
   
   <span
