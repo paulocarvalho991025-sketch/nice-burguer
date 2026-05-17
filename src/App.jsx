@@ -218,18 +218,18 @@ const produtos = [
 },
 
   {
-    nome: "Coca-Cola Garrafinha 250ml",
+    nome: "Coca-Cola Original Garrafinha 250ml",
     descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
     imagem: "/img/250.png"
   },
 {
-    nome: "Coca-Cola Lata 350 ml",
-    descricao: "Coca-Cola Lata 350 ml",
+    nome: "Coca-Cola Original Lata 350ml",
+    descricao: "Coca-Cola Lata 350ml",
     preco: "R$ 5,99",
-    imagem: "/img/Coca-Cola Lata350ml.png",
+    imagem: "/img/350.png",
   },{
-    nome: "Coca-Cola Garrafa 1 Litro",
+    nome: "Coca-Cola Original Garrafa 1 Litro",
     descricao: "Coca-Cola Garrafa 1 Litro",
     preco: "R$ 9,99",
     imagem: "/img/Coca-Cola Garrafa 1 Litro.png",
