@@ -862,8 +862,7 @@ className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-
       whileTap={{ scale: 0.95 }}
       whileHover={{ scale: 1.01 }}
       onClick={() => adicionarItem(produto)}
-      className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"
-    >
+className="w-full rounded-3xl bg-orange-600 py-7 text-2xl font-black text-white shadow-[0_0_30px_rgba(255,120,0,0.45)] hover:bg-orange-500" >
       {comboAdicionado === produto.nome
         ? "Adicionado!"
         : "Adicionar"}
