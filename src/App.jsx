@@ -996,7 +996,7 @@ className="relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 sh
     <img
       src={combo.imagem}
       alt={combo.nome}
-      className="absolute inset-0 h-full w-full object-cover opacity-90"
+      className="h-[330px] w-full object-cover"
     />
 
     <div className="absolute inset-0 bg-black/30" />
