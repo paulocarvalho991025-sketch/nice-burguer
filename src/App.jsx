@@ -385,9 +385,17 @@ return (
 
     <header className="sticky top-0 z-50 border-b bg-[#1b1614]/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <a href="#inicio" className="text-xl font-black text-orange-700">
-          NiceBurguer!
-        </a>
+        <a
+  href="#inicio"
+  className="text-2xl text-orange-400"
+  style={{
+    fontFamily: "'Road Rage', cursive",
+    textShadow: "0 0 12px rgba(255,120,0,0.9)",
+    letterSpacing: "1px",
+  }}
+>
+  NiceBurguer!
+</a>
 
         <nav className="flex items-center gap-3 text-xs font-semibold sm:gap-7 sm:text-sm">
           <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
