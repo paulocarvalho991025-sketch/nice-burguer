@@ -984,7 +984,7 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
     whileHover={{ y: -3, scale: 0.95 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-className="relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"  >
+className="min-w-[300px] md:min-w-0 relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur" >
     <img
       src={combo.imagem}
       alt={combo.nome}
