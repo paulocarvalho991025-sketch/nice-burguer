@@ -835,35 +835,42 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible"><>
 {burguers.map((produto) => (
   <motion.div
-    key={produto.nome}
-    whileHover={{ y: -3, scale: 1.005 }}
-    whileTap={{ scale: 0.98 }}
-    transition={{ duration: 0.2 }}
-className="min-w-[280px] md:min-w-0 relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"  >
+  key={produto.nome}
+  whileHover={{ y: -3, scale: 1.005 }}
+  whileTap={{ scale: 0.98 }}
+  transition={{ duration: 0.2 }}
+  className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"
+>
+  <div className="relative mb-4 overflow-hidden rounded-2xl">
     <img
       src={produto.imagem}
       alt={produto.nome}
-      className="h-[330px] w-full object-cover"
+      className="h-[320px] w-full object-cover"
     />
+  </div>
 
-    <div className="absolute inset-0 bg-black/30" />
+  <h3 className="text-2xl font-black text-white">
+    {produto.nome}
+  </h3>
 
-    <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
+  <p className="mt-3 text-sm leading-7 text-stone-300">
+    {produto.descricao}
+  </p>
 
-      <motion.button
-        type="button"
-        whileTap={{ scale: 0.9 }}
-        whileHover={{ scale: 1.05 }}
-        onClick={() => adicionarItem(produto)}
-        className="rounded-full bg-orange-600 px-5 py-3 text-sm font-black text-white shadow-xl hover:bg-orange-500"
-      >
-        {comboAdicionado === produto.nome
-          ? "Adicionado!"
-          : "Adicionar"}
-      </motion.button>
-
-    </div>
-  </motion.div>
+  <div className="mt-6">
+    <motion.button
+      type="button"
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.01 }}
+      onClick={() => adicionarItem(produto)}
+      className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"
+    >
+      {comboAdicionado === produto.nome
+        ? "Adicionado!"
+        : "Adicionar"}
+    </motion.button>
+  </div>
+</motion.div>
 ))}
 </>
 </div>
