@@ -232,7 +232,7 @@ const produtos = [
     nome: "Coca-Cola Original Garrafa 1 Litro",
     descricao: "Coca-Cola Garrafa 1 Litro",
     preco: "R$ 9,99",
-    imagem: "/img/1L.png",
+    imagem: "/img/1LL.png",
   },
 ]; 
 const combos = [
@@ -924,7 +924,8 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
   </h2>
 </div>
 
-<div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">  {bebidas.map((produto) => (
+<div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">  
+{bebidas.map((produto) => (
     <motion.div
       key={produto.nome}
       whileHover={{ y: -8, scale: 1.05 }}
