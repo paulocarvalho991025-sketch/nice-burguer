@@ -758,7 +758,7 @@ transition={{
         <motion.div
   initial={{ opacity: 0, scale: 0.96 }}
   animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.5 }}
+  transition={{ duration: 1 }}
 className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)]">
 
 <div className="rounded-[1.5rem] bg-[#1f1a18] p-5">
