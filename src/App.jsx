@@ -989,7 +989,7 @@ className="min-w-[300px] md:min-w-0 relative min-h-[380px] overflow-hidden round
     <img
       src={combo.imagem}
       alt={combo.nome}
-      className="h-[300px] w-full object-cover"
+      className="h-[330px] w-full object-cover"
     />
 
     <div className="absolute inset-0 bg-black/30" />
