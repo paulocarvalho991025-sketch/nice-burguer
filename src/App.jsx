@@ -834,42 +834,49 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   </div>
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible"><>
 {burguers.map((produto) => (     
-  <motion.div
+<motion.div
   key={produto.nome}
-  whileHover={{ y: -8, scale: 1.05 }}
+  whileHover={{ y: -3, scale: 1.005 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-className="min-w-[280px] md:min-w-0 flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
-  <div className="relative mb-4 flex h-[340px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-    <img
-      src={produto.imagem}
-      alt={produto.nome}
-      className="relative z-10 h-full w-auto object-contain"
-    />
-  </div>
+  className="min-w-[280px] md:min-w-0 relative min-h-[420px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
+>
+  <img
+    src={produto.imagem}
+    alt={produto.nome}
+    className="absolute inset-0 h-full w-full object-contain opacity-90"
+  />
 
-  <h3 className="text-xl font-black text-white">
-    {produto.nome}
-  </h3>
+  <div className="absolute inset-0 bg-black/40" />
 
-  <p className="mt-2 min-h-16 text-sm leading-6 text-stone-300">
-    {produto.descricao}
-  </p>
+  <div className="absolute bottom-0 left-0 right-0 z-20 p-5">
 
-  <div className="mt-5 flex items-center justify-between">
-    <span className="text-2xl font-black text-orange-700">
-      {produto.preco}
-    </span>
+    <h3 className="text-2xl font-black text-white">
+      {produto.nome}
+    </h3>
 
-    <motion.button
-      type="button"
-      whileTap={{ scale: 0.9 }}
-      whileHover={{ scale: 1.05 }}
-      onClick={() => adicionarItem(produto)}
-      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
-    >
-      {comboAdicionado === produto.nome ? "Adicionado à sacola!" : "Adicionar"}
-    </motion.button>
+    <p className="mt-2 text-sm leading-5 text-stone-200">
+      {produto.descricao}
+    </p>
+
+    <div className="mt-4 flex items-center justify-between">
+      <span className="text-2xl font-black text-orange-400">
+        {produto.preco}
+      </span>
+
+      <motion.button
+        type="button"
+        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.05 }}
+        onClick={() => adicionarItem(produto)}
+        className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white shadow-xl hover:bg-orange-500"
+      >
+        {comboAdicionado === produto.nome
+          ? "Adicionado!"
+          : "Adicionar"}
+      </motion.button>
+    </div>
+
   </div>
 </motion.div>
   ))}
