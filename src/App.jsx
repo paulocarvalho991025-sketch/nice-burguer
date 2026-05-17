@@ -931,7 +931,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
   whileHover={{ y: -3, scale: 1.005 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-  className="min-w-[250px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"
+  className="min-w-[330px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"
 >
   <div className="relative mb-4 overflow-hidden rounded-2xl">
     <img
