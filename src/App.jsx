@@ -967,17 +967,18 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
   ))}
 </div>
 </section>
-<div className="mb-10 mt-20 text-center">
-  <h2 className="text-4xl font-black md:text-4xl">
-    Combos
-  </h2>
-</div>
+
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
-            <p className="font-bold text-orange-300 md:text-xl">Em Nossa Hamburgueria Delivery </p>
-            <h2 className="text-3xl font-black md:text-4xl">Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!</h2>
-          </div>
+  <p className="font-bold text-orange-300 md:text-xl">
+    Em Nossa Hamburgueria Delivery
+  </p>
+
+  <h2 className="text-3xl font-black md:text-4xl">
+    Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!
+  </h2>
+</div>
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">{combosNormais.map((combo) => (
   <motion.div
     key={combo.nome}
