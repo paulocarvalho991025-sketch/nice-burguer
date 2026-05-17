@@ -758,7 +758,7 @@ transition={{
         <motion.div
   initial={{ opacity: 0, scale: 0.96 }}
   animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 1 }}
+  transition={{ duration: 2 }}
 className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)]">
 
 <div className="rounded-[1.5rem] bg-[#1f1a18] p-5">
@@ -767,7 +767,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       <div className="flex flex-col leading-none">
   
   <span
-  className="text-center text-6xl tracking-wide text-orange-400"
+  className="px-2 text-5xl text-orange-400"
   style={{
     fontFamily: "'Road Rage', cursive",
     textShadow: "0 0 12px rgba(255,120,0,0.7)",
