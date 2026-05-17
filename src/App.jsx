@@ -394,7 +394,7 @@ return (
     letterSpacing: "1px",
   }}
 >
-  NiceBurguer!
+  Nice Burguer
 </a>
 
         <nav className="flex items-center gap-3 text-xs font-semibold sm:gap-7 sm:text-sm">
