@@ -221,7 +221,7 @@ const produtos = [
     nome: "Coca-Cola Garrafinha 250ml",
     descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/Coca-Cola Garrafinha250ml.png"
+    imagem: "/img/250.png"
   },
 {
     nome: "Coca-Cola Lata 350 ml",
