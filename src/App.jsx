@@ -931,7 +931,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
-      <div className="relative mb-4 flex h-[280px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+      <div className="relative mb-4 flex h-[260px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
         
 
         <img
