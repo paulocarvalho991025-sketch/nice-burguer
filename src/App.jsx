@@ -886,7 +886,7 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
       <img
         src={produto.imagem}
         alt={produto.nome}
-className="relative z-10 h-[110%] w-auto object-contain"      />
+className="h-full w-full object-cover"      />
     </div>
 
     <h3 className="text-xl font-black text-white">
