@@ -840,7 +840,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
-  <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+  <div className="relative mb-4 flex h-[340px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
     <img
       src={produto.imagem}
       alt={produto.nome}
@@ -889,14 +889,12 @@ className="min-w-[280px] md:min-w-0 flex min-h-[340px] flex-col justify-between 
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
-    <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-      
+<div className="relative mb-4 flex h-[340px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">      
 
       <img
         src={produto.imagem}
         alt={produto.nome}
-        className="relative z-10 h-full w-auto object-contain"
-      />
+className="relative z-10 h-[110%] w-auto object-contain"      />
     </div>
 
     <h3 className="text-xl font-black text-white">
@@ -938,7 +936,7 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
-      <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
+      <div className="relative mb-4 flex h-[340px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
         
 
         <img
@@ -1043,8 +1041,7 @@ className="relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 sh
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"   >
-      <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
-        
+<div className="relative mb-4 flex h-[340px] items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">        
 
         <img
           src={produto.imagem}
