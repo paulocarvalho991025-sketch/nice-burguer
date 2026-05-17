@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arbitrage Tracker Pro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 350px;
+      min-height: 400px;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      color: #fff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #00ff96 0%, #00cc77 100%);
+      padding: 20px;
+      text-align: center;
+      border-radius: 0 0 15px 15px;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      font-size: 12px;
+      color: #333;
+      opacity: 0.8;
+    }
+
+    .section {
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #00ff96;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .status-card {
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .status-card.connected {
+      border-color: #00ff96;
+      background: rgba(0, 255, 150, 0.1);
+    }
+
+    .status-card.disconnected {
+      border-color: #ff4444;
+      background: rgba(255, 68, 68, 0.1);
+    }
+
+    .status-label {
+      font-size: 11px;
+      color: #aaa;
+      margin-bottom: 4px;
+    }
+
+    .status-value {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .connected .status-value {
+      color: #00ff96;
+    }
+
+    .disconnected .status-value {
+      color: #ff4444;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .stat-item {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      color: #888;
+      margin-bottom: 2px;
+    }
+
+    .stat-value {
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #00ff96;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: #00cc77;
+    }
+
+    .btn-secondary {
+      background: #333;
+      color: #fff;
+      border: 1px solid #555;
+    }
+
+    .btn-secondary:hover {
+      background: #444;
+    }
+
+    .footer {
+      padding: 15px 20px;
+      border-top: 1px solid #333;
+      background: #111;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 8px;
+    }
+
+    .footer-link {
+      color: #888;
+      text-decoration: none;
+      font-size: 11px;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover {
+      color: #00ff96;
+    }
+
+    .version {
+      font-size: 10px;
+      color: #555;
+    }
+
+    .tooltip {
+      position: relative;
+      cursor: help;
+    }
+
+    .tooltip:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      white-space: nowrap;
+      z-index: 1000;
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+
+    .loading {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      border-top-color: #00ff96;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📊 Arbitrage Tracker Pro</h1>
+    <p>Monitor de arbitragem em tempo real</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      <span class="icon">🔗</span>
+      Status das Conexões
+    </div>
+    <div class="status-grid">
+      <div class="status-card" id="spot-status">
+        <div class="status-label">SPOT (Gate.io)</div>
+        <div class="status-value" id="spot-status-text">
+          <div class="loading"></div>
+        </div>
+      </div>
+      <div class="status-card" id="futures-status">
+        <div class="status-label">FUTURES (MEXC)</div>
+        <div class="status-value" id="futures-status-text">
+          <div class="loading"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      <span class="icon">📈</span>
+      Estatísticas Ativas
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-label">Tokens</div>
+        <div class="stat-value" id="active-tokens">0</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">Conexões</div>
+        <div class="stat-value" id="total-connections">0</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">Latência</div>
+        <div class="stat-value" id="avg-latency">-</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      <span class="icon">⚙️</span>
+      Controles
+    </div>
+    <div class="controls">
+      <button class="btn btn-primary" id="refresh-btn">
+        <span id="refresh-icon">🔄</span> Atualizar
+      </button>
+      <button class="btn btn-secondary" id="settings-btn">
+        ⚙️ Config
+      </button>
+    </div>
+  </div>
+
+  <div class="section hidden" id="advanced-section">
+    <div class="section-title">
+      <span class="icon">🔧</span>
+      Configurações Avançadas
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label style="display: block; margin-bottom: 5px; font-size: 12px; color: #aaa;">
+        Intervalo de Atualização (ms)
+      </label>
+      <input type="number" id="update-interval" min="50" max="5000" value="100" 
+             style="width: 100%; padding: 8px; background: #222; border: 1px solid #333; 
+                    border-radius: 4px; color: #fff; font-size: 12px;">
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label style="display: block; margin-bottom: 5px; font-size: 12px; color: #aaa;">
+        <input type="checkbox" id="debug-mode" style="margin-right: 5px;">
+        Modo Debug
+      </label>
+    </div>
+    <div>
+      <button class="btn btn-secondary" id="clear-cache-btn" style="width: 100%;">
+        🗑️ Limpar Cache
+      </button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#" class="footer-link" id="github-link">GitHub</a>
+      <a href="#" class="footer-link" id="support-link">Suporte</a>
+      <a href="#" class="footer-link" id="docs-link">Docs</a>
+    </div>
+    <div class="version">v2.0.0</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

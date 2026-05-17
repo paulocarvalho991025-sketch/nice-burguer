@@ -400,7 +400,8 @@ return (
 
 </header>
   
-<div className="fixed right-2 top-20 z-50">
+{carrinho.length > 0 && (
+  <div className="fixed right-2 top-20 z-50">
 <motion.button
   onClick={() => setCarrinhoAberto(!carrinhoAberto)}
 animate={{
@@ -597,6 +598,7 @@ transition={{
     </div>
   )}
 </div>
+)}
 {carrinhoEventos.length > 0 && (
   <div className="fixed left-2 top-36 z-50">
   <motion.button
