@@ -232,7 +232,7 @@ const produtos = [
     nome: "Coca-Cola Original Garrafa 1 Litro",
     descricao: "Coca-Cola Garrafa 1 Litro",
     preco: "R$ 9,99",
-    imagem: "/img/Coca-Cola Garrafa 1 Litro.png",
+    imagem: "/img/1L.png",
   },
 ]; 
 const combos = [
