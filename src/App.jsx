@@ -897,18 +897,14 @@ className="h-full w-full object-cover"      />
       {produto.descricao}
     </p>
 
-    <div className="mt-5 flex items-center justify-between">
-      <span className="text-2xl font-black text-orange-700">
-        {produto.preco}
-      </span>
+<div className="mt-6">      
 
       <motion.button
         type="button"
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.05 }}
         onClick={() => adicionarItem(produto)}
-        className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
-      >
+className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"      >
         {comboAdicionado === produto.nome ? "Adicionado à sacola!" : "Adicionar"}
       </motion.button>
     </div>
