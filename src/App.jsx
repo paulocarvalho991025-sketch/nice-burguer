@@ -390,7 +390,7 @@ return (
           NiceBurguer!
         </a>
 
-        <nav className="flex items-center gap-3 text-xs font-semibold sm:gap-7 sm:text-sm">
+        <nav cclassName="flex items-center gap-4 text-sm font-semibold">
           <a href="#cardapio" className="hover:text-orange-700">Cardápio</a>
           <a href="#combos" className="hover:text-orange-700">Combos</a>
           <a href="#local" className="hover:text-orange-700">Localização</a>
