@@ -608,7 +608,7 @@ transition={{
 </div>
 )}
 {carrinhoEventos.length > 0 && (
-  <div className="fixed left-2 top-36 z-50">
+  <div className="fixed left-2 top-20 z-50">
   <motion.button
     type="button"
     onClick={() => setAgendamentoAberto(!agendamentoAberto)}
