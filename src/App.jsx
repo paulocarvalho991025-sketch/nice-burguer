@@ -736,7 +736,7 @@ transition={{
     transition={{ duration: 0.5 }}
     className="flex flex-col items-center text-center"
   >
-          <p className="mb-4 inline-flex rounded-full bg-orange-500 px-4 py-2 text-lg font-bold text-black">
+          <p className="mb-4 inline-flex rounded-full bg-orange-500 px-4 py-2 text-lg font-bold text-text-stone-900">
             Hamburgueria Artesanal
           </p>
 
