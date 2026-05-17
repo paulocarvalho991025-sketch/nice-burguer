@@ -765,9 +765,17 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 
     <div className="mb-4 flex items-center justify-between">
 
-      <span className="rounded-full bg-black-500 px-4 py-2 text-3xl font-black text-white">
-        O Mais Querido
-      </span>
+      <div className="flex flex-col leading-none">
+  
+  <span className="font-anton text-lg uppercase tracking-wider text-white">
+    O MAIS
+  </span>
+
+  <span className="font-roadrage rotate-[-2deg] text-5xl tracking-wide text-orange-500 drop-shadow-[0_0_20px_rgba(255,120,0,0.8)]">
+    QUERIDO 
+  </span>
+
+</div>
     </div>
 
     <div className="overflow-hidden rounded-[2rem]">
