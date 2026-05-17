@@ -794,7 +794,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       <img
         src="/img/Combo Street.png"
         alt="Combo Street"
-        className="h-[340px] w-full object-cover"
+        className="h-[333px] w-full object-cover"
       />
     </div>
 
@@ -994,7 +994,7 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
     whileHover={{ y: -3, scale: 0.95 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-className="relative min-h-[400px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"  >
+className="relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"  >
     <img
       src={combo.imagem}
       alt={combo.nome}
