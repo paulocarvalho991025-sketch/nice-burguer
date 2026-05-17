@@ -182,38 +182,38 @@ const produtos = [
   {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
-    preco: "",
+    preco: "R$9,99",
     imagem:"/img/Burguer 1.0.png",
   },
   {
     nome: "Burguer 2.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Aneis de Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
-    preco: "",
+    preco: "R$14,99",
     imagem: "/img/Burguer 2.0.png"
   },
   {
     nome: "Burguer 3.0",
     descricao: "Pão Brioche, 2 Blend Bovino 80g, 2 Fatias de Queijo Mussarela, Bacon, Picles, Aneis de Cebola Empanada, Cebola Caramelizada e Molho da casa.",
-    preco: "",
+    preco: "R$21,99",
     imagem: "/img/Burguer 3.0.png"
   },
   
 {
   nome: "Batata Frita Pequena",
   descricao: "Porção Pequena De Batata Frita Crocante + Molho Cortesia da casa.",
-  preco: "",
+  preco: "R$6,99",
   imagem: "/img/Batata Pequena.png",
 },
 {
   nome: "Batata Frita Média ",
   descricao: "Porção Média De Batata Frita Crocante + Molho Cortesia da casa.",
-  preco: "",
+  preco: "R$9,99",
   imagem: "/img/Batata Média.png",
 },
 {
   nome: "Batata Frita Grande",
   descricao: "Porção Grande De Batata Frita Crocante + Molho Cortesia da casa.",
-  preco: "",
+  preco: "R$13,99",
   imagem: "/img/Batata Grande.png",
 },
 
