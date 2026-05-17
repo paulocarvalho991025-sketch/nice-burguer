@@ -869,7 +869,7 @@ className="min-w-[280px] md:min-w-0 relative min-h-[380px] overflow-hidden round
 </div>
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
-    Fritas
+    Porções de Fritas
   </h2>
 </div>
 
@@ -913,7 +913,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
 </div>
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
-    Bebidas
+    Coca-Cola
   </h2>
 </div>
 
