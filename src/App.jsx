@@ -1030,7 +1030,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
       whileHover={{ y: -8, scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"   >
+className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-5 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition hover:shadow-[0_0_60px_rgba(255,120,0,0.35)]"   >
 <div className="relative mb-4 flex h-[340px] items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">        
 
         <img
