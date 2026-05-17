@@ -839,8 +839,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   whileHover={{ y: -3, scale: 1.005 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-  className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"
->
+className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl">
   <div className="relative mb-4 overflow-hidden rounded-2xl">
     <img
       src={produto.imagem}
@@ -853,8 +852,8 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     {produto.nome}
   </h3>
 
-  <p className="mt-3 text-sm leading-7 text-stone-300">
-    {produto.descricao}
+<p className="mt-3 min-h-[120px] text-sm leading-7 text-stone-300">   
+   {produto.descricao}
   </p>
 
   <div className="mt-6">
