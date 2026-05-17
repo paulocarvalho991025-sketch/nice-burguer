@@ -839,7 +839,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   whileHover={{ y: -8, scale: 1.02 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-className="flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
+className="min-w-[280px] md:min-w-0 flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
   <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
     <img
       src={produto.imagem}
@@ -888,7 +888,7 @@ className="flex min-h-[340px] flex-col justify-between rounded-3xl border border
     whileHover={{ y: -8, scale: 1.02 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
+className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
     <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
       
 
@@ -937,7 +937,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur"  >
+className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
       <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
         
 
@@ -994,7 +994,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
     whileHover={{ y: -8, scale: 1.02 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-    className="relative min-h-[400px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
+className="min-w-[280px] md:min-w-0 relative min-h-[400px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
   >
     <img
       src={combo.imagem}
@@ -1043,7 +1043,7 @@ className="relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl ba
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"    >
+className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"   >
       <div className="relative mb-4 flex h-65 items-center justify-center overflow-hidden rounded-2xl bg-[#2b211d]">
         
 
@@ -1086,7 +1086,7 @@ className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition ho
 
 </div>
 
-<div className="mt-12 grid gap-5 md:grid-cols-3">
+<div className="mt-12 flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
 </div>
       <section id="local" className="mx-auto max-w-6xl px-5 py-16">
         <div className="rounded-[2rem] bg-[#1f1a18] p-8 shadow-xl md:flex md:items-center md:justify-between">
@@ -1097,7 +1097,7 @@ className="rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition ho
             </p>
 
             <h2 className="mt-3 text-3xl font-black">
-              Rua Professor Saturnino, Nazaré
+              Rua professor saturnino 196
               
             </h2>
 
