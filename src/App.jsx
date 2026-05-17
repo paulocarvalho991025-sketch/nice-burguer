@@ -767,7 +767,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       <div className="flex flex-col leading-none">
   
   <span
-  className="px-2 text-5xl text-orange-400"
+  className="text-center text-6xl tracking-wide text-orange-400"
   style={{
     fontFamily: "'Road Rage', cursive",
     textShadow: "0 0 12px rgba(255,120,0,0.7)",
