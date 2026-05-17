@@ -779,7 +779,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   <span
   className="px-2 text-5xl text-orange-400"
   style={{
-    fontFamily: "'Anton', sans-serif",
+    fontFamily: "'Bebas Neue', sans-serif",
     textShadow: "0 0 12px rgba(255,120,0,0.7)",
   }}
 >
