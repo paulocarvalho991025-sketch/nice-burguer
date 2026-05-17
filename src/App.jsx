@@ -774,7 +774,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     textShadow: "0 0 12px rgba(255,120,0,0.7)",
   }}
 >
-  O Top 1° Mais Pedido!
+  O Top 1 Mais Pedido!
 </span>
 
 </div>
