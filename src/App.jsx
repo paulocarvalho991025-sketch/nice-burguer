@@ -927,47 +927,42 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">  
 {bebidas.map((produto) => (
     <motion.div
-      key={produto.nome}
-      whileHover={{ y: -8, scale: 1.05 }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ duration: 0.2 }}
-className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
-      <div className="relative mb-4 flex h-[250px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">
-        
+  key={produto.nome}
+  whileHover={{ y: -3, scale: 1.005 }}
+  whileTap={{ scale: 0.98 }}
+  transition={{ duration: 0.2 }}
+  className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"
+>
+  <div className="relative mb-4 overflow-hidden rounded-2xl">
+    <img
+      src={produto.imagem}
+      alt={produto.nome}
+      className="h-[320px] w-full object-cover"
+    />
+  </div>
 
-        <img
-          src={produto.imagem}
-          alt={produto.nome}
-          className="h-full w-full object-cover"
-        />
-      </div>
+  <h3 className="text-2xl font-black text-white">
+    {produto.nome}
+  </h3>
 
-      <h3 className="text-xl font-black text-white">
-        {produto.nome}
-      </h3>
+  <p className="mt-3 text-sm leading-7 text-stone-300">
+    {produto.descricao}
+  </p>
 
-      <p className="mt-2 min-h-16 text-sm leading-6 text-stone-300">
-        {produto.descricao}
-      </p>
-
-      <div className="mt-5 flex items-center justify-between">
-        <span className="text-2xl font-black text-orange-700">
-          {produto.preco}
-        </span>
-
-        <motion.button
-          type="button"
-          whileTap={{ scale: 0.9 }}
-          whileHover={{ scale: 1.05 }}
-          onClick={() => adicionarItem(produto)}
-          className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
-        >
-          {comboAdicionado === produto.nome
-            ? "Adicionado à sacola!"
-            : "Adicionar"}
-        </motion.button>
-      </div>
-    </motion.div>
+  <div className="mt-6">
+    <motion.button
+      type="button"
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.01 }}
+      onClick={() => adicionarItem(produto)}
+      className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"
+    >
+      {comboAdicionado === produto.nome
+        ? "Adicionado!"
+        : "Adicionar"}
+    </motion.button>
+  </div>
+</motion.div>
   ))}
 </div>
 </section>
@@ -993,7 +988,7 @@ className="min-w-[300px] md:min-w-0 relative min-h-[380px] overflow-hidden round
     <img
       src={combo.imagem}
       alt={combo.nome}
-      className="h-[350px] w-full object-cover"
+      className="h-[350px] w-full object-contain"
     />
 
     <div className="absolute inset-0 bg-black/30" />
