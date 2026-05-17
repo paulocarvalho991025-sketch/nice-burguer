@@ -732,7 +732,7 @@ transition={{
 
           <div className="flex flex-col items-center justify-center">
   <img
-    src="/img/NiceBurguer!.jpeg"
+    src="/img/NiceBurguer!!.png"
     alt="Nice Burguer"
     className="h-85 w-85 rounded-full object-cover shadow-lg"
   />
