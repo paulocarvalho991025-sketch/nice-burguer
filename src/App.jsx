@@ -836,7 +836,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 {burguers.map((produto) => (     
   <motion.div
   key={produto.nome}
-  whileHover={{ y: -8, scale: 1.02 }}
+  whileHover={{ y: -8, scale: 1.05 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 flex min-h-[340px] flex-col justify-between rounded-3xl border border-orange-100 bg-[#1f1a18] p-5 shadow-sm transition hover:shadow-xl">
@@ -885,7 +885,7 @@ className="min-w-[280px] md:min-w-0 flex min-h-[340px] flex-col justify-between 
   {fritas.map((produto) => (
   <motion.div
     key={produto.nome}
-    whileHover={{ y: -8, scale: 1.02 }}
+    whileHover={{ y: -8, scale: 1.05 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
@@ -934,7 +934,7 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">  {bebidas.map((produto) => (
     <motion.div
       key={produto.nome}
-      whileHover={{ y: -8, scale: 1.02 }}
+      whileHover={{ y: -8, scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
@@ -991,7 +991,7 @@ className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">{combosNormais.map((combo) => (
   <motion.div
     key={combo.nome}
-    whileHover={{ y: -8, scale: 1.02 }}
+    whileHover={{ y: -8, scale: 1.005 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative min-h-[400px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur"
@@ -1040,7 +1040,7 @@ className="min-w-[280px] md:min-w-0 relative min-h-[400px] overflow-hidden round
   {eventos.map((produto) => (
     <motion.div
       key={produto.nome}
-      whileHover={{ y: -8, scale: 1.02 }}
+      whileHover={{ y: -8, scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-xl backdrop-blur transition hover:shadow-[0_0_25px_rgba(255,120,0,0.25)]"   >
