@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";import { ShoppingBag, MessageCircle, Star, Clock, MapPin, Menu, X } from "lucide-react";
+import React, { useState, useEffect } from "react";import { ShoppingBag, MessageCircle, Star, Clock, MapPin, } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function App() {
-const [menuAberto, setMenuAberto] = useState(false);
 
 const [carrinho, setCarrinho] = useState(() => {
   const carrinhoSalvo = localStorage.getItem("carrinho");
@@ -396,9 +395,7 @@ return (
           <a href="#local" className="hover:text-orange-700">Localização</a>
         </nav>
 
-        <button className="md:hidden" onClick={() => setMenuAberto(!menuAberto)}>
-          {menuAberto ? <X /> : <Menu />}
-        </button>
+        
       </div>
 
 </header>
