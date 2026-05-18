@@ -20,6 +20,7 @@ const [carrinhoEventos, setCarrinhoEventos] = useState(() => {
     : [];
 });
 const [agendamentoAberto, setAgendamentoAberto] = useState(false);
+const [tipoEntregaEvento, setTipoEntregaEvento] = useState("");
 const [produtoAgendamento, setProdutoAgendamento] = useState(null);
 const [carrinhoAberto, setCarrinhoAberto] = useState(false);
 const [comboAdicionado, setComboAdicionado] = useState("");
@@ -344,7 +345,10 @@ function finalizarAgendamento() {
   return;
 }
   }
-  if (!enderecoEvento.trim()) {
+  if (
+  tipoEntregaEvento === "Entrega" &&
+  !enderecoEvento.trim()
+) {
     alert("Digite o endereço.");
     return;
   }
@@ -390,7 +394,11 @@ ${Object.values(
 
 Data do evento: ${dataEvento}
 Horário de entrega: ${horarioEvento}
-Endereço: ${enderecoEvento}
+Tipo: ${tipoEntregaEvento}
+
+${tipoEntregaEvento === "Entrega"
+  ? `Endereço: ${enderecoEvento}`
+  : "Retirada no local"}
 
 Pagamento: ${pagamentoEvento}
 Total: R$ ${totalAgendamento.toFixed(2).replace(".", ",")}
@@ -733,7 +741,21 @@ transition={{
   <label className="mb-2 block text-sm font-black text-yellow-400">
     Qual a data do seu evento?
   </label>
+<select
+  value={tipoEntregaEvento}
+  onChange={(e) => setTipoEntregaEvento(e.target.value)}
+  className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+>
+  <option value="">Entrega ou retirada?</option>
 
+  <option value="Entrega">
+    Entrega
+  </option>
+
+  <option value="Retirada">
+    Retirada
+  </option>
+</select>
   <input
     type="date"
     value={dataEvento}
@@ -754,15 +776,16 @@ transition={{
   />
 </div>
   
-
+{tipoEntregaEvento === "Entrega" && (
   <input
     type="text"
     value={enderecoEvento}
     onChange={(e) => setEnderecoEvento(e.target.value)}
     placeholder="Adicione seu endereço"
     className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
+    
   />
-
+)}
  
   <select
     value={pagamentoEvento}
