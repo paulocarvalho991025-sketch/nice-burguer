@@ -234,6 +234,26 @@ const produtos = [
     preco: "R$ 9,99",
     imagem: "/img/1LL.png",
   },
+  {
+  nome: "Suco De Manga",
+  descricao: "Suco De Manga 300ml",
+  preco: "R$ 6,99",
+  imagem: "/img/Suco Manga.webp",
+},
+
+{
+  nome: "Suco de Maracujá",
+  descricao: "Suco De Maracujá 300ml",
+  preco: "R$ 7,99",
+  imagem: "/img/Suco Maracuja.png",
+},
+
+{
+  nome: "Suco de Goiaba",
+  descricao: "Suco de Goiaba 300ml",
+  preco: "R$ 6,99",
+  imagem: "/img/Suco de Goiaba.jpg",
+},
 ]; 
 const combos = [
   {
@@ -367,6 +387,9 @@ const fritas = produtos.filter((produto) =>
 
 const bebidas = produtos.filter((produto) =>
   produto.nome.includes("Coca-Cola")
+);
+const sucos = produtos.filter((produto) =>
+  produto.nome.includes("Suco")
 );
 
 const eventos = combos.filter((combo) =>
@@ -964,7 +987,53 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
   ))}
 </div>
 </section>
+<div className="mb-10 mt-20 text-center">
+  <h2 className="text-4xl font-black md:text-4xl">
+    Sucos
+  </h2>
+</div>
 
+<div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
+  {sucos.map((produto) => (
+    <motion.div
+      key={produto.nome}
+      whileHover={{ y: -3, scale: 1.005 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ duration: 0.2 }}
+      className="min-w-[340px] md:min-w-0 rounded-3xl bg-[#1f1a18]/80 p-5 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition hover:shadow-[0_0_60px_rgba(255,120,0,0.35)]"
+    >
+      <div className="relative mb-4 overflow-hidden rounded-2xl">
+        <img
+          src={produto.imagem}
+          alt={produto.nome}
+          className="h-[320px] w-full object-cover"
+        />
+      </div>
+
+      <h3 className="text-2xl font-black text-white">
+        {produto.nome}
+      </h3>
+
+      <p className="mt-3 text-sm leading-7 text-stone-300">
+        {produto.descricao}
+      </p>
+
+      <div className="mt-6">
+        <motion.button
+          type="button"
+          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.01 }}
+          onClick={() => adicionarItem(produto)}
+          className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"
+        >
+          {comboAdicionado === produto.nome
+            ? "Adicionado!"
+            : "Adicionar"}
+        </motion.button>
+      </div>
+    </motion.div>
+  ))}
+</div>
       <section id="combos" className="bg-stone-900 py-16 text-white">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-10 text-center">
