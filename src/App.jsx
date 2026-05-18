@@ -276,6 +276,13 @@ const combos = [
     imagem: "/img/Combo Turbo.png",
   },
   {
+  nome: "20 Mini Burguer",
+  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
+  preco: "R$ 59,80",
+  imagem: "/img/Mini Burguer.png",
+  tipo: "mini-burguer",
+},
+  {
   nome: "40 Mini Burguer",
   descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
   preco: "R$ 119,60",
