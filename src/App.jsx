@@ -737,25 +737,21 @@ transition={{
     className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
   />
 
-  <div className="mt-3">
-  <label className="mb-2 block text-sm font-black text-yellow-400">
-    Qual a data do seu evento?
-  </label>
 <select
   value={tipoEntregaEvento}
   onChange={(e) => setTipoEntregaEvento(e.target.value)}
   className="mt-3 w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none"
 >
   <option value="">Entrega ou retirada?</option>
-
-  <option value="Entrega">
-    Entrega
-  </option>
-
-  <option value="Retirada">
-    Retirada
-  </option>
+  <option value="Entrega">Entrega</option>
+  <option value="Retirada">Retirada</option>
 </select>
+
+<div className="mt-3">
+  <label className="mb-2 block text-sm font-black text-yellow-400">
+    Qual a data do seu evento?
+  </label>
+
   <input
     type="date"
     value={dataEvento}
