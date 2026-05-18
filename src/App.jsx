@@ -43,6 +43,7 @@ const [trocoPara, setTrocoPara] = useState(() => {
 });
 const [nomeEvento, setNomeEvento] = useState("");
 const [dataEvento, setDataEvento] = useState("");
+const [horarioEvento, setHorarioEvento] = useState("");
 const [enderecoEvento, setEnderecoEvento] = useState("");
 const [pagamentoEvento, setPagamentoEvento] = useState("");
 useEffect(() => {
@@ -338,6 +339,10 @@ function finalizarAgendamento() {
   if (!dataEvento) {
     alert("Selecione a data do evento.");
     return;
+    if (!horarioEvento) {
+  alert("Selecione o horário de entrega.");
+  return;
+}
   }
   if (!enderecoEvento.trim()) {
     alert("Digite o endereço.");
@@ -384,7 +389,7 @@ ${Object.values(
 .join("\n")}
 
 Data do evento: ${dataEvento}
-
+Horário de entrega: ${horarioEvento}
 Endereço: ${enderecoEvento}
 
 Pagamento: ${pagamentoEvento}
@@ -736,7 +741,18 @@ transition={{
     className="w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none [color-scheme:light]"
   />
 </div>
+<div className="mt-3">
+  <label className="mb-2 block text-sm font-black text-yellow-400">
+    Qual horário de entrega?
+  </label>
 
+  <input
+    type="time"
+    value={horarioEvento}
+    onChange={(e) => setHorarioEvento(e.target.value)}
+    className="w-full rounded-xl border border-yellow-400 bg-[#fff7ed] p-3 text-sm font-bold text-stone-900 outline-none [color-scheme:light]"
+  />
+</div>
   
 
   <input
