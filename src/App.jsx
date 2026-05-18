@@ -765,7 +765,7 @@ transition={{
 </div>
 <div className="mt-3">
   <label className="mb-2 block text-sm font-black text-yellow-400">
-    Qual horário de entrega?
+    Qual horário de entrega/retirada?
   </label>
 
   <input
