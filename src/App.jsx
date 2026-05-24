@@ -203,13 +203,13 @@ const produtos = [
 {
   nome: "Batata Frita Pequena ",
   descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
-  preco: "R$7,99",
+  preco: "R$6,99",
   imagem: "/img/Batata Pequena.png",
 },
 {
   nome: "Batata Frita Grande",
   descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
-  preco: "R$15,99",
+  preco: "R$13,99",
   imagem: "/img/Batata Grande.png",
 },
 
@@ -241,14 +241,14 @@ const produtos = [
   nome: "Suco de Maracujá",
   descricao: "Suco De Maracujá 300ml",
   preco: "R$ 7,99",
-  imagem: "/img/mara.jpg",
+  imagem: "/img/mara.png",
 },
 
 {
   nome: "Suco de Goiaba",
   descricao: "Suco de Goiaba 300ml",
   preco: "R$ 5,99",
-  imagem: "/img/Suco de Goiaba.jpg",
+  imagem: "/img/aba.png",
 },
 ]; 
 const combos = [
