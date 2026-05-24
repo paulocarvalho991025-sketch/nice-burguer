@@ -185,13 +185,13 @@ const produtos = [
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
     preco: "R$11,99",
-    imagem:"/img/Burguer 1.0.png",
+    imagem:"/img/11,99.png",
   },
   {
     nome: "Burguer 2.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
     preco: "R$17,99",
-    imagem: "/img/Burguer 2.0.png"
+    imagem: "/img/Burguer 17,99.png"
   },
   {
     nome: "Burguer 3.0",
@@ -201,7 +201,7 @@ const produtos = [
   },
   
 {
-  nome: "Batata Frita Pequena McCain Coorte Fino Pequena",
+  nome: "Batata Frita Pequena ",
   descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
   preco: "R$7,99",
   imagem: "/img/Batata Pequena.png",
@@ -233,7 +233,7 @@ const produtos = [
   {
   nome: "Suco De Manga",
   descricao: "Suco De Manga 300ml",
-  preco: "R$ 6,99",
+  preco: "R$ 5,99",
   imagem: "/img/Suco Manga.webp",
 },
 
@@ -247,7 +247,7 @@ const produtos = [
 {
   nome: "Suco de Goiaba",
   descricao: "Suco de Goiaba 300ml",
-  preco: "R$ 6,99",
+  preco: "R$ 5,99",
   imagem: "/img/Suco de Goiaba.jpg",
 },
 ]; 
@@ -255,22 +255,29 @@ const combos = [
   {
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
-    preco: "R$ 20,97",
-    imagem: "/img/Combo Prime.png",
+    preco: "R$ 23,97",
+    imagem: "/img/23,97.png",
   },
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca Lata 350ml + Molho Especial",
-    preco: "R$ 27,97",
-    imagem: "/img/Combo Street.png",
+    preco: "R$ 31,97",
+    imagem: "/img/31,97.png",
     
   },
   {
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial",
-    preco: "R$ 34,97",
-    imagem: "/img/Combo Turbo.png",
+    preco: "R$ 38,97",
+    imagem: "/img/38,97.png",
   },
+  {
+  nome: "5 Mini Burguer",
+  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
+  preco: "R$ 14,95",
+  imagem: "/img/Mini Burguer.png",
+  tipo: "mini-burguer",
+},
   {
   nome: "10 Mini Burguer",
   descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
