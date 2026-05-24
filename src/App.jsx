@@ -234,7 +234,7 @@ const produtos = [
   nome: "Suco De Manga",
   descricao: "Suco De Manga 300ml",
   preco: "R$ 5,99",
-  imagem: "/img/Suco Manga.webp",
+  imagem: "/img/mango.png",
 },
 
 {
