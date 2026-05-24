@@ -184,38 +184,32 @@ const produtos = [
   {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, e Molho da casa.",
-    preco: "R$9,99",
+    preco: "R$11,99",
     imagem:"/img/Burguer 1.0.png",
   },
   {
     nome: "Burguer 2.0",
     descricao: "Pão Brioche, Blend Bovino 80g, Queijo Mussarela, Picles, Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
-    preco: "R$14,99",
+    preco: "R$17,99",
     imagem: "/img/Burguer 2.0.png"
   },
   {
     nome: "Burguer 3.0",
     descricao: "Pão Brioche, 2 Blend Bovino 80g, Bacon, Queijo Mussarela, Picles, Cebola Empanada, Cebola Caramelizada e Molho da casa.",
-    preco: "R$21,99",
+    preco: "R$24,99",
     imagem: "/img/Burguer 3.0.png"
   },
   
 {
-  nome: "Batata Frita Pequena",
-  descricao: "Porção Pequena De Batata Frita Crocante + Molho Cortesia da casa.",
-  preco: "R$6,99",
+  nome: "Batata Frita Pequena McCain Coorte Fino Pequena",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
+  preco: "R$7,99",
   imagem: "/img/Batata Pequena.png",
 },
 {
-  nome: "Batata Frita Média ",
-  descricao: "Porção Média De Batata Frita Crocante + Molho Cortesia da casa.",
-  preco: "R$9,99",
-  imagem: "/img/Batata Média.png",
-},
-{
   nome: "Batata Frita Grande",
-  descricao: "Porção Grande De Batata Frita Crocante + Molho Cortesia da casa.",
-  preco: "R$13,99",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
+  preco: "R$15,99",
   imagem: "/img/Batata Grande.png",
 },
 
