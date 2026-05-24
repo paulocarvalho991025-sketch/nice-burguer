@@ -434,6 +434,21 @@ const eventos = combos.filter((combo) =>
 const combosNormais = combos.filter((combo) =>
   combo.tipo !== "mini-burguer"
 );
+function ArrasteDica() {
+  return (
+    <div className="mb-4 flex items-center justify-center gap-2 text-sm font-bold text-orange-400 md:hidden">
+      <motion.span
+        animate={{ x: [0, 10, 0] }}
+        transition={{ duration: 1.2, repeat: Infinity }}
+        className="text-2xl"
+      >
+        👉
+      </motion.span>
+
+      <span>Arraste para o lado</span>
+    </div>
+  );
+}
 return (
 <main className="min-h-screen bg-[#14100f] relative overflow-hidden text-white">    <div className="absolute inset-0 opacity-20 pointer-events-none">
       <div className="absolute top-0 left-6 h-[500px] w-[500px] rounded-full bg-orange-500 blur-[140px]" />
@@ -912,6 +927,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   <div className="mb-10 text-center">
     <h2 className="text-3xl font-black md:text-4xl">Burguer's</h2>
   </div>
+  <ArrasteDica />
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible"><>
 {burguers.map((produto) => (
   <motion.div
