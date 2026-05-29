@@ -189,7 +189,7 @@ const produtos = [
   },
   {
     nome: "Burguer 2.0",
-    descricao: "Pão Brioche, Blend Bovino 60g, Queijo Mussarela, Picles, Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
+    descricao: "Pão Brioche, Blend Bovino 90g, Queijo Mussarela, Picles, Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
     preco: "R$17,99",
     imagem: "/img/Burguer 17,99.png"
   },
