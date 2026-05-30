@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react";import { ShoppingBag, Message
 import { motion } from "framer-motion";
 
 export default function App() {
+const [imagem3, setImagem3] = useState(0);useEffect(() => {
+  const interval = setInterval(() => {
+    setImagem3((atual) => (atual === 0 ? 1 : 0));
+  }, 1500);
 
+  return () => clearInterval(interval);
+}, []);
 const [carrinho, setCarrinho] = useState(() => {
   const carrinhoSalvo = localStorage.getItem("carrinho");
 
@@ -182,23 +188,24 @@ ${pagamento === "Dinheiro" ? `Troco Para: R$ ${trocoPara || "Não informado"}` :
 const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
   {
+    nome: "Burguer 3.0",
+    descricao: "Pão Brioche, 2 Blend Bovino 60g, Bacon, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada e Molho da casa.",
+    preco: "R$24,99",
+    imagem: "/img/uju.png",
+},
+  {
+    nome: "Burguer 2.0",
+    descricao: "Pão Brioche, Blend Bovino 90g, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
+    preco: "R$17,99",
+    imagem: "/img/Burguer 17,99.png",
+  },
+  {
     nome: "Burguer 1.0",
     descricao: "Pão Brioche, Blend Bovino 60g, Queijo Mussarela, e Molho da casa.",
     preco: "R$11,99",
     imagem:"/img/11,99.png",
   },
-  {
-    nome: "Burguer 2.0",
-    descricao: "Pão Brioche, Blend Bovino 90g, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
-    preco: "R$17,99",
-    imagem: "/img/Burguer 17,99.png"
-  },
-  {
-    nome: "Burguer 3.0",
-    descricao: "Pão Brioche, 2 Blend Bovino 60g, Bacon, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada e Molho da casa.",
-    preco: "R$24,99",
-    imagem: "/img/Trindade1.jpg"
-  },
+ 
   
 {
   nome: "Batata Frita Pequena ",
@@ -937,11 +944,17 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-5 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition hover:shadow-[0_0_60px_rgba(255,120,0,0.25)]">
   <div className="relative mb-4 overflow-hidden rounded-2xl">
-    <img
-      src={produto.imagem}
-      alt={produto.nome}
-      className="h-[280px] w-full object-cover"
-    />
+    <AnimatePresence mode="wait">
+  <motion.img
+    key={imagem3}
+    src={produto.imagens[imagem3]}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.4 }}
+    className="..."
+  />
+</AnimatePresence>
   </div>
 
   <h3 className="text-2xl font-black text-white">
