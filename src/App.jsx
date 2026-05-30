@@ -1,4 +1,3 @@
-import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";import { ShoppingBag, MessageCircle, Star, Clock, MapPin, } from "lucide-react";
 export default function App() {
 const [imagem3, setImagem3] = useState(0);useEffect(() => {
