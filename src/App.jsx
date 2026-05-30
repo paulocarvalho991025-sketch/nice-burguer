@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";import { ShoppingBag, MessageCircle, Star, Clock, MapPin, } from "lucide-react";
 export default function App() {
-const [imagem3, setImagem3] = useState(0);useEffect(() => {
-  const interval = setInterval(() => {
-    setImagem3((atual) => (atual === 0 ? 1 : 0));
-  }, 1500);
-
-  return () => clearInterval(interval);
-}, []);
 const [carrinho, setCarrinho] = useState(() => {
   const carrinhoSalvo = localStorage.getItem("carrinho");
 
@@ -942,18 +935,11 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-5 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition hover:shadow-[0_0_60px_rgba(255,120,0,0.25)]">
   <div className="relative mb-4 overflow-hidden rounded-2xl">
-    <AnimatePresence mode="wait">
-  <motion.img
-    key={imagem3}
-    src={produto.imagem[imagem3]}
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
-    transition={{ duration: 0.4 }}
-    className="..."
-  />
-</AnimatePresence>
-  </div>import { motion, AnimatePresence } from "framer-motion";
+<img
+  src={produto.imagem}
+  alt={produto.nome}
+  className="h-[320px] w-full object-cover"
+/>
 
   <h3 className="text-2xl font-black text-white">
     {produto.nome}
