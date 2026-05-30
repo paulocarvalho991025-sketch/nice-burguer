@@ -946,7 +946,7 @@ className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-
     <AnimatePresence mode="wait">
   <motion.img
     key={imagem3}
-    src={produto.imagens[imagem3]}
+    src={produto.imagem[imagem3]}
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
@@ -954,7 +954,7 @@ className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-
     className="..."
   />
 </AnimatePresence>
-  </div>
+  </div>import { motion, AnimatePresence } from "framer-motion";
 
   <h3 className="text-2xl font-black text-white">
     {produto.nome}
