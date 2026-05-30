@@ -197,7 +197,7 @@ const produtos = [
     nome: "Burguer 3.0",
     descricao: "Pão Brioche, 2 Blend Bovino 60g, Bacon, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada e Molho da casa.",
     preco: "R$24,99",
-    imagem: "/img/Burguer 24,99.png"
+    imagem: "/img/Trindade.jpg"
   },
   
 {
@@ -903,7 +903,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       nome: "Combo Street",
       descricao: "Burguer 2.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial",
       preco: "R$ 31,97",
-      imagem: "/img/cst.png",
+      imagem: "/img/Trindade.jpg",
     })
   }
   className="mt-6 w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl transition hover:bg-orange-500"
