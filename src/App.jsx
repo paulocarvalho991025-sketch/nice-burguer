@@ -240,7 +240,7 @@ const produtos = [
   nome: "Suco de Maracujá",
   descricao: "Delicioso Suco De Maracujá 300ml",
   preco: "R$ 7,99",
-  imagem: "/img/Viagem.png",
+  imagem: "/img/image.png",
 },
 
 ]; 
