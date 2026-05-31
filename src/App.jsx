@@ -254,14 +254,14 @@ const combos = [
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
-    preco: "R$ 31,97",
+    preco: "R$ 28,97",
     imagem: "/img/.png",
     
   },
   {
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
-    preco: "R$ 23,97",
+    preco: "R$ 22,97",
     imagem: "/img/.png",
   },
   
