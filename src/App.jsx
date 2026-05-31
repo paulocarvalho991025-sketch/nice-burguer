@@ -200,15 +200,21 @@ const produtos = [
  
   
 {
-  nome: "Batata Frita Pequena ",
-  descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
+  nome: "Batata Frita Acompnhamento De Combo",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante + e Delicioso Molho especial da casa.",
   preco: "R$6,99",
   imagem: "/img/Batata MacCain.png",
 },
 {
-  nome: "Batata Frita Grande",
-  descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
+  nome: "Batata Frita Tamanho família",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante + e Delicioso Molho especial da casa.",
   preco: "R$15,99",
+  imagem: "/img/grande.png",
+},
+{
+  nome: "Batata Suprema Cheddar e Bacon",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante + e Delicioso Molho especial da casa.",
+  preco: "R$21,99",
   imagem: "/img/grande.png",
 },
 
@@ -252,24 +258,26 @@ const produtos = [
 ]; 
 const combos = [
   {
-    nome: "Combo Prime",
-    descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
-    preco: "R$ 23,97",
-    imagem: "/img/23,97.png",
+    nome: "Combo Turbo",
+    descricao: "Burguer 3.0 + Batata Frita + Coca-Cola  250ml + Molho Especial",
+    preco: "R$ 38,97",
+    imagem: "/img/Turbooo.png",
   },
   {
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
     preco: "R$ 31,97",
-    imagem: "/img/31,97.png",
+    imagem: "/img/.png",
     
   },
   {
-    nome: "Combo Turbo",
-    descricao: "Burguer 3.0 + Batata Frita + Coca-Cola  250ml + Molho Especial",
-    preco: "R$ 38,97",
-    imagem: "/img/38,97.png",
+    nome: "Combo Prime",
+    descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
+    preco: "R$ 23,97",
+    imagem: "/img/.png",
   },
+  
+  
   {
   nome: "5 Mini Burguer",
   descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
