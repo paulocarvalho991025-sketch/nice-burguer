@@ -222,7 +222,7 @@ const produtos = [
     nome: "Coca-Cola Original Garrafinha 250ml",
     descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/coca250ml.png"
+    imagem: "/img/250ml.png"
   },
 {
     nome: "Coca-Cola Original Lata 350ml",
@@ -972,12 +972,17 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
   {fritas.map((produto) => (
-  <motion.div
+ <motion.div
   key={produto.nome}
-  whileHover={{ y: -3, scale: 0.98 }}
-  whileTap={{ scale: 0.98 }}
-  transition={{ duration: 0.2 }}
-  className="min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18] p-5"
+  drag="x"
+  dragElastic={0.2}
+  dragMomentum={false}
+  whileHover={{ y: -3 }}
+  whileDrag={{
+    scale: 1.05,
+    zIndex: 50
+  }}
+  className="..."
 >
   <img
     src={produto.imagem}
