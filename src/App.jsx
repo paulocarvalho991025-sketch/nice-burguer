@@ -1065,7 +1065,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   </h2>
 </div>
 
-<div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
+<div className="flex justify-center">
   {sucos.map((produto) => (
     <motion.div
   key={produto.nome}
