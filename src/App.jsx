@@ -934,7 +934,7 @@ className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-
 <img
   src={produto.imagem}
   alt={produto.nome}
-  className="h-[300px] w-full object-cover"
+  className="h-[280px] w-full object-cover"
 />
 </div>
   <h3 className="text-2xl font-black text-white">
