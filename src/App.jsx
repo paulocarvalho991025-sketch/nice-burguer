@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";import { ShoppingBag, MessageCircle, Star, Clock, MapPin, } from "lucide-react";
-export default function App() {
+import React, { useState, useEffect } from "react";
+import { ShoppingBag, MapPin } from "lucide-react";
+import { motion } from "framer-motion";export default function App() {
 const [carrinho, setCarrinho] = useState(() => {
   const carrinhoSalvo = localStorage.getItem("carrinho");
 
@@ -182,7 +183,7 @@ const produtos = [
     nome: "Burguer 3.0",
     descricao: "Pão Brioche, 2 Blend Bovino 60g, Bacon, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada e Molho da casa.",
     preco: "R$24,99",
-    imagem: "/img/uju",
+   imagem: "/img/uju.png",
 },
   {
     nome: "Burguer 2.0",
@@ -940,7 +941,7 @@ className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-
   alt={produto.nome}
   className="h-[320px] w-full object-cover"
 />
-
+</div>
   <h3 className="text-2xl font-black text-white">
     {produto.nome}
   </h3>
