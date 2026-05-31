@@ -201,19 +201,19 @@ const produtos = [
   
 {
   nome: "Batata Frita Acompnhamento De Combo",
-  descricao: "Batata Frita McCain Corte Fino Super Crocante + e Delicioso Molho especial da casa.",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante e Delicioso Molho especial da casa.",
   preco: "R$6,99",
   imagem: "/img/Batata MacCain.png",
 },
 {
   nome: "Batata Frita Tamanho família",
-  descricao: "Batata Frita McCain Corte Fino Super Crocante + e Delicioso Molho especial da casa.",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante e Delicioso Molho especial da casa.",
   preco: "R$15,99",
   imagem: "/img/grande.png",
 },
 {
   nome: "Batata Suprema Cheddar e Bacon",
-  descricao: "Batata Frita McCain Corte Fino Super Crocante + e Delicioso Molho especial da casa.",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante Cheddar , Bacon e Delicioso Molho especial da casa.",
   preco: "R$21,99",
   imagem: "/img/BATATA SUPREMAA.png",
 },
