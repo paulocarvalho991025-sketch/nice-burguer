@@ -247,7 +247,7 @@ const produtos = [
 const combos = [
   {
     nome: "Combo Turbo",
-    descricao: "Burguer 3.0 + Batata Frita + Delicioso Suco De Maracujá 300ml + Molho Especial",
+    descricao: "Burguer 3.0 + Batata Frita + Suco De Maracujá 300ml + Molho Especial",
     preco: "R$ 39,97",
     imagem: "/img/comboturbomaa.png",
   },
@@ -929,7 +929,11 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   whileHover={{ y: -3, scale: 0.98 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-  className="fire-card min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18] p-5 border-2 border-orange-500 shadow-[0_0_20px_rgba(255,120,0,0.7)]"
+  className={`min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18] ${
+  produto.nome === "Burguer 3.0"
+    ? "fire-card border-2 border-orange-500"
+    : ""
+}`}
 >
   <img
     src={produto.imagem}
