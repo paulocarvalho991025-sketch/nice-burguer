@@ -886,7 +886,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     <div className="overflow-hidden rounded-[2rem]">
 
       <img
-        src="/img/31,97.png"
+        src="/img/Turbooo.png"
         alt="Combo Street"
         className="h-[333px] w-full object-cover"
       />
@@ -900,9 +900,9 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   onClick={() =>
     adicionarItem({
       nome: "Combo Street",
-      descricao: "Burguer 2.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial",
-      preco: "R$ 31,97",
-      imagem: "/img/Trindade1.jpg",
+      descricao: "Burguer 3.0 + Batata Frita + Coca-Cola Lata 350ml + Molho Especial Da Casa",
+      preco: "R$ 36,97",
+      imagem: "/img/Turbooo.png", 
     })
   }
   className="mt-6 w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl transition hover:bg-orange-500"
