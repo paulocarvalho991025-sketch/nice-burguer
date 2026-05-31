@@ -228,12 +228,12 @@ const produtos = [
     nome: "Coca-Cola Original Lata 350ml",
     descricao: "Coca-Cola Lata 350ml",
     preco: "R$ 5,99",
-    imagem: "/img/350.png",
+    imagem: "/img/350ml.png",
   },{
     nome: "Coca-Cola Original Garrafa 1 Litro",
     descricao: "Coca-Cola Garrafa 1 Litro",
     preco: "R$ 9,99",
-    imagem: "/img/1LL.png",
+    imagem: "/img/1litro.png",
   },
   
 {

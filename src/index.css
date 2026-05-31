@@ -12,3 +12,26 @@
 .font-roadrage {
   font-family: 'Road Rage', cursive;
 }
+@keyframes fireGlow {
+  0% {
+    box-shadow:
+      0 0 10px rgba(255,120,0,0.5),
+      0 0 20px rgba(255,80,0,0.3);
+  }
+
+  50% {
+    box-shadow:
+      0 0 20px rgba(255,140,0,0.8),
+      0 0 40px rgba(255,60,0,0.5);
+  }
+
+  100% {
+    box-shadow:
+      0 0 10px rgba(255,120,0,0.5),
+      0 0 20px rgba(255,80,0,0.3);
+  }
+}
+
+.fire-card {
+  animation: fireGlow 2s infinite ease-in-out;
+}
