@@ -193,7 +193,7 @@ const produtos = [
   },
   {
     nome: "Burguer 1.0",
-    descricao: "Pão Com Gergelim Macio, Blend Bovino 60g, Queijo Mussarela, e Molho da casa.",
+    descricao: "Pão Com Gergelim Macio, Blend Bovino 60g, Queijo Cheddar ou mussarela e Delicioso Molho especial da casa.",
     preco: "R$11,99",
     imagem:"/img/png",
   },
