@@ -222,7 +222,7 @@ const produtos = [
     nome: "Coca-Cola Original Garrafinha 250ml",
     descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/250ml.png"
+    imagem: "/img/coca250ml.png"
   },
 {
     nome: "Coca-Cola Original Lata 350ml",
@@ -972,48 +972,40 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
   {fritas.map((produto) => (
- <motion.div
-  key={produto.nome}
-  drag="x"
-  dragElastic={0.2}
-  dragMomentum={false}
-  whileHover={{ y: -3 }}
-  whileDrag={{
-    scale: 1.05,
-    zIndex: 50
-  }}
-  className="..."
->
-  <img
-    src={produto.imagem}
-    alt={produto.nome}
-    className="h-[260px] w-full object-cover"
-  />
+  <motion.div
+    key={produto.nome}
+    whileHover={{ y: -8, scale: 1.05 }}
+    whileTap={{ scale: 0.98 }}
+    transition={{ duration: 0.2 }}
+className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
+<div className="relative mb-4 flex h-[280px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">      
 
-  <h3 className="mt-6 text-2xl font-black text-white">
-    {produto.nome}
-  </h3>
+      <img
+        src={produto.imagem}
+        alt={produto.nome}
+className="h-full w-full object-cover"      />
+    </div>
 
-  <p className="mt-3 min-h-[90px] text-sm leading-6 text-stone-300">
-    {produto.descricao}
-  </p>
+    <h3 className="text-xl font-black text-white">
+      {produto.nome}
+    </h3>
 
-  <div className="mt-5 flex items-center justify-between">
-    <span className="text-4xl font-black text-orange-500">
-      {produto.preco}
-    </span>
+    <p className="mt-2 min-h-[70px] text-sm leading-6 text-stone-300">
+      {produto.descricao}
+    </p>
 
-    <motion.button
-      type="button"
-      whileTap={{ scale: 0.9 }}
-      whileHover={{ scale: 1.05 }}
-      onClick={() => adicionarItem(produto)}
-      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white hover:bg-orange-500"
-    >
-      {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
-    </motion.button>
-  </div>
-</motion.div>
+<div className="mt-6">      
+
+      <motion.button
+        type="button"
+        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.05 }}
+        onClick={() => adicionarItem(produto)}
+className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"      >
+        {comboAdicionado === produto.nome ? "Adicionado à sacola!" : "Adicionar"}
+      </motion.button>
+    </div>
+  </motion.div>
 ))}
 </div>
 <div className="mb-10 mt-20 text-center">
