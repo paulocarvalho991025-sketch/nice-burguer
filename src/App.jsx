@@ -896,7 +896,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   onClick={() =>
     adicionarItem({
       nome: "Combo Street",
-      preco: "R$ 36,97",
+      preco: "R$ 35,97",
       imagem: "/img/Turbooo.png", 
     })
   }
@@ -1124,7 +1124,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
     <img
       src={combo.imagem}
       alt={combo.nome}
-      className="h-[260px] w-full object-contain"
+      className="h-[280px] w-full object-contain"
     />
 
   
