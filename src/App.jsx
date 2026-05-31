@@ -235,26 +235,14 @@ const produtos = [
     preco: "R$ 9,99",
     imagem: "/img/1LL.png",
   },
-  {
-  nome: "Suco De Manga",
-  descricao: "Suco De Manga 300ml",
-  preco: "R$ 5,99",
-  imagem: "/img/mango.png",
-},
-
+  
 {
   nome: "Suco de Maracujá",
-  descricao: "Suco De Maracujá 300ml",
+  descricao: "Delicioso Suco De Maracujá 300ml",
   preco: "R$ 7,99",
-  imagem: "/img/mara.png",
+  imagem: "/img/Viagem.png",
 },
 
-{
-  nome: "Suco de Goiaba",
-  descricao: "Suco de Goiaba 300ml",
-  preco: "R$ 5,99",
-  imagem: "/img/aba.png",
-},
 ]; 
 const combos = [
   {
