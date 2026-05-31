@@ -1114,48 +1114,42 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
   {combosNormais.map((combo) => (
   <motion.div
-  key={combo.nome}
-  whileHover={{ y: -3, scale: 0.95 }}
+  key={produto.nome}
+  whileHover={{ y: -3, scale: 0.98 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-  className="fire-card min-w-[280px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/20 border-2 border-orange-500 shadow-[0_0_15px_rgba(255,120,0,0.6),0_0_35px_rgba(255,80,0,0.4)]"
->  
-  
-    <img
-      src={combo.imagem}
-      alt={combo.nome}
-      className="h-[280px] w-full object-contain"
-    />
+  className="fire-card min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18] p-5 border-2 border-orange-500 shadow-[0_0_20px_rgba(255,120,0,0.7)]"
+>
+  <img
+    src={produto.imagem}
+    alt={produto.nome}
+    className="h-[260px] w-full object-cover"
+  />
 
-  
-<div className="p-5">
-  <h3 className="text-2xl font-black text-white">
-    {combo.nome}
+  <h3 className="mt-6 text-2xl font-black text-white">
+    {produto.nome}
   </h3>
 
-  <p className="mt-3 text-stone-300">
-    {combo.descricao}
+  <p className="mt-3 min-h-[90px] text-sm leading-6 text-stone-300">
+    {produto.descricao}
   </p>
 
   <div className="mt-5 flex items-center justify-between">
-    <span className="text-3xl font-black text-orange-400">
-      {combo.preco}
+    <span className="text-4xl font-black text-orange-500">
+      {produto.preco}
     </span>
 
     <motion.button
       type="button"
       whileTap={{ scale: 0.9 }}
       whileHover={{ scale: 1.05 }}
-      onClick={() => adicionarItem(combo)}
-      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white"
+      onClick={() => adicionarItem(produto)}
+      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white hover:bg-orange-500"
     >
-      {comboAdicionado === combo.nome
-        ? "✓ Adicionado"
-        : "Adicionar"}
+      {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
     </motion.button>
   </div>
-</div>
-  </motion.div>
+</motion.div>
 ))}
 </div>
 </div>
