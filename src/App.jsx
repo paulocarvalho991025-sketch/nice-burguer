@@ -1204,7 +1204,7 @@ className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.05 }}
           onClick={() => agendar(produto)}
-          className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white hover:bg-orange-700"
+          className="rounded-full bg-orange-600 px-3 py-1 text-sm font-bold text-white hover:bg-orange-700"
         >
           {comboAdicionado === produto.nome
             ? "Agendado!"
