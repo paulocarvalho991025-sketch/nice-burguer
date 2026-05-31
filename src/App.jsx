@@ -1114,12 +1114,12 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
   {combosNormais.map((combo) => (
   <motion.div
-    key={combo.nome}
-    whileHover={{ y: -3, scale: 0.95 }}
-    whileTap={{ scale: 0.98 }}
-    transition={{ duration: 0.2 }}
-className="min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl border border-orange-500" >
-  className="min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/20 border-2 border-orange-500 shadow-[0_0_15px_rgba(255,120,0,0.6),0_0_35px_rgba(255,80,0,0.4)]"
+  key={combo.nome}
+  whileHover={{ y: -3, scale: 0.95 }}
+  whileTap={{ scale: 0.98 }}
+  transition={{ duration: 0.2 }}
+  className="fire-card min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/20 border-2 border-orange-500 shadow-[0_0_15px_rgba(255,120,0,0.6),0_0_35px_rgba(255,80,0,0.4)]"
+>  
   
     <img
       src={combo.imagem}
