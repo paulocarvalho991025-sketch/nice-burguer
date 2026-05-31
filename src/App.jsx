@@ -1123,33 +1123,48 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
     Você aproveita o melhor do hamburguer artesanal com um ótimo custo beneficio!
   </h2>
 </div>
-<div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">{combosNormais.map((combo) => (
+<div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible">
+  {combosNormais.map((combo) => (
   <motion.div
     key={combo.nome}
     whileHover={{ y: -3, scale: 0.95 }}
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
-className="min-w-[300px] md:min-w-0 relative min-h-[380px] overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl backdrop-blur" >
+className="min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/10 shadow-xl"  >
     <img
       src={combo.imagem}
       alt={combo.nome}
-      className="h-[350px] w-full object-contain"
+      className="h-[260px] w-full object-cover"
     />
 
   
+<div className="p-5">
+  <h3 className="text-2xl font-black text-white">
+    {combo.nome}
+  </h3>
 
-    <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
-      <motion.button
-        type="button"f
-        whileTap={{ scale: 0.9 }}
-        whileHover={{ scale: 1.05 }}
-        onClick={() => adicionarItem(combo)}
-className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white shadow-xl hover:bg-orange-500"      >
-        {comboAdicionado === combo.nome
-          ? "Adicionado à sacola!"
-          : "Adicionar"}
-      </motion.button>
-    </div>
+  <p className="mt-3 text-stone-300">
+    {combo.descricao}
+  </p>
+
+  <div className="mt-5 flex items-center justify-between">
+    <span className="text-3xl font-black text-orange-400">
+      {combo.preco}
+    </span>
+
+    <motion.button
+      type="button"
+      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.05 }}
+      onClick={() => adicionarItem(combo)}
+      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-bold text-white"
+    >
+      {comboAdicionado === combo.nome
+        ? "✓ Adicionado"
+        : "Adicionar"}
+    </motion.button>
+  </div>
+</div>
   </motion.div>
 ))}
 </div>
