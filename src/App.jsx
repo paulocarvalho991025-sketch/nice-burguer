@@ -975,7 +975,7 @@ className="w-full rounded-3xl bg-orange-600 py-6 text-2xl font-black text-white 
     whileTap={{ scale: 0.98 }}
     transition={{ duration: 0.2 }}
 className="min-w-[280px] md:min-w-0 relative overflow-hidden rounded-3xl bg-[#1f1a18]/10 p-5 shadow-xl backdrop-blur" >
-<div className="relative mb-4 flex h-[285px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">      
+<div className="relative mb-4 flex h-[280px] items-center justify-center overflow-hidden rounded-2xl bg-orange-100">      
 
       <img
         src={produto.imagem}
@@ -1024,7 +1024,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
     <img
       src={produto.imagem}
       alt={produto.nome}
-      className="h-[320px] w-full object-cover"
+      className="h-[280px] w-full object-cover"
     />
   </div>
 
@@ -1072,7 +1072,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
         <img
           src={produto.imagem}
           alt={produto.nome}
-          className="h-[320px] w-full object-cover"
+          className="h-[280px] w-full object-cover"
         />
       </div>
 
@@ -1118,7 +1118,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
   whileHover={{ y: -3, scale: 0.95 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-  className="fire-card min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/20 border-2 border-orange-500 shadow-[0_0_15px_rgba(255,120,0,0.6),0_0_35px_rgba(255,80,0,0.4)]"
+  className="fire-card min-w-[280px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/20 border-2 border-orange-500 shadow-[0_0_15px_rgba(255,120,0,0.6),0_0_35px_rgba(255,80,0,0.4)]"
 >  
   
     <img
