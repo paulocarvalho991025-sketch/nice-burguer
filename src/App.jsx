@@ -203,13 +203,13 @@ const produtos = [
   nome: "Batata Frita Pequena ",
   descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
   preco: "R$6,99",
-  imagem: "/img/Batata Pequena.png",
+  imagem: "/img/Batata MacCain.png",
 },
 {
   nome: "Batata Frita Grande",
   descricao: "Batata Frita McCain Corte Fino Super Crocante + Molho Cortesia da casa.",
   preco: "R$13,99",
-  imagem: "/img/Batata Grande.png",
+  imagem: "/img/Batata MacCain1.png",
 },
 
   {
