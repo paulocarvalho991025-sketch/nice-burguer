@@ -249,7 +249,7 @@ const combos = [
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Batata Frita + Suco De Maracujá 300ml + Molho Especial",
     preco: "R$ 39,97",
-    imagem: "/img/comboturbomaa.png",
+    imagem: "/img/combo.png",
   },
   {
     nome: "Combo Street",
