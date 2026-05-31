@@ -882,8 +882,8 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     <div className="overflow-hidden rounded-[2rem]">
 
       <img
-        src="/img/Turbooo.png"
-        alt="Combo Street"
+        src="/img/comboturboma.png"
+        alt="Combo Turbo"
         className="h-[333px] w-full object-cover"
       />
     </div>
