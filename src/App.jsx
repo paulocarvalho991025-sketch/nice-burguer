@@ -181,7 +181,7 @@ const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
   {
     nome: "Burguer 3.0",
-    descricao: "Pão Brioche, 2 Blend Bovino 60g, Bacon, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada e Molho da casa.",
+    descricao: "Pão com gergelim macio , 2 Blend Bovino 60g, Queijo Cheddar ou mussarela , Bacon , Cebola Empanada, Cebola Caramelizada e Delicioso Molho especial da casa.",
     preco: "R$24,99",
    imagem: "/img/uju.png",
 },
