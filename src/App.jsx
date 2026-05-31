@@ -247,9 +247,9 @@ const produtos = [
 const combos = [
   {
     nome: "Combo Turbo",
-    descricao: "Burguer 3.0 + Batata Frita + Coca-Cola  250ml + Molho Especial",
-    preco: "R$ 35,97",
-    imagem: "/img/Turbooo.png",
+    descricao: "Burguer 3.0 + Batata Frita + Delicioso Suco De Maracujá 300ml + Molho Especial",
+    preco: "R$ 39,97",
+    imagem: "/img/comboturboma.png",
   },
   {
     nome: "Combo Street",
