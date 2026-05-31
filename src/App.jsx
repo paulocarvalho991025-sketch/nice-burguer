@@ -924,37 +924,40 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   <ArrasteDica />
 <div className="flex gap-5 overflow-x-auto scroll-smooth pb-4 md:grid md:grid-cols-3 md:overflow-visible"><>
 {burguers.map((produto) => (
-  <motion.div
+ <motion.div
   key={produto.nome}
-  whileHover={{ y: -3, scale: 1.005 }}
+  whileHover={{ y: -3, scale: 0.98 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-className="min-w-[280px] md:min-w-0 flex flex-col rounded-3xl bg-[#1f1a18]/80 p-5 shadow-[0_0_40px_rgba(255,120,0,0.18)] transition hover:shadow-[0_0_60px_rgba(255,120,0,0.25)]">
-  <div className="relative mb-4 overflow-hidden rounded-2xl">
-<img
-  src={produto.imagem}
-  alt={produto.nome}
-  className="h-[280px] w-full object-cover"
-/>
-</div>
-  <h3 className="text-2xl font-black text-white">
+  className="fire-card min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18] p-5 border-2 border-orange-500 shadow-[0_0_20px_rgba(255,120,0,0.7)]"
+>
+  <img
+    src={produto.imagem}
+    alt={produto.nome}
+    className="h-[260px] w-full object-cover"
+  />
+
+  <h3 className="mt-6 text-2xl font-black text-white">
     {produto.nome}
   </h3>
 
-<p className="mt-3 min-h-[120px] text-sm leading-7 text-stone-300">   
-   {produto.descricao}
+  <p className="mt-3 min-h-[90px] text-sm leading-6 text-stone-300">
+    {produto.descricao}
   </p>
 
-  <div className="mt-6">
+  <div className="mt-5 flex items-center justify-between">
+    <span className="text-4xl font-black text-orange-500">
+      {produto.preco}
+    </span>
+
     <motion.button
       type="button"
-      whileTap={{ scale: 0.95 }}
-      whileHover={{ scale: 1.01 }}
+      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.05 }}
       onClick={() => adicionarItem(produto)}
-className="w-full rounded-3xl bg-orange-600 py-6 text-2xl font-black text-white shadow-xl hover:bg-orange-500"    >
-      {comboAdicionado === produto.nome
-        ? "Adicionado!"
-        : "Adicionar"}
+      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white hover:bg-orange-500"
+    >
+      {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
     </motion.button>
   </div>
 </motion.div>
@@ -1055,7 +1058,7 @@ className="w-full rounded-2xl bg-orange-600 py-4 text-lg font-black text-white s
 </section>
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
-    Sucos
+    Suco
   </h2>
 </div>
 
