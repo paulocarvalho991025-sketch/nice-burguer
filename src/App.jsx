@@ -1136,11 +1136,11 @@ className="min-w-[300px] md:min-w-0 relative min-h-[380px] overflow-hidden round
       className="h-[350px] w-full object-contain"
     />
 
-    <div className="absolute inset-0 bg-black/30" />
+  
 
     <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
       <motion.button
-        type="button"
+        type="button"f
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.05 }}
         onClick={() => adicionarItem(combo)}
