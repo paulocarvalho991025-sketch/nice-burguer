@@ -181,19 +181,19 @@ const linkWhatsapp = `https://wa.me/5584997063345?text=${mensagemPedido}`;
 const produtos = [
   {
     nome: "Burguer 3.0",
-    descricao: "Pão com gergelim macio , 2 Blend Bovino 60g, Queijo Cheddar ou mussarela , Bacon , Cebola Empanada, Cebola Caramelizada e Delicioso Molho especial da casa.",
+    descricao: "Pão Com Gergelim Macio , 2 Blend Bovino 60g, Queijo Cheddar ou mussarela , Bacon , Cebola Empanada, Cebola Caramelizada e Delicioso Molho especial da casa.",
     preco: "R$24,99",
    imagem: "/img/uju.png",
 },
   {
     nome: "Burguer 2.0",
-    descricao: "Pão Brioche, Blend Bovino 90g, Queijo Mussarela, Cebola Empanada, Cebola Caramelizada  e Molho da casa.",
+    descricao: "Pão Com Gergelim Macio, Blend Bovino 80g , Queijo Cheddar ou mussarela, Cebola Empanada, Cebola Caramelizada e Delicioso Molho especial da casa.",
     preco: "R$17,99",
     imagem: "/img/Burguer 17,99.png",
   },
   {
     nome: "Burguer 1.0",
-    descricao: "Pão Brioche, Blend Bovino 60g, Queijo Mussarela, e Molho da casa.",
+    descricao: "Pão Com Gergelim Macio, Blend Bovino 60g, Queijo Mussarela, e Molho da casa.",
     preco: "R$11,99",
     imagem:"/img/11,99.png",
   },
