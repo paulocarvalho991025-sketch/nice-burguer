@@ -1134,7 +1134,7 @@ className="min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18]/10 
     <img
       src={combo.imagem}
       alt={combo.nome}
-      className="h-[260px] w-full object-cover"
+      className="h-[260px] w-full object-contain"
     />
 
   
