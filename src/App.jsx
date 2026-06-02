@@ -947,9 +947,9 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   </p>
 
   <div className="mt-5 flex items-center justify-between">
-    <span className="text-4xl font-black text-white">
-  {combo.preco}
-</span>
+    <span className="text-4xl font-black text-orange-500">
+      {produto.preco}
+    </span>
 
     <motion.button
       type="button"
