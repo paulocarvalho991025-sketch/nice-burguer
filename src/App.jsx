@@ -190,7 +190,7 @@ const produtos = [
     nome: "Burguer 2.0",
     descricao: "Pão Com Gergelim Macio, Blend Bovino 80g , Queijo Cheddar ou mussarela, Cebola Empanada, Cebola Caramelizada e Delicioso Molho especial da casa.",
     preco: "R$17,99",
-    imagem: "/img/png",
+    imagem: "/img/2.png",
   },
   {
     nome: "Burguer 1.0",
