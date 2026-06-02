@@ -196,7 +196,7 @@ const produtos = [
     nome: "Burguer 1.0",
     descricao: "Pão Com Gergelim Macio, Blend Bovino 60g, Queijo Cheddar ou mussarela e Delicioso Molho especial da casa.",
     preco: "R$11,99",
-    imagem:"/img/Burguer 1.0.png",
+    imagem:"/img/Burguer 1.png",
   },
  
   
@@ -256,14 +256,14 @@ const combos = [
     nome: "Combo Street",
     descricao: "Burguer 2.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
     preco: "R$ 28,97",
-    imagem: "/img/.png",
+    imagem: "/img/Street1.png",
     
   },
   {
     nome: "Combo Prime",
     descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
-    preco: "R$ 22,97",
-    imagem: "/img/.png",
+    preco: "R$ 26,97",
+    imagem: "/img/Prime1.png",
   },
   
   
