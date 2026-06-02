@@ -17,6 +17,7 @@ const [carrinhoEventos, setCarrinhoEventos] = useState(() => {
     ? JSON.parse(salvo)
     : [];
 });
+
 const [agendamentoAberto, setAgendamentoAberto] = useState(false);
 const [tipoEntregaEvento, setTipoEntregaEvento] = useState("");
 const [produtoAgendamento, setProdutoAgendamento] = useState(null);
@@ -195,7 +196,7 @@ const produtos = [
     nome: "Burguer 1.0",
     descricao: "Pão Com Gergelim Macio, Blend Bovino 60g, Queijo Cheddar ou mussarela e Delicioso Molho especial da casa.",
     preco: "R$11,99",
-    imagem:"/img/png",
+    imagem:"/img/Burguer 1.0.png",
   },
  
   
