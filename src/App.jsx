@@ -287,35 +287,7 @@ const combos = [
   preco: "R$ 59,80",
   imagem: "/img/Mini Burguer.png",
   tipo: "mini-burguer",
-},
-{
-  nome: "30 Mini Burguer",
-  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
-  preco: "R$ 89,70",
-  imagem: "/img/Mini Burguer.png",
-  tipo: "mini-burguer",
-},
-  {
-  nome: "40 Mini Burguer",
-  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,99",
-  preco: "R$ 119,60",
-  imagem: "/img/Mini Burguer.png",
-  tipo: "mini-burguer",
-},
-{
-  nome: "50 Mini Burguer",
-  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,89",
-  preco: "R$ 144,50",
-  imagem: "/img/Mini Burguer.png",
-  tipo: "mini-burguer",
-},
-{
-  nome: "100 Mini Burguer",
-  descricao: "Turbine sua festa ou evento com o melhor! Apenas por agendamento. Cada Mini Burguer sai a R$2,84",
-  preco: "R$ 284,00",
-  imagem: "/img/Mini Burguer.png",
-  tipo: "mini-burguer",
-},
+}
 ];
 function agendar(combo) {
   setCarrinhoEventos((atual) => [...atual, combo]);
