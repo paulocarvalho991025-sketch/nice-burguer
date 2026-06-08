@@ -988,7 +988,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 </div>
 <div className="mb-10 mt-20 text-center">
   <h2 className="text-4xl font-black md:text-4xl">
-    Coca-Cola
+    Refrigerantes
   </h2>
 </div>
 
