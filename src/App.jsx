@@ -390,9 +390,12 @@ const fritas = produtos.filter((produto) =>
   produto.nome.includes("Batata")
 );
 
-const bebidas = produtos.filter((produto) =>
-  produto.nome.includes("Coca-Cola")
+const bebidas = produtos.filter(
+  (produto) =>
+    produto.nome.includes("Coca-Cola") ||
+    produto.nome.includes("Fanta")
 );
+
 const sucos = produtos.filter((produto) =>
   produto.nome.includes("Suco")
 );
