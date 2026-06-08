@@ -1019,7 +1019,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   </p>
 
   <div className="mt-5 flex items-center justify-between">
-    <span className="text-4xl font-black text-orange-500">
+    <span className="text-4xl font-black text-red-500">
       {produto.preco}
     </span>
 
@@ -1028,7 +1028,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
       whileTap={{ scale: 0.9 }}
       whileHover={{ scale: 1.05 }}
       onClick={() => adicionarItem(produto)}
-      className="rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white hover:bg-orange-500"
+      className="rounded-full bg-red-600 px-4 py-2 text-sm font-black text-white hover:bg-orange-500"
     >
       {comboAdicionado === produto.nome ? "Adicionado!" : "Adicionar"}
     </motion.button>
