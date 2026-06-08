@@ -208,7 +208,7 @@ const produtos = [
 },
 {
   nome: "Batata Frita Tamanho família",
-  descricao: "Batata Frita McCain Corte Fino Super Crocante e Delicioso Molho especial da casa.",
+  descricao: "3x a Porção da Batata Frita McCain Corte Fino Super Crocante e Delicioso Molho especial da casa.",
   preco: "R$19,99",
   imagem: "/img/19,99.png",
 },
@@ -256,14 +256,14 @@ const combos = [
   },
   {
     nome: "Combo Street",
-    descricao: "Burguer 2.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
+    descricao: "Burguer 2.0 + Batata Frita + Suco De Maracujá 300ml + Molho Especial",
     preco: "R$ 32,97",
     imagem: "/img/dois.png",
     
   },
   {
     nome: "Combo Prime",
-    descricao: "Burguer 1.0 + Batata Frita + Coca-Cola 250ml + Molho Especial",
+    descricao: "Burguer 1.0 + Batata Frita + Suco De Maracujá 300ml + Molho Especial",
     preco: "R$ 26,97",
     imagem: "/img/Prime1.png",
   },
