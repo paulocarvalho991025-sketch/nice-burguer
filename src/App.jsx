@@ -223,19 +223,20 @@ const produtos = [
     nome: "Coca-Cola Original Garrafinha 250ml",
     descricao: "Coca-Cola Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/coca250ml.png"
+    imagem: "/img/coca250ml.png",
   },
+
   {
     nome: "Fanta Laranja Garrafinha 250ml",
     descricao: "Fanta Laranja Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/uva.png"
+    imagem: "/img/uva.png",
   },
   {
     nome: "Fanta Uva  Garrafinha 250ml",
     descricao: "Fanta Uva Garrafinha 250ml",
     preco: "R$ 3,99",
-    imagem: "/img/laranja.png"
+    imagem: "/img/laranja.png",
   },
 
 {
