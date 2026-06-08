@@ -227,14 +227,14 @@ const produtos = [
   },
 
   {
-    nome: "Fanta Laranja Garrafinha 250ml",
-    descricao: "Fanta Laranja Garrafinha 250ml",
+    nome: "Fanta Uva Garrafinha 250ml",
+    descricao: "Fanta Uva Garrafinha 250ml",
     preco: "R$ 3,99",
     imagem: "/img/uva.png",
   },
   {
-    nome: "Fanta Uva  Garrafinha 250ml",
-    descricao: "Fanta Uva Garrafinha 250ml",
+    nome: "Fanta Laranja  Garrafinha 250ml",
+    descricao: "Fanta Laranja Garrafinha 250ml",
     preco: "R$ 3,99",
     imagem: "/img/laranja.png",
   },
