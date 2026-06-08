@@ -252,7 +252,7 @@ const combos = [
     nome: "Combo Turbo",
     descricao: "Burguer 3.0 + Batata Frita + Suco De Maracujá 300ml + Molho Especial",
     preco: "R$ 39,97",
-    imagem: "/img/novot.png",
+    imagem: "/img/turbo!.png",
   },
   {
     nome: "Combo Street",
@@ -860,7 +860,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
     <div className="overflow-hidden rounded-[2rem]">
 
       <img
-        src="/img/novot.png"
+        src="/img/turbo!.png"
         alt="Combo Turbo"
         className="h-[333px] w-full object-cover"
       />
