@@ -857,7 +857,11 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
 </div>
     </div>
 
-    <div className="overflow-hidden rounded-[2rem]">
+    <div className={`overflow-hidden rounded-3xl bg-[#1f1a18] ${
+  combo.nome === "Combo Turbo"
+    ? "border-2 border-yellow-400 shadow-[0_0_25px_rgba(255,215,0,0.8)]"
+    : ""
+}`}>
 
       <img
         src="/img/turbo!.png"
