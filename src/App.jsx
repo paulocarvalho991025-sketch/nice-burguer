@@ -907,8 +907,7 @@ className="rounded-[2rem] bg-[#1f1a18] p-0 shadow-[0_0_80px_rgba(255,120,0,0.25)
   whileHover={{ y: -3, scale: 0.98 }}
   whileTap={{ scale: 0.98 }}
   transition={{ duration: 0.2 }}
-  className="fire-card min-w-[300px] md:min-w-0 overflow-hidden rounded-3xl bg-[#1f1a18] p-5 border-2 border-orange-500 shadow-[0_0_20px_rgba(255,120,0,0.7)]"
->
+className="gold-card overflow-hidden rounded-3xl bg-[#1f1a18]">
   <img
     src={produto.imagem}
     alt={produto.nome}

@@ -182,3 +182,9 @@
     border-right-color: var(--border);
   }
 }
+.gold-card {
+  border: 2px solid #fbbf24;
+  box-shadow:
+    0 0 8px rgba(251,191,36,0.6),
+    0 0 20px rgba(251,191,36,0.3);
+}
