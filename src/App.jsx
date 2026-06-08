@@ -210,7 +210,7 @@ const produtos = [
   nome: "Batata Frita Tamanho família",
   descricao: "Batata Frita McCain Corte Fino Super Crocante e Delicioso Molho especial da casa.",
   preco: "R$19,99",
-  imagem: "/img/grande.png",
+  imagem: "/img/19,99.png",
 },
 {
   nome: "Batata Suprema Cheddar e Bacon",
