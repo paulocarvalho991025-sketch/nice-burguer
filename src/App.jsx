@@ -216,7 +216,7 @@ const produtos = [
   nome: "Batata Suprema Cheddar e Bacon",
   descricao: "Batata Frita McCain Corte Fino Super Crocante Com Cheddar e Bacon e Delicioso Molho especial da casa.",
   preco: "R$25,99",
-  imagem: "/img/BATATA SUPREMAA.png",
+  imagem: "/img/25,99.png",
 },
 
   {
