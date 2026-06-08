@@ -225,22 +225,23 @@ const produtos = [
     preco: "R$ 3,99",
     imagem: "/img/coca250ml.png"
   },
-{
-    nome: "Coca-Cola Original Lata 350ml",
-    descricao: "Coca-Cola Lata 350ml",
-    preco: "R$ 5,99",
-    imagem: "/img/350ml.png",
-  },{
-    nome: "Coca-Cola Original Garrafa 1 Litro",
-    descricao: "Coca-Cola Garrafa 1 Litro",
-    preco: "R$ 9,99",
-    imagem: "/img/1litro.png",
+  {
+    nome: "Fanta Laranja Garrafinha 250ml",
+    descricao: "Fanta Laranja Garrafinha 250ml",
+    preco: "R$ 3,99",
+    imagem: "/img/uva.png"
   },
-  
+  {
+    nome: "Fanta Uva  Garrafinha 250ml",
+    descricao: "Fanta Uva Garrafinha 250ml",
+    preco: "R$ 3,99",
+    imagem: "/img/laranja.png"
+  },
+
 {
   nome: "Suco de Maracujá",
   descricao: "Delicioso Suco De Maracujá 300ml",
-  preco: "R$ 7,99",
+  preco: "R$ 6,99",
   imagem: "/img/image.png",
 },
 
