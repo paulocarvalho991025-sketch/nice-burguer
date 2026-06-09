@@ -207,16 +207,16 @@ const produtos = [
   imagem: "/img/Batata MacCain.png",
 },
 {
-  nome: "Batata Frita Tamanho família",
-  descricao: "3x a Porção da Batata Frita McCain Corte Fino Super Crocante e Delicioso Molho especial da casa.",
-  preco: "R$19,99",
-  imagem: "/img/19,99.png",
+  nome: "Batata Frita Grande",
+  descricao: "Batata Frita McCain Corte Fino Super Crocante e Delicioso Molho especial da casa.",
+  preco: "R$15,99",
+  imagem: "/img/grande.png",
 },
 {
-  nome: "Batata Suprema Cheddar e Bacon",
+  nome: "Batata Grande Com Cheddar e Bacon",
   descricao: "Batata Frita McCain Corte Fino Super Crocante Com Cheddar e Bacon e Delicioso Molho especial da casa.",
-  preco: "R$25,99",
-  imagem: "/img/25,99.png",
+  preco: "R$21,99",
+  imagem: "/img/BATATA SUPREMAA.png",
 },
 
   {
