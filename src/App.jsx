@@ -212,12 +212,7 @@ const produtos = [
   preco: "R$15,99",
   imagem: "/img/grande.png",
 },
-{
-  nome: "Batata Grande Com Cheddar e Bacon",
-  descricao: "Batata Frita McCain Corte Fino Super Crocante Com Cheddar e Bacon e Delicioso Molho especial da casa.",
-  preco: "R$21,99",
-  imagem: "/img/BATATA SUPREMAA.png",
-},
+
 
   {
     nome: "Coca-Cola Original Garrafinha 250ml",
